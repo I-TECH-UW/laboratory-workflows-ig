@@ -1,6 +1,6 @@
-Empty IG
----
-This is an empty IG
+EMR LMIS Communication Implementation Guide
+
+![CI](https://github.com/pmanko/emr-lmis-ig/workflows/CI/badge.svg)
 <br> </br>
 ###
 ### Publication
