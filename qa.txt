@@ -1,0 +1,53 @@
+﻿EmrLmisCommunication : Validation Results
+=========================================
+
+err = 2, warn = 14, info = 0
+IG Publisher Version: 1.1.59
+Generated Thu Feb 04 21:00:52 UTC 2021. FHIR version 4.0.1 for openhie.fhir.emr.lims#0.1.0-test (canonical = http://openhie.org/fhir)
+
+ Build Errors : 3 / 1 / 0
+ /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-diagnostic-report : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-observation : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-patient : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-service-request : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-task : 0 / 5 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-intent : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-status : 0 / 2 / 1
+ /github/workspace/input/myig : 2 / 0 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be openhie.fhir.emr.lims
+ERROR: /github/workspace/output/StructureDefinition-emr-lab-service-request-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 435, column 262: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-emr-lab-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 333, column 2413: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-emr-lab-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 513, column 2413: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
+== /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-diagnostic-report.json ==
+INFORMATION: StructureDefinition/emr-lab-diagnostic-report: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-observation.json ==
+INFORMATION: StructureDefinition/emr-lab-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-observation'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-patient.json ==
+INFORMATION: StructureDefinition/emr-lab-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-patient'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-service-request.json ==
+INFORMATION: StructureDefinition/emr-lab-service-request: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-service-request'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-task.json ==
+WARNING: EMR-LMIS Workflow Task Resource.Task.status: Binding http://openhie.org/fhir/ValueSet/emr-lab-task-status could not be expanded
+WARNING: EMR-LMIS Workflow Task Resource.Task.intent: Binding http://openhie.org/fhir/ValueSet/emr-lab-task-intent could not be expanded
+INFORMATION: StructureDefinition/emr-lab-task: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/emr-lab-task: StructureDefinition: Binding http://openhie.org/fhir/ValueSet/emr-lab-task-status could not be expanded
+WARNING: StructureDefinition/emr-lab-task: StructureDefinition: Binding http://openhie.org/fhir/ValueSet/emr-lab-task-intent could not be expanded
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-task'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-intent.json ==
+INFORMATION: ValueSet/emr-lab-task-intent: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+WARNING: ValueSet/emr-lab-task-intent: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'emr-lab-task-intent'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-intent
+== /github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-status.json ==
+INFORMATION: ValueSet/emr-lab-task-status: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+WARNING: ValueSet/emr-lab-task-status: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'emr-lab-task-status'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-status
+== /github/workspace/input/myig.xml ==
+ERROR: ImplementationGuide.where(url = 'http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lmis'): Conformance resource /github/workspace/input/myig.xml - the canonical URL (http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lmis) does not match the URL (http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lmis)
+INFORMATION: ImplementationGuide/openhie.fhir.emr.lmis: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+ERROR: /github/workspace/input/myig: URL Mismatch http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lmis vs http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lmis

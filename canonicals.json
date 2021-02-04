@@ -1,0 +1,58 @@
+[
+  {
+    "id": "openhie.fhir.emr.lmis",
+    "type": "ImplementationGuide",
+    "url": "http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lmis",
+    "version": "0.1.0-test",
+    "name": "EmrLmisCommunication"
+  },
+  {
+    "id": "emr-lab-diagnostic-report",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report",
+    "version": "0.1.0-test",
+    "name": "EmrLabDiagnosticReport"
+  },
+  {
+    "id": "emr-lab-observation",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-observation",
+    "version": "0.1.0-test",
+    "name": "EmrLabObservation"
+  },
+  {
+    "id": "emr-lab-patient",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-patient",
+    "version": "0.1.0-test",
+    "name": "EmrLabPatient"
+  },
+  {
+    "id": "emr-lab-service-request",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-service-request",
+    "version": "0.1.0-test",
+    "name": "EmrLabServiceRequest"
+  },
+  {
+    "id": "emr-lab-task",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-task",
+    "version": "0.1.0-test",
+    "name": "EmrLabTask"
+  },
+  {
+    "id": "emr-lab-task-intent",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/ValueSet/emr-lab-task-intent",
+    "version": "0.1.0-test",
+    "name": "EmrLabTaskIntent"
+  },
+  {
+    "id": "emr-lab-task-status",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/ValueSet/emr-lab-task-status",
+    "version": "0.1.0-test",
+    "name": "EmrLabTaskStatus"
+  }
+]
