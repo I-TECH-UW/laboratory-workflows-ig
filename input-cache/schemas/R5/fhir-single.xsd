@@ -11421,7 +11421,7 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">The version number or other version identifier.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="baseCitation" minOccurs="0" maxOccurs="1" type="Reference">
+          <xs:element name="classifier" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">Citation for the main version of the cited artifact.</xs:documentation>
            </xs:annotation>
@@ -11463,7 +11463,7 @@ into another (possibly the same) biological entity.</xs:documentation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="type" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="code" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">Used to express the reason or specific aspect for the title.</xs:documentation>
            </xs:annotation>
@@ -11478,33 +11478,42 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">The title of the article or artifact.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:choice minOccurs="1" maxOccurs="1" >
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The article or artifact that the Citation Resource is related to.</xs:documentation>
+            </xs:annotation>
+            <xs:element name="targetUri" type="uri"/>
+            <xs:element name="targetIdentifier" type="Identifier"/>
+            <xs:element name="targetReference" type="Reference"/>
+            <xs:element name="targetAttachment" type="Attachment"/>
+          </xs:choice>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="Citation.Abstract">
+  <xs:complexType name="Citation.CitedArtifact">
     <xs:annotation>
       <xs:documentation xml:lang="en">The Citation Resource enables reference to any knowledge artifact for purposes of identification and attribution. The Citation Resource supports existing reference structures and developing publication practices such as versioning, expressing complex contributorship roles, and referencing computable resources.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="type" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded" type="Identifier">
             <xs:annotation>
               <xs:documentation xml:lang="en">Used to express the reason or specific aspect for the abstract.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="language" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="relatedIdentifier" minOccurs="0" maxOccurs="unbounded" type="Identifier">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Used to express the specific language.</xs:documentation>
+              <xs:documentation xml:lang="en">A formal identifier that is used to identify things closely related to this citation.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="text" minOccurs="1" maxOccurs="1" type="markdown">
+          <xs:element name="dateAccessed" minOccurs="0" maxOccurs="1" type="dateTime">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Abstract content.</xs:documentation>
+              <xs:documentation xml:lang="en">When the citation was cited.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="copyright" minOccurs="0" maxOccurs="1" type="markdown">
+          <xs:element name="version" type="Citation.Version" minOccurs="0" maxOccurs="1">
             <xs:annotation>
               <xs:documentation xml:lang="en">Copyright notice for the abstract.</xs:documentation>
            </xs:annotation>
@@ -33061,7 +33070,9 @@ description of the substance according to standardised sets of properties.</xs:d
         <xs:sequence>
           <xs:element name="text" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Free text dosage can be used for cases where the dosage administered is too complex to code. When coded dosage is present, the free text dosage may still be present for display to humans.The dosage instructions should reflect the dosage of the medication that was administered.</xs:documentation>
+              <xs:documentation xml:lang="en">Free text dosage can be used for cases where the dosage administered is too complex to code. When coded dosage is present, the free text dosage may still be present for display to humans.
+
+The dosage instructions should reflect the dosage of the medication that was administered.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="site" minOccurs="0" maxOccurs="1" type="CodeableConcept">
@@ -40368,7 +40379,8 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:choice>
           <xs:element name="address" minOccurs="0" maxOccurs="unbounded" type="Address">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Address(es) of the practitioner that are not role specific (typically home address). Work addresses are not typically entered in this property as they are usually role dependent.</xs:documentation>
+              <xs:documentation xml:lang="en">Address(es) of the practitioner that are not role specific (typically home address). 
+Work addresses are not typically entered in this property as they are usually role dependent.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="gender" minOccurs="0" maxOccurs="1" type="AdministrativeGender">
