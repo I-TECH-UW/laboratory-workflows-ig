@@ -10,8 +10,8 @@ Description: "A Task resource for tracking order state and synchronizing communi
 * encounter only Reference(Encounter)
 * owner only Reference(Practitioner or Organization or HealthcareService)
 * authoredOn 1..1
-* status from EmrLabTaskStatus
-* intent from EmrLabTaskIntent
+* status from EmrLabTaskStatusVS
+* intent from EmrLabTaskIntentVS
 * output.type.text = "DiagnosticReport"
 * output.value[x] only Reference(EmrLabDiagnosticReport)
 
