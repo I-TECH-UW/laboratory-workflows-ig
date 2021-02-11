@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
-  <id value="openhie.fhir.emr.lmis"/>
+  <id value="openhie.fhir.emr.lis"/>
 <!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
     <valueString value="resources-spreadsheet.xml"/>
   </extension>-->
-  <url value="http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lmis"/>
+  <url value="http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.1.0-test"/>
-  <name value="EmrLmisCommunication"/>
-  <title value="EMR LMIS Communication"/>
+  <name value="EmrLisCommunication"/>
+  <title value="EMR LIS Communication"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="I-TECH-UW"/>
@@ -20,7 +20,7 @@
       <value value="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"/>
     </telecom>
   </contact>
-  <description value="Lab order communication between EMRs and LMISs"/>
+  <description value="Lab order communication between EMRs and LISs"/>
   <jurisdiction>
     <!-- This will drive SNOMED release used -->
     <coding>
