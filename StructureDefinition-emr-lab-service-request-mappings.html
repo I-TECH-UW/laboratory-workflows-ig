@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENHIE.FHIR.EMR.LMIS\EMR-LMIS Service Request - Mappings - FHIR v4.0.1</title>
+    <title>OPENHIE.FHIR.EMR.LIS\EMR-LIS Service Request - Mappings - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,8 +45,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.1"}
-    h3,h4,h5,h6{--heading-prefix:"4.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.2"}
+    h3,h4,h5,h6{--heading-prefix:"4.2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -73,7 +73,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">EMR LMIS Communication</span><br/>0.1.0-test - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">EMR LIS Communication</span><br/>0.1.0-test - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -139,7 +139,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EMR-LMIS Service Request</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EMR-LIS Service Request</b></li>
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -150,7 +150,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 5" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">EMR LMIS Communication - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">EMR LIS Communication - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -263,6 +263,8 @@
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>RF1-5</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>TQ1.9, RF1-2</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>PR1-3 / OBR-4  (varies by domain)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>C*E.1-8, C*E.10-22</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;orderDetail</td><td>NTE</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;quantity[x]</td><td>NTE</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>PID</td> </tr>
@@ -301,6 +303,10 @@
  <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>.priorityCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;doNotPerform</td><td>.actionNegationInd</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>union(., ./translation)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;orderDetail</td><td>.code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;quantity[x]</td><td>.quantity</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>.participation[typeCode=SBJ].role</td> </tr>
@@ -412,7 +418,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/">I-TECH-UW</a>.  Package openhie.fhir.emr.lims#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 4, 2021 21:00+0000">2021-02-04</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/">I-TECH-UW</a>.  Package openhie.fhir.emr.lims#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 11, 2021 22:54+0000">2021-02-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

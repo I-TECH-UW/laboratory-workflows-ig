@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENHIE.FHIR.EMR.LMIS\Intent values for EMR-LMIS order and result workflow. - JSON Representation - FHIR v4.0.1</title>
+    <title>OPENHIE.FHIR.EMR.LIS\EMR-LIS Diagnostic Report Status Flag - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.6"}
-    h3,h4,h5,h6{--heading-prefix:"4.6"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.10"}
+    h3,h4,h5,h6{--heading-prefix:"4.10"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -71,7 +71,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">EMR LMIS Communication</span><br/>0.1.0-test - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">EMR LIS Communication</span><br/>0.1.0-test - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -137,7 +137,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Intent values for EMR-LMIS order and result workflow.</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EMR-LIS Diagnostic Report Status Flag</b></li>
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -148,7 +148,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">EMR LMIS Communication - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">EMR LIS Communication - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -159,13 +159,13 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="ValueSet-emr-lab-task-intent.html">Narrative Content</a>
+    <a href="ValueSet-emr-lab-diagnostic-report-status-vs.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="ValueSet-emr-lab-task-intent.xml.html">XML</a>
+      <a href="ValueSet-emr-lab-diagnostic-report-status-vs.xml.html">XML</a>
     </li>
   
 
@@ -179,7 +179,7 @@
 
   
     <li>
-      <a href="ValueSet-emr-lab-task-intent.ttl.html">TTL</a>
+      <a href="ValueSet-emr-lab-diagnostic-report-status-vs.ttl.html">TTL</a>
     </li>
   
 
@@ -191,9 +191,9 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Intent values for EMR-LMIS order and result workflow. - JSON Representation</h2>
+<h2 id="root">: EMR-LIS Diagnostic Report Status Flag - JSON Representation</h2>
 
-<p><a href="ValueSet-emr-lab-task-intent.json" no-download="true">Raw json</a> | <a href="ValueSet-emr-lab-task-intent.json" download>Download</a></p>
+<p><a href="ValueSet-emr-lab-diagnostic-report-status-vs.json" no-download="true">Raw json</a> | <a href="ValueSet-emr-lab-diagnostic-report-status-vs.json" download>Download</a></p>
 
   <!-- insert intro if present -->
   
@@ -203,17 +203,17 @@
   <pre class="json"><code class="language-json">
 {
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "emr-lab-task-intent",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "emr-lab-diagnostic-report-status-vs",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;http://hl7.org/fhir/ValueSet/task-intent&lt;/code&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;task-intent-order&lt;/td&gt;&lt;td&gt;Order&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html\&quot;&gt;&lt;code&gt;http://hl7.org/fhir/diagnostic-report-status&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-partial\&quot;&gt;diagnostic-report-status-partial&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Partial&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-final\&quot;&gt;diagnostic-report-status-final&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Final&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-unknown\&quot;&gt;diagnostic-report-status-unknown&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unknown&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-canceled\&quot;&gt;diagnostic-report-status-canceled&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Canceled&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-amended\&quot;&gt;diagnostic-report-status-amended&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Amended&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://openhie.org/fhir/ValueSet/emr-lab-task-intent",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.0-test",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "EmrLabTaskIntent",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Intent values for EMR-LMIS order and result workflow.",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "EmrLabDiagnosticReportStatusVS",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "EMR-LIS Diagnostic Report Status Flag",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2021-02-04T21:00:22+00:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2021-02-11T22:54:34+00:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "I-TECH-UW",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -225,7 +225,7 @@
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
@@ -239,11 +239,27 @@
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
     "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
       {
-        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://hl7.org/fhir/ValueSet/task-intent",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://hl7.org/fhir/diagnostic-report-status",
         "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "task-intent-order",
-            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Order"
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "diagnostic-report-status-partial",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Partial"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "diagnostic-report-status-final",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Final"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "diagnostic-report-status-unknown",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Unknown"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "diagnostic-report-status-canceled",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Canceled"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "diagnostic-report-status-amended",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Amended"
           }
         ]
       }
@@ -278,7 +294,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/">I-TECH-UW</a>.  Package openhie.fhir.emr.lims#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 4, 2021 21:00+0000">2021-02-04</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/">I-TECH-UW</a>.  Package openhie.fhir.emr.lims#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 11, 2021 22:54+0000">2021-02-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

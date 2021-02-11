@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lmis> a fhir:ImplementationGuide;
+<http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lis> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "openhie.fhir.emr.lmis"];
+  fhir:Resource.id [ fhir:value "openhie.fhir.emr.lis"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>EmrLmisCommunication</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lmis</pre><div><p>Lab order communication between EMRs and LMISs</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>EmrLisCommunication</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis</pre><div><p>Lab order communication between EMRs and LISs</p>\n</div></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lmis"];
+  fhir:ImplementationGuide.url [ fhir:value "http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis"];
   fhir:ImplementationGuide.version [ fhir:value "0.1.0-test"];
-  fhir:ImplementationGuide.name [ fhir:value "EmrLmisCommunication"];
-  fhir:ImplementationGuide.title [ fhir:value "EMR LMIS Communication"];
+  fhir:ImplementationGuide.name [ fhir:value "EmrLisCommunication"];
+  fhir:ImplementationGuide.title [ fhir:value "EMR LIS Communication"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-02-04T21:00:22+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-02-11T22:54:34+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "I-TECH-UW"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -28,7 +28,7 @@
        fhir:ContactPoint.value [ fhir:value "https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/" ]
      ]
   ];
-  fhir:ImplementationGuide.description [ fhir:value "Lab order communication between EMRs and LMISs"];
+  fhir:ImplementationGuide.description [ fhir:value "Lab order communication between EMRs and LISs"];
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -314,14 +314,14 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://openhie.org/fhir/ValueSet/emr-lab-task-intent>;
-         fhir:Reference.reference [ fhir:value "ValueSet/emr-lab-task-intent" ]
+         fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/emr-lab-patient" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Intent values for EMR-LMIS order and result workflow." ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMR-LIS Workflow Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A patient used for EMR - LIS lab order and result communication." ]
      ], [
        fhir:index 1;
        fhir:Element.extension [
@@ -333,21 +333,21 @@
          fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-service-request>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/emr-lab-service-request" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMR-LMIS Service Request" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A service request created by an EMR representing an order for an LMIS system" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMR-LIS Service Request" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A service request created by an EMR representing an order for an LIS system" ]
      ], [
        fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-task>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/emr-lab-task" ]
+         fhir:link <http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/emr-lab-task-intent-vs" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMR-LMIS Workflow Task Resource" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Task resource for tracking order state and synchronizing communication between an EMR and a LMIS" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMR-LIS Intent for Task" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html" ]
      ], [
        fhir:index 3;
        fhir:Element.extension [
@@ -356,13 +356,26 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://openhie.org/fhir/ValueSet/emr-lab-task-status>;
-         fhir:Reference.reference [ fhir:value "ValueSet/emr-lab-task-status" ]
+         fhir:link <http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/emr-lab-order-code-vs" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Status values for EMR-LMIS order and result workflow." ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMR Lab Order Code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The code for the lab order requested in the EMR." ]
      ], [
        fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/emr-lab-task-status-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMR-LIS Status for Task" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html" ]
+     ], [
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -372,23 +385,36 @@
          fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-observation>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/emr-lab-observation" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMR-LMIS Observation" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observation resource created by a LMIS that representing a result for an order submitted by an EMR System" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMR-LIS Observation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observation resource created by a LIS that representing a result for an order submitted by an EMR System" ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/emr-lab-diagnostic-report-status-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMR-LIS Diagnostic Report Status Flag" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html" ]
+     ], [
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-patient>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/emr-lab-patient" ]
+         fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-encounter>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/emr-lab-encounter" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMR-LMIS Workflow Patient" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A patient used for EMR - LMIS lab order and result communication." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMR-LIS Encounter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encounter resource associated with the Service Request for a lab order generated by the EMR" ]
      ], [
-       fhir:index 6;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -398,8 +424,21 @@
          fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/emr-lab-diagnostic-report" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMR-LMIS Diagnostic Report" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DiagnosticReport resource created by a LMIS that representing results of an order submitted from an EMR System" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMR-LIS Diagnostic Report" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DiagnosticReport resource created by a LIS that representing results of an order submitted from an EMR System" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-task>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/emr-lab-task" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMR-LIS Workflow Task Resource" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Task resource for tracking order state and synchronizing communication between an EMR and a LIS" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
@@ -491,7 +530,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lmis.ttl> a owl:Ontology;
+<http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lis.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

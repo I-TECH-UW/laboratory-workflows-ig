@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 3, errors = 2, warn = 14, info = 0 -->
+<!-- broken links = 3, errors = 4, warn = 23, info = 0 -->
 <head>
-  <title>EmrLmisCommunication : Validation Results</title>
+  <title>EmrLisCommunication : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
   <style>
     span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
@@ -22,8 +22,8 @@
   </script>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
- <h1>Validation Results for EmrLmisCommunication</h1>
- <p>Generated Thu Feb 04 21:00:52 UTC 2021, FHIR version 4.0.1 for openhie.fhir.emr.lims#0.1.0-test (canonical = <a href="http://openhie.org/fhir">http://openhie.org/fhir</a> (<a href="http://openhie.org/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <h1>Validation Results for EmrLisCommunication</h1>
+ <p>Generated Thu Feb 11 22:54:55 UTC 2021, FHIR version 4.0.1 for openhie.fhir.emr.lims#0.1.0-test (canonical = <a href="http://openhie.org/fhir">http://openhie.org/fhir</a> (<a href="http://openhie.org/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.59</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = openhie.fhir.emr.lims, Canonical = http://openhie.org/fhir</td></tr>
@@ -37,7 +37,7 @@
 </td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://openhie.org/fhir (Problem #1 with package-list.json at http://openhie.org/fhir: openhie.org)</td></tr>
- <tr><td>Summary:</td><td> broken links = 3, errors = 2, warn = 14, info = 0</td></tr>
+ <tr><td>Summary:</td><td> broken links = 3, errors = 4, warn = 23, info = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -46,8 +46,11 @@
    <tr style="background-color: #ffcccc">
      <td><a href="#internal"><b>Build Errors</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-emr-lab-diagnostic-report"><b>/github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-diagnostic-report</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-emr-lab-diagnostic-report"><b>/github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-diagnostic-report</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-emr-lab-encounter"><b>/github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-encounter</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-emr-lab-observation"><b>/github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-observation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
@@ -62,10 +65,13 @@
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-emr-lab-task"><b>/github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-task</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-emr-lab-task-intent"><b>/github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-intent</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-emr-lab-diagnostic-report-status-vs"><b>/github/workspace/fsh-generated/resources/ValueSet-emr-lab-diagnostic-report-status-vs</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-emr-lab-task-status"><b>/github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-status</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-emr-lab-task-intent-vs"><b>/github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-intent-vs</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-emr-lab-task-status-vs"><b>/github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-status-vs</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_input_myig"><b>/github/workspace/input/myig</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
@@ -79,13 +85,13 @@
      <td><b>ImplementationGuide.id</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide Resource id should be openhie.fhir.emr.lims</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-emr-lab-service-request-definitions.html#2488e74c-55f8-423a-8086-f524add8089e">StructureDefinition-emr-lab-service-request-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 435, column 262</a></b></td><td><b>error</b></td><td><b>The link 'valueset-diagnostic-requests.html' for &quot;here&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-emr-lab-service-request-definitions.html#7a064809-a882-4b8f-b045-ec132323c7d8">StructureDefinition-emr-lab-service-request-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 435, column 262</a></b></td><td><b>error</b></td><td><b>The link 'valueset-diagnostic-requests.html' for &quot;here&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-emr-lab-service-request.html#a597f27b-a7f3-42e4-8615-b112bda090d7">StructureDefinition-emr-lab-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 333, column 2413</a></b></td><td><b>error</b></td><td><b>The link 'valueset-diagnostic-requests.html' for &quot;here&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-emr-lab-service-request.html#4f349a3a-492c-4793-bef2-7c249de94375">StructureDefinition-emr-lab-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 344, column 2449</a></b></td><td><b>error</b></td><td><b>The link 'valueset-diagnostic-requests.html' for &quot;here&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-emr-lab-service-request.html#0f7eb72e-a30e-41d0-97ff-6ed5d1749457">StructureDefinition-emr-lab-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 513, column 2413</a></b></td><td><b>error</b></td><td><b>The link 'valueset-diagnostic-requests.html' for &quot;here&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-emr-lab-service-request.html#1c3d71b6-e121-41e3-9384-177daf34985d">StructureDefinition-emr-lab-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 544, column 2449</a></b></td><td><b>error</b></td><td><b>The link 'valueset-diagnostic-requests.html' for &quot;here&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -95,11 +101,31 @@
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>EMR-LIS Diagnostic Report.DiagnosticReport.status</b></td><td><b>error</b></td><td title=""><b>Binding http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1</b></td>
+   </tr>
    <tr style="background-color: #d6feff">
      <td><b>StructureDefinition/emr-lab-diagnostic-report: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/emr-lab-diagnostic-report: StructureDefinition</b></td><td><b>error</b></td><td title=""><b>Binding http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1</b></td>
+   </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-emr-lab-encounter"> </a>
+<h2><a href="StructureDefinition-emr-lab-encounter.html">/github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-encounter.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/emr-lab-encounter: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-encounter')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -152,73 +178,108 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>EMR-LMIS Workflow Task Resource.Task.status</b></td><td><b>warning</b></td><td title=""><b>Binding http://openhie.org/fhir/ValueSet/emr-lab-task-status could not be expanded</b></td>
+     <td><b>EMR-LIS Workflow Task Resource.Task.status</b></td><td><b>warning</b></td><td title=""><b>Binding http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs could not be expanded</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>EMR-LMIS Workflow Task Resource.Task.intent</b></td><td><b>warning</b></td><td title=""><b>Binding http://openhie.org/fhir/ValueSet/emr-lab-task-intent could not be expanded</b></td>
+     <td><b>EMR-LIS Workflow Task Resource.Task.intent</b></td><td><b>warning</b></td><td title=""><b>Binding http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs could not be expanded</b></td>
    </tr>
    <tr style="background-color: #d6feff">
      <td><b>StructureDefinition/emr-lab-task: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/emr-lab-task: StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Binding http://openhie.org/fhir/ValueSet/emr-lab-task-status could not be expanded</b></td>
+     <td><b>StructureDefinition/emr-lab-task: StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Binding http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs could not be expanded</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition/emr-lab-task: StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Binding http://openhie.org/fhir/ValueSet/emr-lab-task-intent could not be expanded</b></td>
+     <td><b>StructureDefinition/emr-lab-task: StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Binding http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs could not be expanded</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-task')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_ValueSet-emr-lab-task-intent"> </a>
-<h2><a href="ValueSet-emr-lab-task-intent.html">/github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-intent.json</a></h2>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-emr-lab-diagnostic-report-status-vs"> </a>
+<h2><a href="ValueSet-emr-lab-diagnostic-report-status-vs.html">/github/workspace/fsh-generated/resources/ValueSet-emr-lab-diagnostic-report-status-vs.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #d6feff">
-     <td><b>ValueSet/emr-lab-task-intent: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+     <td><b>ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet/emr-lab-task-intent: ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
+     <td><b>ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[0]</b></td><td><b>warning</b></td><td title=""><b>The code diagnostic-report-status-partial is not valid in the system http://hl7.org/fhir/diagnostic-report-status</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'emr-lab-task-intent')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-intent</b></td>
+     <td><b>ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[1]</b></td><td><b>warning</b></td><td title=""><b>The code diagnostic-report-status-final is not valid in the system http://hl7.org/fhir/diagnostic-report-status</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[2]</b></td><td><b>warning</b></td><td title=""><b>The code diagnostic-report-status-unknown is not valid in the system http://hl7.org/fhir/diagnostic-report-status</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[3]</b></td><td><b>warning</b></td><td title=""><b>The code diagnostic-report-status-canceled is not valid in the system http://hl7.org/fhir/diagnostic-report-status</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[4]</b></td><td><b>warning</b></td><td title=""><b>The code diagnostic-report-status-amended is not valid in the system http://hl7.org/fhir/diagnostic-report-status</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_ValueSet-emr-lab-task-status"> </a>
-<h2><a href="ValueSet-emr-lab-task-status.html">/github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-status.json</a></h2>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-emr-lab-task-intent-vs"> </a>
+<h2><a href="ValueSet-emr-lab-task-intent-vs.html">/github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-intent-vs.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #d6feff">
-     <td><b>ValueSet/emr-lab-task-status: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+     <td><b>ValueSet/emr-lab-task-intent-vs: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet/emr-lab-task-status: ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
+     <td><b>ValueSet/emr-lab-task-intent-vs: ValueSet.compose[0].include[0].concept[0]</b></td><td><b>warning</b></td><td title=""><b>The code task-intent-order is not valid in the system http://hl7.org/fhir/ValueSet/task-intent</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'emr-lab-task-status')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-status</b></td>
+     <td><b>ValueSet.where(id = 'emr-lab-task-intent-vs')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-intent</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-emr-lab-task-status-vs"> </a>
+<h2><a href="ValueSet-emr-lab-task-status-vs.html">/github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-status-vs.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/emr-lab-task-status-vs: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept[0]</b></td><td><b>warning</b></td><td title=""><b>The code task-status-requested is not valid in the system http://hl7.org/fhir/ValueSet/task-status</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept[1]</b></td><td><b>warning</b></td><td title=""><b>The code task-status-rejected is not valid in the system http://hl7.org/fhir/ValueSet/task-status</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept[2]</b></td><td><b>warning</b></td><td title=""><b>The code task-status-accepted is not valid in the system http://hl7.org/fhir/ValueSet/task-status</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept[3]</b></td><td><b>warning</b></td><td title=""><b>The code task-status-completed is not valid in the system http://hl7.org/fhir/ValueSet/task-status</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'emr-lab-task-status-vs')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-status</b></td>
    </tr>
 </table>
 <hr/>
 <a name="_github_workspace_input_myig"> </a>
-<h2><a href="ImplementationGuide-openhie.fhir.emr.lmis.html">/github/workspace/input/myig.xml</a></h2>
+<h2><a href="ImplementationGuide-openhie.fhir.emr.lis.html">/github/workspace/input/myig.xml</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide.where(url = 'http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lmis')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/input/myig.xml - the canonical URL (http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lmis) does not match the URL (http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lmis)</b></td>
+     <td><b>ImplementationGuide.where(url = 'http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/input/myig.xml - the canonical URL (http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lis) does not match the URL (http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis)</b></td>
    </tr>
    <tr style="background-color: #d6feff">
-     <td><b>ImplementationGuide/openhie.fhir.emr.lmis: ImplementationGuide</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide</b></td>
+     <td><b>ImplementationGuide/openhie.fhir.emr.lis: ImplementationGuide</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/github/workspace/input/myig</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lmis vs http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lmis</b></td>
+     <td><b>/github/workspace/input/myig</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lis vs http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
@@ -241,7 +302,7 @@
 <h2>RESOURCE_CANONICAL_MISMATCH</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="ImplementationGuide-openhie.fhir.emr.lmis.html">/github/workspace/input/myig.xml</a></td><td><b>Conformance resource /github/workspace/input/myig.xml - the canonical URL (http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lmis) does not match the URL (http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lmis)</b></td>
+     <td><a href="ImplementationGuide-openhie.fhir.emr.lis.html">/github/workspace/input/myig.xml</a></td><td><b>Conformance resource /github/workspace/input/myig.xml - the canonical URL (http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lis) does not match the URL (http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis)</b></td>
    </tr>
 </table>
 </body>

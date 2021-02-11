@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENHIE.FHIR.EMR.LMIS\Status values for EMR-LMIS order and result workflow. - TTL Representation - FHIR v4.0.1</title>
+    <title>OPENHIE.FHIR.EMR.LIS\EMR-LIS Status for Task - TTL Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.7"}
-    h3,h4,h5,h6{--heading-prefix:"4.7"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.9"}
+    h3,h4,h5,h6{--heading-prefix:"4.9"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -71,7 +71,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">EMR LMIS Communication</span><br/>0.1.0-test - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">EMR LIS Communication</span><br/>0.1.0-test - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -137,7 +137,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Status values for EMR-LMIS order and result workflow.</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EMR-LIS Status for Task</b></li>
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -148,7 +148,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">EMR LMIS Communication - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">EMR LIS Communication - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -159,20 +159,20 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="ValueSet-emr-lab-task-status.html">Narrative Content</a>
+    <a href="ValueSet-emr-lab-task-status-vs.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="ValueSet-emr-lab-task-status.xml.html">XML</a>
+      <a href="ValueSet-emr-lab-task-status-vs.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-emr-lab-task-status.json.html">JSON</a>
+      <a href="ValueSet-emr-lab-task-status-vs.json.html">JSON</a>
     </li>
   
 
@@ -191,9 +191,9 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Status values for EMR-LMIS order and result workflow. - TTL Representation</h2>
+<h2 id="root">: EMR-LIS Status for Task - TTL Representation</h2>
 
-<p><a href="ValueSet-emr-lab-task-status.ttl" no-download="true">Raw ttl</a> | <a href="ValueSet-emr-lab-task-status.ttl" download>Download</a></p>
+<p><a href="ValueSet-emr-lab-task-status-vs.ttl" no-download="true">Raw ttl</a> | <a href="ValueSet-emr-lab-task-status-vs.ttl" download>Download</a></p>
 
   <!-- insert intro if present -->
   
@@ -210,17 +210,17 @@
 
  a fhir:ValueSet;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;emr-lab-task-status&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;emr-lab-task-status-vs&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;http://hl7.org/fhir/ValueSet/task-status&lt;/code&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;task-status-requested&lt;/td&gt;&lt;td&gt;Requested&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;task-status-rejected&lt;/td&gt;&lt;td&gt;Rejected&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;task-status-accepted&lt;/td&gt;&lt;td&gt;Accepted&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;task-status-completed&lt;/td&gt;&lt;td&gt;Completed&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
   ];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://openhie.org/fhir/ValueSet/emr-lab-task-status&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.1.0-test&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EmrLabTaskStatus&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Status values for EMR-LMIS order and result workflow.&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EmrLabTaskStatusVS&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EMR-LIS Status for Task&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2021-02-04T21:00:22+00:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2021-02-11T22:54:34+00:00&quot;^^xsd:dateTime];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;I-TECH-UW&quot;];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -291,7 +291,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/">I-TECH-UW</a>.  Package openhie.fhir.emr.lims#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 4, 2021 21:00+0000">2021-02-04</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/">I-TECH-UW</a>.  Package openhie.fhir.emr.lims#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 11, 2021 22:54+0000">2021-02-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -1,10 +1,10 @@
 [
   {
-    "id": "openhie.fhir.emr.lmis",
+    "id": "openhie.fhir.emr.lis",
     "type": "ImplementationGuide",
-    "url": "http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lmis",
+    "url": "http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis",
     "version": "0.1.0-test",
-    "name": "EmrLmisCommunication"
+    "name": "EmrLisCommunication"
   },
   {
     "id": "emr-lab-diagnostic-report",
@@ -12,6 +12,13 @@
     "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report",
     "version": "0.1.0-test",
     "name": "EmrLabDiagnosticReport"
+  },
+  {
+    "id": "emr-lab-encounter",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-encounter",
+    "version": "0.1.0-test",
+    "name": "EmrLabEncounter"
   },
   {
     "id": "emr-lab-observation",
@@ -42,17 +49,31 @@
     "name": "EmrLabTask"
   },
   {
-    "id": "emr-lab-task-intent",
+    "id": "emr-lab-diagnostic-report-status-vs",
     "type": "ValueSet",
-    "url": "http://openhie.org/fhir/ValueSet/emr-lab-task-intent",
+    "url": "http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs",
     "version": "0.1.0-test",
-    "name": "EmrLabTaskIntent"
+    "name": "EmrLabDiagnosticReportStatusVS"
   },
   {
-    "id": "emr-lab-task-status",
+    "id": "emr-lab-order-code-vs",
     "type": "ValueSet",
-    "url": "http://openhie.org/fhir/ValueSet/emr-lab-task-status",
+    "url": "http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs",
     "version": "0.1.0-test",
-    "name": "EmrLabTaskStatus"
+    "name": "EmrLabOrderCodeVS"
+  },
+  {
+    "id": "emr-lab-task-intent-vs",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs",
+    "version": "0.1.0-test",
+    "name": "EmrLabTaskIntentVS"
+  },
+  {
+    "id": "emr-lab-task-status-vs",
+    "type": "ValueSet",
+    "url": "http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs",
+    "version": "0.1.0-test",
+    "name": "EmrLabTaskStatusVS"
   }
 ]

@@ -15,9 +15,9 @@
   <url value="http://openhie.org/fhir/StructureDefinition/emr-lab-observation"/>
   <version value="0.1.0-test"/>
   <name value="EmrLabObservation"/>
-  <title value="EMR-LMIS Observation"/>
+  <title value="EMR-LIS Observation"/>
   <status value="active"/>
-  <date value="2021-02-04T21:00:22+00:00"/>
+  <date value="2021-02-11T22:54:34+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
     <telecom>
@@ -25,7 +25,7 @@
       <value value="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"/>
     </telecom>
   </contact>
-  <description value="Observation resource created by a LMIS that representing a result for an order submitted by an EMR System"/>
+  <description value="Observation resource created by a LIS that representing a result for an order submitted by an EMR System"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

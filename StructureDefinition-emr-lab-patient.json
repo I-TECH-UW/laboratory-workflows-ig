@@ -18,9 +18,9 @@
   "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-patient",
   "version": "0.1.0-test",
   "name": "EmrLabPatient",
-  "title": "EMR-LMIS Workflow Patient",
+  "title": "EMR-LIS Workflow Patient",
   "status": "active",
-  "date": "2021-02-04T21:00:22+00:00",
+  "date": "2021-02-11T22:54:34+00:00",
   "publisher": "I-TECH-UW",
   "contact": [
     {
@@ -32,7 +32,7 @@
       ]
     }
   ],
-  "description": "A patient used for EMR - LMIS lab order and result communication.",
+  "description": "A patient used for EMR - LIS lab order and result communication.",
   "jurisdiction": [
     {
       "coding": [

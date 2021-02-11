@@ -24,9 +24,9 @@
   fhir:StructureDefinition.url [ fhir:value "http://openhie.org/fhir/StructureDefinition/emr-lab-patient"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0-test"];
   fhir:StructureDefinition.name [ fhir:value "EmrLabPatient"];
-  fhir:StructureDefinition.title [ fhir:value "EMR-LMIS Workflow Patient"];
+  fhir:StructureDefinition.title [ fhir:value "EMR-LIS Workflow Patient"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-02-04T21:00:22+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-02-11T22:54:34+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "I-TECH-UW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -36,7 +36,7 @@
        fhir:ContactPoint.value [ fhir:value "https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "A patient used for EMR - LMIS lab order and result communication."];
+  fhir:StructureDefinition.description [ fhir:value "A patient used for EMR - LIS lab order and result communication."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

@@ -8,31 +8,37 @@
     "DiagnosticReport": [
       {
         "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report",
-        "title": "EMR-LMIS Diagnostic Report"
+        "title": "EMR-LIS Diagnostic Report"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-encounter",
+        "title": "EMR-LIS Encounter"
       }
     ],
     "Observation": [
       {
         "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-observation",
-        "title": "EMR-LMIS Observation"
+        "title": "EMR-LIS Observation"
       }
     ],
     "Patient": [
       {
         "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-patient",
-        "title": "EMR-LMIS Workflow Patient"
+        "title": "EMR-LIS Workflow Patient"
       }
     ],
     "ServiceRequest": [
       {
         "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-service-request",
-        "title": "EMR-LMIS Service Request"
+        "title": "EMR-LIS Service Request"
       }
     ],
     "Task": [
       {
         "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-task",
-        "title": "EMR-LMIS Workflow Task Resource"
+        "title": "EMR-LIS Workflow Task Resource"
       }
     ]
   },

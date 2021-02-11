@@ -16,9 +16,9 @@
   <url value="http://openhie.org/fhir/StructureDefinition/emr-lab-patient"/>
   <version value="0.1.0-test"/>
   <name value="EmrLabPatient"/>
-  <title value="EMR-LMIS Workflow Patient"/>
+  <title value="EMR-LIS Workflow Patient"/>
   <status value="active"/>
-  <date value="2021-02-04T21:00:22+00:00"/>
+  <date value="2021-02-11T22:54:34+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
     <telecom>
@@ -26,7 +26,7 @@
       <value value="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"/>
     </telecom>
   </contact>
-  <description value="A patient used for EMR - LMIS lab order and result communication."/>
+  <description value="A patient used for EMR - LIS lab order and result communication."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

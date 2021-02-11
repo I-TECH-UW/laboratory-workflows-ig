@@ -1,17 +1,17 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "openhie.fhir.emr.lmis",
+  "id": "openhie.fhir.emr.lis",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>EmrLmisCommunication</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lmis</pre><div><p>Lab order communication between EMRs and LMISs</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>EmrLisCommunication</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis</pre><div><p>Lab order communication between EMRs and LISs</p>\n</div></div>"
   },
-  "url": "http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lmis",
+  "url": "http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis",
   "version": "0.1.0-test",
-  "name": "EmrLmisCommunication",
-  "title": "EMR LMIS Communication",
+  "name": "EmrLisCommunication",
+  "title": "EMR LIS Communication",
   "status": "draft",
   "experimental": false,
-  "date": "2021-02-04T21:00:22+00:00",
+  "date": "2021-02-11T22:54:34+00:00",
   "publisher": "I-TECH-UW",
   "contact": [
     {
@@ -23,7 +23,7 @@
       ]
     }
   ],
-  "description": "Lab order communication between EMRs and LMISs",
+  "description": "Lab order communication between EMRs and LISs",
   "jurisdiction": [
     {
       "coding": [
@@ -333,14 +333,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
+            "valueString": "StructureDefinition:resource"
           }
         ],
         "reference": {
-          "reference": "ValueSet/emr-lab-task-intent"
+          "reference": "StructureDefinition/emr-lab-patient"
         },
-        "name": "Intent values for EMR-LMIS order and result workflow.",
-        "description": "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html"
+        "name": "EMR-LIS Workflow Patient",
+        "description": "A patient used for EMR - LIS lab order and result communication."
       },
       {
         "extension": [
@@ -352,21 +352,8 @@
         "reference": {
           "reference": "StructureDefinition/emr-lab-service-request"
         },
-        "name": "EMR-LMIS Service Request",
-        "description": "A service request created by an EMR representing an order for an LMIS system"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/emr-lab-task"
-        },
-        "name": "EMR-LMIS Workflow Task Resource",
-        "description": "A Task resource for tracking order state and synchronizing communication between an EMR and a LMIS"
+        "name": "EMR-LIS Service Request",
+        "description": "A service request created by an EMR representing an order for an LIS system"
       },
       {
         "extension": [
@@ -376,9 +363,35 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/emr-lab-task-status"
+          "reference": "ValueSet/emr-lab-task-intent-vs"
         },
-        "name": "Status values for EMR-LMIS order and result workflow.",
+        "name": "EMR-LIS Intent for Task",
+        "description": "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/emr-lab-order-code-vs"
+        },
+        "name": "EMR Lab Order Code",
+        "description": "The code for the lab order requested in the EMR."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/emr-lab-task-status-vs"
+        },
+        "name": "EMR-LIS Status for Task",
         "description": "The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html"
       },
       {
@@ -391,8 +404,21 @@
         "reference": {
           "reference": "StructureDefinition/emr-lab-observation"
         },
-        "name": "EMR-LMIS Observation",
-        "description": "Observation resource created by a LMIS that representing a result for an order submitted by an EMR System"
+        "name": "EMR-LIS Observation",
+        "description": "Observation resource created by a LIS that representing a result for an order submitted by an EMR System"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/emr-lab-diagnostic-report-status-vs"
+        },
+        "name": "EMR-LIS Diagnostic Report Status Flag",
+        "description": "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html"
       },
       {
         "extension": [
@@ -402,10 +428,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/emr-lab-patient"
+          "reference": "StructureDefinition/emr-lab-encounter"
         },
-        "name": "EMR-LMIS Workflow Patient",
-        "description": "A patient used for EMR - LMIS lab order and result communication."
+        "name": "EMR-LIS Encounter",
+        "description": "Encounter resource associated with the Service Request for a lab order generated by the EMR"
       },
       {
         "extension": [
@@ -417,8 +443,21 @@
         "reference": {
           "reference": "StructureDefinition/emr-lab-diagnostic-report"
         },
-        "name": "EMR-LMIS Diagnostic Report",
-        "description": "DiagnosticReport resource created by a LMIS that representing results of an order submitted from an EMR System"
+        "name": "EMR-LIS Diagnostic Report",
+        "description": "DiagnosticReport resource created by a LIS that representing results of an order submitted from an EMR System"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/emr-lab-task"
+        },
+        "name": "EMR-LIS Workflow Task Resource",
+        "description": "A Task resource for tracking order state and synchronizing communication between an EMR and a LIS"
       }
     ],
     "page": {

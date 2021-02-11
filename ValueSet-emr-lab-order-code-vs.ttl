@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/ValueSet/emr-lab-task-intent> a fhir:ValueSet;
+<http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "emr-lab-task-intent"];
+  fhir:Resource.id [ fhir:value "emr-lab-order-code-vs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/ValueSet/task-intent</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>task-intent-order</td><td>Order</td></tr></table></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/ValueSet/emr-lab-task-intent"];
+  fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs"];
   fhir:ValueSet.version [ fhir:value "0.1.0-test"];
-  fhir:ValueSet.name [ fhir:value "EmrLabTaskIntent"];
-  fhir:ValueSet.title [ fhir:value "Intent values for EMR-LMIS order and result workflow."];
+  fhir:ValueSet.name [ fhir:value "EmrLabOrderCodeVS"];
+  fhir:ValueSet.title [ fhir:value "EMR Lab Order Code"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-02-04T21:00:22+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-02-11T22:54:34+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "I-TECH-UW"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -27,7 +27,7 @@
        fhir:ContactPoint.value [ fhir:value "https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html"];
+  fhir:ValueSet.description [ fhir:value "The code for the lab order requested in the EMR."];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -39,18 +39,13 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/ValueSet/task-intent" ];
-       fhir:ValueSet.compose.include.concept [
-         fhir:index 0;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "task-intent-order" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Order" ]
-       ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/ValueSet/emr-lab-task-intent.ttl> a owl:Ontology;
+<http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
