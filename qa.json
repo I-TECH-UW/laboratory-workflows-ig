@@ -3,7 +3,7 @@
   "name": "EmrLisCommunication",
   "package-id": "openhie.fhir.emr.lims",
   "ig-ver": "0.1.0-test",
-  "date": "Thu, 11 Feb, 2021 22:57:00 +0000",
+  "date": "Thu, 11 Feb, 2021 22:58:13 +0000",
   "errs": 4,
   "warnings": 23,
   "hints": 0,
