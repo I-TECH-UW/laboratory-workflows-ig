@@ -1,8 +1,8 @@
 Profile: EmrLabTask
 Parent: Task
 Id: emr-lab-task
-Title: "EMR-LMIS Workflow Task Resource"
-Description: "A Task resource for tracking order state and synchronizing communication between an EMR and a LMIS"
+Title: "EMR-LIS Workflow Task Resource"
+Description: "A Task resource for tracking order state and synchronizing communication between an EMR and a LIS"
 * identifier 1..*
 * basedOn 1..*
 * basedOn only Reference(EmrLabServiceRequest)
@@ -17,7 +17,7 @@ Description: "A Task resource for tracking order state and synchronizing communi
 
 // Instance:       SampleEmrLabTask
 // InstanceOf:     EmrLabTask
-// Description:    "Sample Patient for EMR-LMIS order and result workflow."
-// Title:          "EMR-LMIS Sample Patient"
+// Description:    "Sample Patient for EMR-LIS order and result workflow."
+// Title:          "EMR-LIS Sample Patient"
 // Usage:          #example
 
