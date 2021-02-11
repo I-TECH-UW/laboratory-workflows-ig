@@ -1,19 +1,15 @@
-EMR LMIS Communication Implementation Guide
+EMR-LIS Communication Implementation Guide
 
 ![CI](https://github.com/pmanko/emr-lmis-ig/workflows/CI/badge.svg)
 <br> </br>
 ###
 ### Publication
-This ImplementationGuide is published in the following locations:
 
-Continuous Build: __http://build.fhir.org/ig/openhie/fhir-ig-empty/branches/main/index.html__  
-Canonical / permanent URL: 
 <br> </br>
 
 ### Issues
 Issues and change requests are managed here:  
 
-Issues:  __https://github.com/openhie/fhir-ig-empty/issues__  
-Kanban board:  __https://github.com/openhie/fhir-ig-empty/projects/1__  
+Issues:  __https://github.com/pmanko/emr-lis-ig/issues__  
 
 ---
