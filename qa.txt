@@ -1,22 +1,24 @@
 ﻿EmrLisCommunication : Validation Results
 =========================================
 
-err = 4, warn = 23, info = 0
-IG Publisher Version: 1.1.59
-Generated Thu Feb 11 22:58:35 UTC 2021. FHIR version 4.0.1 for openhie.fhir.emr.lims#0.1.0-test (canonical = http://openhie.org/fhir)
+err = 5, warn = 25, info = 0
+IG Publisher Version: 1.1.63
+Generated Mon Mar 15 23:15:32 UTC 2021. FHIR version 4.0.1 for openhie.fhir.emr.lims#0.1.0-test (canonical = http://openhie.org/fhir)
 
  Build Errors : 3 / 1 / 0
  /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-diagnostic-report : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-encounter : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-observation : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-openmrs-identifier : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-patient : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-service-request : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-task : 0 / 5 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-emr-lis-patient-identifier-location : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-emr-lab-diagnostic-report-status-vs : 0 / 5 / 1
  /github/workspace/fsh-generated/resources/ValueSet-emr-lab-order-code-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-intent-vs : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-status-vs : 0 / 5 / 1
- /github/workspace/input/myig : 2 / 0 / 1
+ /github/workspace/input/emr-lis : 2 / 0 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be openhie.fhir.emr.lims
@@ -34,6 +36,9 @@ WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefin
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-observation.json ==
 INFORMATION: StructureDefinition/emr-lab-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-observation'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-openmrs-identifier.json ==
+INFORMATION: StructureDefinition/emr-lab-openmrs-identifier: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-openmrs-identifier'): The Implementation Guide contains no examples for this data type profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-patient.json ==
 INFORMATION: StructureDefinition/emr-lab-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-patient'): The Implementation Guide contains no examples for this profile
@@ -47,6 +52,10 @@ INFORMATION: StructureDefinition/emr-lab-task: StructureDefinition: Validate res
 WARNING: StructureDefinition/emr-lab-task: StructureDefinition: Binding http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs could not be expanded
 WARNING: StructureDefinition/emr-lab-task: StructureDefinition: Binding http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs could not be expanded
 WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-task'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-emr-lis-patient-identifier-location.json ==
+INFORMATION: StructureDefinition/emr-lis-patient-identifier-location: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+ERROR: StructureDefinition/emr-lis-patient-identifier-location: StructureDefinition.snapshot.element[3].fixed.ofType(uri): The element Extension.url has a fixed of type uri, which is not in the list of allowed types ([http://hl7.org/fhirpath/System.String])
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lis-patient-identifier-location'): The Implementation Guide contains no examples for this extension
 == /github/workspace/fsh-generated/resources/ValueSet-emr-lab-diagnostic-report-status-vs.json ==
 INFORMATION: ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 WARNING: ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[0]: The code diagnostic-report-status-partial is not valid in the system http://hl7.org/fhir/diagnostic-report-status
@@ -67,7 +76,7 @@ WARNING: ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept
 WARNING: ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept[2]: The code task-status-accepted is not valid in the system http://hl7.org/fhir/ValueSet/task-status
 WARNING: ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept[3]: The code task-status-completed is not valid in the system http://hl7.org/fhir/ValueSet/task-status
 WARNING: ValueSet.where(id = 'emr-lab-task-status-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-status
-== /github/workspace/input/myig.xml ==
-ERROR: ImplementationGuide.where(url = 'http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis'): Conformance resource /github/workspace/input/myig.xml - the canonical URL (http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lis) does not match the URL (http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis)
+== /github/workspace/input/emr-lis.xml ==
+ERROR: ImplementationGuide.where(url = 'http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis'): Conformance resource /github/workspace/input/emr-lis.xml - the canonical URL (http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lis) does not match the URL (http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis)
 INFORMATION: ImplementationGuide/openhie.fhir.emr.lis: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-ERROR: /github/workspace/input/myig: URL Mismatch http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lis vs http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis
+ERROR: /github/workspace/input/emr-lis: URL Mismatch http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lis vs http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis

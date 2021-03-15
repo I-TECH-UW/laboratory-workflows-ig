@@ -3,7 +3,15 @@
   "version": "0.1.0-test",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://openhie.org/fhir/StructureDefinition/emr-lis-patient-identifier-location",
+      "title": "EMR-LIS Patient Identifier Location Extension",
+      "types": [
+        "Reference"
+      ]
+    }
+  ],
   "profiles": {
     "DiagnosticReport": [
       {
@@ -87,6 +95,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://openhie.org/fhir/StructureDefinition/emr-lis-patient-identifier-location": [
+      "Identifier"
     ]
   }
 }

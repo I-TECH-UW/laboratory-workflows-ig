@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="564658e5-18c8-43e2-bd25-1012335ee0e3"/>
+  <id value="e110a97c-5407-44fd-9e36-bccd3f6fb3a4"/>
   <meta>
-    <lastUpdated value="2021-02-11T22:58:13.929+00:00"/>
+    <lastUpdated value="2021-03-15T23:15:11.707+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,7 +15,7 @@
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.68</p>
             <p>All codes from system 
-              <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-loinc.html">
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-loinc.html">
                 <code>http://loinc.org</code>
               </a>
             </p>
@@ -13130,7 +13130,7 @@
         <name value="EmrLabDiagnosticReportStatusVS"/>
         <title value="EMR-LIS Diagnostic Report Status Flag"/>
         <status value="active"/>
-        <date value="2021-02-11T22:58:13+00:00"/>
+        <date value="2021-03-15T23:15:11+00:00"/>
         <publisher value="I-TECH-UW"/>
         <contact>
           <telecom>
@@ -13146,8 +13146,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0a4fa8cd-b7e4-4495-8be6-79186e2903fc"/>
-          <timestamp value="2021-02-11T22:58:26+00:00"/>
+          <identifier value="urn:uuid:9694bc32-f9fd-45a1-b0b5-4f1747263121"/>
+          <timestamp value="2021-03-15T23:15:22+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

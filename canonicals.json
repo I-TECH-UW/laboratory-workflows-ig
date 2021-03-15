@@ -28,6 +28,13 @@
     "name": "EmrLabObservation"
   },
   {
+    "id": "emr-lab-openmrs-identifier",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-openmrs-identifier",
+    "version": "0.1.0-test",
+    "name": "EmrLabOpenmrsIdentifier"
+  },
+  {
     "id": "emr-lab-patient",
     "type": "StructureDefinition",
     "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-patient",
@@ -47,6 +54,13 @@
     "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-task",
     "version": "0.1.0-test",
     "name": "EmrLabTask"
+  },
+  {
+    "id": "emr-lis-patient-identifier-location",
+    "type": "StructureDefinition",
+    "url": "http://openhie.org/fhir/StructureDefinition/emr-lis-patient-identifier-location",
+    "version": "0.1.0-test",
+    "name": "EmrLisPatientIdentifierLocationExtension"
   },
   {
     "id": "emr-lab-diagnostic-report-status-vs",
