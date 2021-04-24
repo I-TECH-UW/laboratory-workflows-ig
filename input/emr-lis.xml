@@ -62,6 +62,12 @@
         <title value="IG Change History"/>
         <generation value="html"/>
       </page>
+
+      <page>
+        <nameUrl value="use_cases.html"/>
+        <title value="Use Case Overview"/>
+        <generation value="markdown"/>
+      </page>
     </page>
     <!-- copyright year is a mandatory parameter -->
     <parameter>
