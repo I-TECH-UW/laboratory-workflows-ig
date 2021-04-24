@@ -15,9 +15,9 @@
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
 		</a>
-		<ul>
+		<ul class="dropdown-menu">
 			<li>
-				<a href="use_cases.html">Use Case Overview</a>
+				<a href="use_cases.html">Use Cases</a>
 			</li>
 		</ul>
 	</li>
