@@ -7,6 +7,15 @@
 ### Install nodejs
 https://nodejs.org/en/download/
 
+### Install Jekyll
+Install ruby and ruby gems:
+https://www.ruby-lang.org/en/documentation/installation/
+
+Install Jekyll gem
+```
+gem install jekyll
+```
+
 ### Install Sushi
 ```
 npm install -g fsh-sushi
@@ -23,6 +32,8 @@ sushi --help
 ./_genonce.sh
 ```
 
+### Open Published IG
+Open `./output/
 
 
 ### Issues
