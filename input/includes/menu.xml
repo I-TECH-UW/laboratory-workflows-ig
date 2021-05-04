@@ -12,6 +12,19 @@
 		</a>
 
 	</li>
+<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		</a>
+
+	    <ul class="dropdown-menu">
+			<li>
+				<a href="system_specification.html">Functional and Non Functional Requirement</a>
+			</li>
+			<li>
+				<a href="use_cases.html">Functional and Non Functional Requirement</a>
+			</li>
+		</ul>
+
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
 		</a>
@@ -28,14 +41,5 @@
 		</ul>
 	</li>
 </ul>      
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
-		</a>
-
-	    <ul class="dropdown-menu">
-			<li>
-				<a href="system_specification.html">Functional and Non Functional Requirement</a>
-			</li>
-			
-		</ul
+	
 	
