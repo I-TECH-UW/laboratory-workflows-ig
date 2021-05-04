@@ -18,10 +18,10 @@
 
 	    <ul class="dropdown-menu">
 			<li>
-				<a href="system_specification.html">Functional and Non Functional Requirement</a>
+				<a href="system_specification.html">System Requirements</a>
 			</li>
 			<li>
-				<a href="use_cases.html">Functional and Non Functional Requirement</a>
+				<a href="use_cases.html">Use Cases</a>
 			</li>
 		</ul>
 

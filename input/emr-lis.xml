@@ -71,7 +71,7 @@
     </page>
     <page>
         <nameUrl value="system_specification.html"/>
-        <title value="System Functional Specification"/>
+        <title value="System Requirements"/>
         <generation value="markdown"/>
       </page>
     </page>
