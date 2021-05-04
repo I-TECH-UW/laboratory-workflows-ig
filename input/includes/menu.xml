@@ -18,15 +18,14 @@
 
 	<ul class="dropdown-menu">
 			<li>
-				<a href="use_cases.md">Functional and Non Functional Requirement</a>
+				<a href="system_specification.html">Functional and Non Functional Requirement</a>
+			</li>
+			<li>
+				<a href="use_cases.html">Use Case Descriptions and Use case Diagrams</a>
 			</li>
 		</ul
+
 		
-		<ul class="dropdown-menu">
-			<li>
-				<a href="use_cases.md">Use Case Descriptions and Use case Diagrams</a>
-			</li>
-		</ul>
 	</li>
 
 	<li class="dropdown">

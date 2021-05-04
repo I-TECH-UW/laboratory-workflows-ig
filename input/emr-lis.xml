@@ -69,6 +69,12 @@
         <generation value="markdown"/>
       </page>
     </page>
+    <page>
+        <nameUrl value="system_specification.html"/>
+        <title value="System Functional Specification"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
     <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code value="copyrightyear"/>
