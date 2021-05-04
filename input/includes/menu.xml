@@ -15,9 +15,16 @@
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
 		</a>
+
+	<ul class="dropdown-menu">
+			<li>
+				<a href="use_cases.md">Functional and Non Functional Requirement</a>
+			</li>
+		</ul
+		
 		<ul class="dropdown-menu">
 			<li>
-				<a href="use_cases.md">Use Cases</a>
+				<a href="use_cases.md">Use Case Descriptions and Use case Diagrams</a>
 			</li>
 		</ul>
 	</li>
