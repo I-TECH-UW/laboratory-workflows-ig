@@ -1,4 +1,4 @@
-## 4.1. Functional Requirements
+## Functional Requirements
 
 Clinician should be able to do the following;
 - Log in to system and access the laboratory module.
