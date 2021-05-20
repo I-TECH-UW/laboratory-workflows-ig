@@ -68,8 +68,8 @@
         <title value="Use Case Overview"/>
         <generation value="markdown"/>
       </page>
-    </page>
-    <page>
+      
+      <page>
         <nameUrl value="system_specification.html"/>
         <title value="System Requirements"/>
         <generation value="markdown"/>
