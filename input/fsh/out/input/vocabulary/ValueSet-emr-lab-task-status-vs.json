@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EmrLabTaskStatusVS",
+  "id": "emr-lab-task-status-vs",
+  "title": "EMR-LIS Status for Task",
+  "description": "The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html",
+  "version": "0.1.0-test",
+  "url": "http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/task-status",
+        "concept": [
+          {
+            "code": "task-status-requested",
+            "display": "Requested"
+          },
+          {
+            "code": "task-status-rejected",
+            "display": "Rejected"
+          },
+          {
+            "code": "task-status-accepted",
+            "display": "Accepted"
+          },
+          {
+            "code": "task-status-completed",
+            "display": "Completed"
+          }
+        ]
+      }
+    ]
+  }
+}

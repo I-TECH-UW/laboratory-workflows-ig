@@ -1,0 +1,6 @@
+id: dev.emr-lis-bt-ig.example
+canonical: "http://openhie.org/fhir"
+version: "0.1.0-test"                                             
+fhirVersion: "4.0.1"                                           
+dependencies: undefined                                           
+FSHOnly: true

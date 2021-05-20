@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EmrLabOrderCodeVS",
+  "id": "emr-lab-order-code-vs",
+  "title": "EMR Lab Order Code",
+  "description": "The code for the lab order requested in the EMR.",
+  "version": "0.1.0-test",
+  "url": "http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org"
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "emr-lab-openmrs-identifier",
+  "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-openmrs-identifier",
+  "version": "0.1.0-test",
+  "name": "EmrLabOpenmrsIdentifier",
+  "title": "EMR-LIS Workflow OpenMRS Identifier",
+  "status": "active",
+  "description": "A identifier for OpenMRS",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Identifier",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Identifier",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Identifier.extension",
+        "path": "Identifier.extension",
+        "min": 1
+      },
+      {
+        "id": "Identifier.extension:location",
+        "path": "Identifier.extension",
+        "sliceName": "location",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://openhie.org/fhir/StructureDefinition/emr-lis-patient-identifier-location"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
