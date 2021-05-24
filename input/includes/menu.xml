@@ -21,13 +21,11 @@
 				<a href="system_specification.html">System Requirements</a>
 		
 			</li>
-		</ul>
-		 <ul class="dropdown-menu">
 			<li>
 				<a href="use_cases.html">Use Cases</a>
 			</li>
 		</ul>
-
+		
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
 		</a>
