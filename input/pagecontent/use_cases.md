@@ -251,53 +251,58 @@ COMMENTS:
 <br />
 
 
-#### USE CASE NAME: CAPTURING LAB ORDERS
-
-ACTORS:
-
-- Clinician
+#### USE CASE NAME: TRANSMISSION OF LABORATORY RESULTS
+ACTOR:
+PIMS, IPMS, OpenHIM, SHR, OpenCR
 
 DEPENDENCIES:
 
-- Availability of PIMS
+active connection to interoperability layer 
 
 DESCRIPTION:
-> Clinician login the system and access the lab module. Clinician then enters Lab specimen details using a lab form available in the lab module.
 
-PRE CONDITION:
+>An interoperability layer facilitates information exchange of clinical laboratory orders between the electronic medical record and the laboratory information system, via the longitudinal record system (SHR). 
 
-- User successfully logs in to the system
+PRE-CONDITION:
 
-ORDINARY SEQUENCE:
+>Queries are sent between interfacing systems and the interoperability layer to update and store new data.
 
-    Steps:
+Ordinary sequence
 
-> 1. Log into the system
->
-> 2. Access the Laboratory module
->
->3. Enter specimen details in lab order form available in the lab module.
->
->4. Save the order details
->
->5. Send the lab order details to SHR
+Steps:
 
-POST CONDITION:
+Actions:
 
-- Data successfully pushed to the interoperability layer
+    1. PIMS/IPMS send captured orders to the interoperability layer and store them in the SHR
+    2. MFL update the facility information in the SHR
+    3. Patient demographic data is queried from the omang system as well as the deaths and births register.
+    4. Updated lab order details with results are received by the interoperability layer and stored in the SHR
+    5. PIMS pings the interoperability layer for lab test results
+    6. Available results in the SHR are pulled to PIMS.
+
+POST-CONDITION:
+
+- Lab orders, lab test results, facility information and patient information updated and stored in the SHR.
+
+ASSUMPTIONS:
+
+- Each and every order that is created is assigned an identifier by IPMS.
+- Lab orders are assigned identifiers by the system.
+- No data is pushed to IPMS from SHR, only a pull is allowed
 
 EXCEPTIONS:
 
-    Steps:
->6. System caches the lab order details when there is network failure and resend late
+Steps:
 
-ASSUMPTIONS:
-- PIMS is hosted in the facility with access to the operability layer.
-- The lab order form is sent to the laboratory with the specimen.
-- The specimen ID is attached to the container with the specimen
+    Actions:
+    6. Unidentifiable orders and order results sent to the interoperability layer are rejected
 
 
-COMMENTS:
+COMMENTS
+
+
+
+
 >
 >
 >
