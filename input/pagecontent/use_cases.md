@@ -4,9 +4,7 @@
 
 #### USE CASE NAME: CAPTURING LAB ORDERS
 
-ACTORS:
-
-- Clinician
+ACTORS: Clinician
 
 DEPENDENCIES:
 
@@ -17,21 +15,17 @@ DESCRIPTION:
 
 PRE CONDITION:
 
-- User successfully logs in to the system
+1: User successfully logs in to the system
 
 ORDINARY SEQUENCE:
 
     Steps:
 
-> 1. Log into the system
->
-> 2. Access the Laboratory module
->
->3. Enter specimen details in lab order form available in the lab module.
->
->4. Save the order details
->
->5. Send the lab order details to SHR
+        2: Log into the system.
+        3: Access the Laboratory module.
+        4: Enter specimen details in lab order form available in the lab module.
+        5: Save the order details.
+        6: Send the lab order details to SHR
 
 POST CONDITION:
 
@@ -40,7 +34,9 @@ POST CONDITION:
 EXCEPTIONS:
 
     Steps:
->6. System caches the lab order details when there is network failure and resend late
+    
+        3: Where the patient does not exist, the clinician creates the patient before paturing the order.
+        6: System caches the lab order details when there is network failure and resend late
 
 ASSUMPTIONS:
 - PIMS is hosted in the facility with access to the operability layer.
@@ -49,14 +45,15 @@ ASSUMPTIONS:
 
 
 COMMENTS:
->
->
->
+<br />
+<br />
+<br />
 
 #### USE CASE NAME: LAB ORDER RESULTING
+<br />
 
-Actor:
-- Laboratory technicians 
+ACTOR/s: Laboratory technicians 
+<br />
 
 Dependencies:
 - Received specimen with order form
@@ -65,20 +62,18 @@ Description:
 > The use case enables laboratory technicians to enter lab order details into IPMS at the laboratory facility 
 
 Pre-condition:
-- User successfully logs in to the system 
+
+    1: User successfully logs in to the system 
 
 Ordinary sequence
 
 Step:
-> Action
->
- >2: Access the Lab Order component/module
->
- >3: Access lab order details in to IPMS
->
- >4:Update order details with lab test results
->
- >5:   Save the updated lab test results.
+     Action
+    
+    2: Access the Lab Order component/module
+    3: Access lab order details in to IPMS
+    4: Update order details with lab test results
+    5: Save the updated lab test results.
 
 Post-condition
 
@@ -86,178 +81,76 @@ Post-condition
 
 Assumptions
 
-    Some orders will be entered directly in to IPMS at the facility
+> Some orders will be entered directly in to IPMS at the facility
 Exceptions
 
 Step:
 
     Action
-    - 2: Enter/Capture the lab order
+      2: Enter/Capture the lab order
 
 
 Comments
 
 
-#### USE CASE NAME: CAPTURING LAB ORDERS
+#### USE CASE NAME: RETIEVING LAB TEST RESULTS
 
-ACTORS:
-
-- Clinician
+ACTOR/s:  Clinicians 
 
 DEPENDENCIES:
 
-- Availability of PIMS
+- Up to date synchronization of the SHR.
 
 DESCRIPTION:
-> Clinician login the system and access the lab module. Clinician then enters Lab specimen details using a lab form available in the lab module.
 
-PRE CONDITION:
+> This use case enables clinicians to retrieve lab order results at the facility and have the option to print out the results.
 
-- User successfully logs in to the system
-
-ORDINARY SEQUENCE:
-
-    Steps:
-
+PRE-CONDITION:
 > 1. Log into the system
->
-> 2. Access the Laboratory module
->
->3. Enter specimen details in lab order form available in the lab module.
->
->4. Save the order details
->
->5. Send the lab order details to SHR
 
-POST CONDITION:
+Ordinary sequence
 
-- Data successfully pushed to the interoperability layer
+STEPS:
+
+    > ACTIONS:
+
+> 2. Access the Lab Order module
+> 3. Search lab test results using lab order ID or Patient ID.
+> 4. Open the selected results and consult with the patient
+> 5. Print results out (optional)
+
+POST-CONDITION:
+
+ - Lab results received by the clinician.
+
+ASSUMPTIONS:
+
+- Lab test results can also be queried from the pool using a combination of patient identifiers.
 
 EXCEPTIONS:
 
-    Steps:
->6. System caches the lab order details when there is network failure and resend late
+STEP/s:
 
-ASSUMPTIONS:
-- PIMS is hosted in the facility with access to the operability layer.
-- The lab order form is sent to the laboratory with the specimen.
-- The specimen ID is attached to the container with the specimen
+    > ACTIONS
 
+ > 2. Access the results using the client module
 
-COMMENTS:
->
->
->
-
-#### USE CASE NAME: CAPTURING LAB ORDERS
-
-ACTORS:
-
-- Clinician
-
-DEPENDENCIES:
-
-- Availability of PIMS
-
-DESCRIPTION:
-> Clinician login the system and access the lab module. Clinician then enters Lab specimen details using a lab form available in the lab module.
-
-PRE CONDITION:
-
-- User successfully logs in to the system
-
-ORDINARY SEQUENCE:
-
-    Steps:
-
-> 1. Log into the system
->
-> 2. Access the Laboratory module
->
->3. Enter specimen details in lab order form available in the lab module.
->
->4. Save the order details
->
->5. Send the lab order details to SHR
-
-POST CONDITION:
-
-- Data successfully pushed to the interoperability layer
-
-EXCEPTIONS:
-
-    Steps:
->6. System caches the lab order details when there is network failure and resend late
-
-ASSUMPTIONS:
-- PIMS is hosted in the facility with access to the operability layer.
-- The lab order form is sent to the laboratory with the specimen.
-- The specimen ID is attached to the container with the specimen
-
-
-COMMENTS:
->
->
->
-
-#### USE CASE NAME: CAPTURING LAB ORDERS
-
-ACTORS:
-
-- Clinician
-
-DEPENDENCIES:
-
-- Availability of PIMS
-
-DESCRIPTION:
-> Clinician login the system and access the lab module. Clinician then enters Lab specimen details using a lab form available in the lab module.
-
-PRE CONDITION:
-
-- User successfully logs in to the system
-
-ORDINARY SEQUENCE:
-
-    Steps:
-
-> 1. Log into the system
->
-> 2. Access the Laboratory module
->
->3. Enter specimen details in lab order form available in the lab module.
->
->4. Save the order details
->
->5. Send the lab order details to SHR
-
-POST CONDITION:
-
-- Data successfully pushed to the interoperability layer
-
-EXCEPTIONS:
-
-    Steps:
->6. System caches the lab order details when there is network failure and resend late
-
-ASSUMPTIONS:
-- PIMS is hosted in the facility with access to the operability layer.
-- The lab order form is sent to the laboratory with the specimen.
-- The specimen ID is attached to the container with the specimen
-
-
-COMMENTS:
-
+<br />
+Comments
+<br />
+<br />
 <br />
 
 
 #### USE CASE NAME: TRANSMISSION OF LABORATORY RESULTS
+<br />
 ACTOR:
 PIMS, IPMS, OpenHIM, SHR, OpenCR
-
+<br />
+<br />
 DEPENDENCIES:
 
-active connection to interoperability layer 
+Active connection to interoperability layer 
 
 DESCRIPTION:
 
@@ -300,26 +193,33 @@ Steps:
 
 COMMENTS
 
-
-
-
->
->
->
+<br />
+<br />
+<br />
 
 ### USE CASE DIAGRAM
+<br />
+<br />
+
 
 <img src="captureLabOrders.png" alt="drawing" style="width: 80%; margin: 0 10%;"/>
 <br />
-
-
+<br />
+<br />
 <img src="retrieveLabOrders.png" alt="drawing" style="width: 80%; margin: 0 10%;"/>
 <br />
+<br />
+<br />
+
 
 <img src="dataTransmissionLayer.png" alt="drawing" style="width: 80%; margin: 0 10%;"/>
 <br />
+<br />
+<br />
 
 <img src="LabOrderResulting.png" alt="drawing" style="width: 80%; margin: 0 10%;"/>
+<br />
+<br />
 <br />
 
 <img src="retrieveLabResults.png" alt="drawing" style="width: 80%; margin: 0 10%;"/>
