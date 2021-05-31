@@ -97,8 +97,6 @@ Step:
 
 Comments
 
-<img src="LabOrderResulting.png" alt="drawing" style="width: 80%; margin: 0 10%;"/>
-
 
 #### USE CASE NAME: CAPTURING LAB ORDERS
 
@@ -249,9 +247,9 @@ ASSUMPTIONS:
 
 
 COMMENTS:
->
->
->
+
+<br />
+
 
 #### USE CASE NAME: CAPTURING LAB ORDERS
 
@@ -307,7 +305,16 @@ COMMENTS:
 ### USE CASE DIAGRAM
 
 <img src="captureLabOrders.png" alt="drawing" style="width: 80%; margin: 0 10%;"/>
+<br />
+
+
 <img src="retrieveLabOrders.png" alt="drawing" style="width: 80%; margin: 0 10%;"/>
+<br />
+
 <img src="dataTransmissionLayer.png" alt="drawing" style="width: 80%; margin: 0 10%;"/>
+<br />
+
+<img src="LabOrderResulting.png" alt="drawing" style="width: 80%; margin: 0 10%;"/>
+<br />
 
 <img src="retrieveLabResults.png" alt="drawing" style="width: 80%; margin: 0 10%;"/>
