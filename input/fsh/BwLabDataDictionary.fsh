@@ -1,12 +1,12 @@
-Instance: EmrLisDataDictionary
+Instance: BwLabDataDictionary
 InstanceOf: StructureDefinition
-Description: "EMR-LIS Data Dictionary Logical Model"
-Title: "EMR-LIS Data Dictionary" // user-friendly name
+Description: "Botswana Laboratory Data Dictionary - Logical Model"
+Title: "Botswana Lab Data Dictionary" // user-friendly name
 Usage: #definition
 
 * insert PublisherContextInstance
-* name = "EmrLisDataDictionary" // computer ready name
-* url = "http://openhie.github.io/covid-19/StructureDefinition/EmrLisDataDictionary"
+* name = "BwLabDataDictionary" // computer ready name
+* url = "http://b-techbw.github.io//StructureDefinition/BwLabDataDictionary"
 * version = "0.1.0"
 * kind = #logical
 * abstract = false
