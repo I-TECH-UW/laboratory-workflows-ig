@@ -1,4 +1,4 @@
-Profile:        EmrLabOpenmrsIdentifier
+Profile:        EmrLisOpenmrsIdentifier
 Parent:         Identifier
 Id:             emr-lab-openmrs-identifier
 Title:          "EMR-LIS Workflow OpenMRS Identifier"

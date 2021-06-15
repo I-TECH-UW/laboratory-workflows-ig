@@ -1,4 +1,4 @@
-Profile:        EmrLabPatient
+Profile:        EmrLisPatient
 Parent:         Patient
 Id:             emr-lab-patient
 Title:          "EMR-LIS Workflow Patient"
@@ -8,4 +8,4 @@ Description:    "A patient used for EMR - LIS lab order and result communication
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type.coding.code"
 * identifier ^slicing.rules = #open
-* identifier only EmrLabOpenmrsIdentifier
+* identifier only EmrLisOpenmrsIdentifier

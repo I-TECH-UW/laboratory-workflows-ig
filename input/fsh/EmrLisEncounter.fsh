@@ -1,4 +1,4 @@
-Profile: EmrLabEncounter
+Profile: EmrLisEncounter
 Parent: Encounter
 Id: emr-lab-encounter
 Title: "EMR-LIS Encounter"

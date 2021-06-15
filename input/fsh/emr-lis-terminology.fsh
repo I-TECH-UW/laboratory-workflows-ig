@@ -3,7 +3,7 @@ Alias: TI = http://hl7.org/fhir/ValueSet/task-intent
 Alias: DS = http://hl7.org/fhir/diagnostic-report-status
 Alias: LOINC = http://loinc.org
 
-ValueSet:   EmrLabTaskStatusVS
+ValueSet:   EmrLisTaskStatusVS
 Id: emr-lab-task-status-vs
 Title: "EMR-LIS Status for Task"
 Description:  "The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html"
@@ -12,19 +12,19 @@ Description:  "The state of the task, subset from https://www.hl7.org/FHIR/value
 * TS#task-status-accepted "Accepted"
 * TS#task-status-completed "Completed"
 
-ValueSet:   EmrLabTaskIntentVS
+ValueSet:   EmrLisTaskIntentVS
 Id: emr-lab-task-intent-vs
 Title: "EMR-LIS Intent for Task"
 Description:  "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html"
 * TI#task-intent-order "Order"
 
-ValueSet: EmrLabOrderCodeVS
+ValueSet: EmrLisOrderCodeVS
 Id: emr-lab-order-code-vs
 Title: "EMR Lab Order Code"
 Description: "The code for the lab order requested in the EMR."
 * include codes from system LOINC
 
-ValueSet:   EmrLabDiagnosticReportStatusVS
+ValueSet:   EmrLisDiagnosticReportStatusVS
 Id: emr-lab-diagnostic-report-status-vs
 Title: "EMR-LIS Diagnostic Report Status Flag"
 Description:  "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html"
