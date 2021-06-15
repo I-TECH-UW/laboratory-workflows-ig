@@ -15,34 +15,29 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-patient",
-  "version": "0.1.0-test",
-  "name": "EmrLabPatient",
+  "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-patient",
+  "version": "0.2.0",
+  "name": "EmrLisPatient",
   "title": "EMR-LIS Workflow Patient",
   "status": "active",
-  "date": "2021-03-15T23:15:11+00:00",
+  "date": "2021-06-15T21:03:30+00:00",
   "publisher": "I-TECH-UW",
   "contact": [
     {
+      "name": "I-TECH-UW",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"
+          "value": "www.github.com/i-tech-uw"
+        },
+        {
+          "system": "email",
+          "value": "pmanko@uw.edu"
         }
       ]
     }
   ],
   "description": "A patient used for EMR - LIS lab order and result communication.",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code": "001"
-        }
-      ]
-    }
-  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -502,7 +497,7 @@
           {
             "code": "Identifier",
             "profile": [
-              "http://openhie.org/fhir/StructureDefinition/emr-lab-openmrs-identifier"
+              "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-openmrs-identifier"
             ]
           }
         ],
@@ -2270,7 +2265,7 @@
           {
             "code": "Identifier",
             "profile": [
-              "http://openhie.org/fhir/StructureDefinition/emr-lab-openmrs-identifier"
+              "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-openmrs-identifier"
             ]
           }
         ]

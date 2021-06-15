@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/StructureDefinition/emr-lab-task> a fhir:StructureDefinition;
+<http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "emr-lab-task"];
   fhir:DomainResource.text [
@@ -21,30 +21,27 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://openhie.org/fhir/StructureDefinition/emr-lab-task"];
-  fhir:StructureDefinition.version [ fhir:value "0.1.0-test"];
-  fhir:StructureDefinition.name [ fhir:value "EmrLabTask"];
+  fhir:StructureDefinition.url [ fhir:value "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.0"];
+  fhir:StructureDefinition.name [ fhir:value "EmrLisTask"];
   fhir:StructureDefinition.title [ fhir:value "EMR-LIS Workflow Task Resource"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-03-15T23:15:11+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-06-15T21:03:30+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "I-TECH-UW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "I-TECH-UW" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/" ]
+       fhir:ContactPoint.value [ fhir:value "www.github.com/i-tech-uw" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pmanko@uw.edu" ]
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "A Task resource for tracking order state and synchronizing communication between an EMR and a LIS"];
-  fhir:StructureDefinition.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "001" ]
-     ]
-  ];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
@@ -670,9 +667,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://openhie.org/fhir/StructureDefinition/emr-lab-service-request";
+           fhir:value "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request";
            fhir:index 0;
-           fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-service-request>
+           fhir:link <http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -822,8 +819,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs";
-           fhir:link <http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs>
+           fhir:value "http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-status-vs";
+           fhir:link <http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-status-vs>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -966,8 +963,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs";
-           fhir:link <http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs>
+           fhir:value "http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-intent-vs";
+           fhir:link <http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-intent-vs>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1205,9 +1202,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://openhie.org/fhir/StructureDefinition/emr-lab-patient";
+           fhir:value "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-patient";
            fhir:index 0;
-           fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-patient>
+           fhir:link <http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-patient>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3125,9 +3122,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report";
+           fhir:value "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-diagnostic-report";
            fhir:index 0;
-           fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report>
+           fhir:link <http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-diagnostic-report>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3170,9 +3167,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://openhie.org/fhir/StructureDefinition/emr-lab-service-request";
+           fhir:value "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request";
            fhir:index 0;
-           fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-service-request>
+           fhir:link <http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request>
          ]
        ]
      ], [
@@ -3182,8 +3179,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs";
-           fhir:link <http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs>
+           fhir:value "http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-status-vs";
+           fhir:link <http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-status-vs>
          ]
        ]
      ], [
@@ -3193,8 +3190,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs";
-           fhir:link <http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs>
+           fhir:value "http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-intent-vs";
+           fhir:link <http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-intent-vs>
          ]
        ]
      ], [
@@ -3205,9 +3202,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://openhie.org/fhir/StructureDefinition/emr-lab-patient";
+           fhir:value "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-patient";
            fhir:index 0;
-           fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-patient>
+           fhir:link <http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-patient>
          ]
        ]
      ], [
@@ -3249,9 +3246,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report";
+           fhir:value "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-diagnostic-report";
            fhir:index 0;
-           fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report>
+           fhir:link <http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-diagnostic-report>
          ]
        ]
      ]
@@ -3259,7 +3256,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/StructureDefinition/emr-lab-task.ttl> a owl:Ontology;
+<http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

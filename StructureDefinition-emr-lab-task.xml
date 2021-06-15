@@ -23,26 +23,25 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="not-classified"/>
   </extension>
-  <url value="http://openhie.org/fhir/StructureDefinition/emr-lab-task"/>
-  <version value="0.1.0-test"/>
-  <name value="EmrLabTask"/>
+  <url value="http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task"/>
+  <version value="0.2.0"/>
+  <name value="EmrLisTask"/>
   <title value="EMR-LIS Workflow Task Resource"/>
   <status value="active"/>
-  <date value="2021-03-15T23:15:11+00:00"/>
+  <date value="2021-06-15T21:03:30+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
+    <name value="I-TECH-UW"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"/>
+      <value value="www.github.com/i-tech-uw"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pmanko@uw.edu"/>
     </telecom>
   </contact>
   <description value="A Task resource for tracking order state and synchronizing communication between an EMR and a LIS"/>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>
@@ -523,7 +522,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://openhie.org/fhir/StructureDefinition/emr-lab-service-request"/>
+        <targetProfile value="http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -642,7 +641,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs"/>
+        <valueSet value="http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-status-vs"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -758,7 +757,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs"/>
+        <valueSet value="http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-intent-vs"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -946,7 +945,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://openhie.org/fhir/StructureDefinition/emr-lab-patient"/>
+        <targetProfile value="http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-patient"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2428,7 +2427,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report"/>
+        <targetProfile value="http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-diagnostic-report"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2459,28 +2458,28 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://openhie.org/fhir/StructureDefinition/emr-lab-service-request"/>
+        <targetProfile value="http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request"/>
       </type>
     </element>
     <element id="Task.status">
       <path value="Task.status"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs"/>
+        <valueSet value="http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-status-vs"/>
       </binding>
     </element>
     <element id="Task.intent">
       <path value="Task.intent"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs"/>
+        <valueSet value="http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-intent-vs"/>
       </binding>
     </element>
     <element id="Task.for">
       <path value="Task.for"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://openhie.org/fhir/StructureDefinition/emr-lab-patient"/>
+        <targetProfile value="http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-patient"/>
       </type>
     </element>
     <element id="Task.authoredOn">
@@ -2504,7 +2503,7 @@
       <path value="Task.output.value[x]"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report"/>
+        <targetProfile value="http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-diagnostic-report"/>
       </type>
     </element>
   </differential>

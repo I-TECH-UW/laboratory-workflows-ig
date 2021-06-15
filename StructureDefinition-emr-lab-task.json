@@ -15,34 +15,29 @@
       "valueCode": "not-classified"
     }
   ],
-  "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-task",
-  "version": "0.1.0-test",
-  "name": "EmrLabTask",
+  "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task",
+  "version": "0.2.0",
+  "name": "EmrLisTask",
   "title": "EMR-LIS Workflow Task Resource",
   "status": "active",
-  "date": "2021-03-15T23:15:11+00:00",
+  "date": "2021-06-15T21:03:30+00:00",
   "publisher": "I-TECH-UW",
   "contact": [
     {
+      "name": "I-TECH-UW",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"
+          "value": "www.github.com/i-tech-uw"
+        },
+        {
+          "system": "email",
+          "value": "pmanko@uw.edu"
         }
       ]
     }
   ],
   "description": "A Task resource for tracking order state and synchronizing communication between an EMR and a LIS",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code": "001"
-        }
-      ]
-    }
-  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -621,7 +616,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://openhie.org/fhir/StructureDefinition/emr-lab-service-request"
+              "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request"
             ]
           }
         ],
@@ -767,7 +762,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs"
+          "valueSet": "http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-status-vs"
         },
         "mapping": [
           {
@@ -910,7 +905,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs"
+          "valueSet": "http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-intent-vs"
         },
         "mapping": [
           {
@@ -1141,7 +1136,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://openhie.org/fhir/StructureDefinition/emr-lab-patient"
+              "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-patient"
             ]
           }
         ],
@@ -2957,7 +2952,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report"
+              "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-diagnostic-report"
             ]
           }
         ],
@@ -3001,7 +2996,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://openhie.org/fhir/StructureDefinition/emr-lab-service-request"
+              "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request"
             ]
           }
         ]
@@ -3011,7 +3006,7 @@
         "path": "Task.status",
         "binding": {
           "strength": "required",
-          "valueSet": "http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs"
+          "valueSet": "http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-status-vs"
         }
       },
       {
@@ -3019,7 +3014,7 @@
         "path": "Task.intent",
         "binding": {
           "strength": "required",
-          "valueSet": "http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs"
+          "valueSet": "http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-intent-vs"
         }
       },
       {
@@ -3029,7 +3024,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://openhie.org/fhir/StructureDefinition/emr-lab-patient"
+              "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-patient"
             ]
           }
         ]
@@ -3065,7 +3060,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report"
+              "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-diagnostic-report"
             ]
           }
         ]

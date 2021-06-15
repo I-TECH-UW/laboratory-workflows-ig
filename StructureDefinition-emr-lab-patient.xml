@@ -14,26 +14,25 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://openhie.org/fhir/StructureDefinition/emr-lab-patient"/>
-  <version value="0.1.0-test"/>
-  <name value="EmrLabPatient"/>
+  <url value="http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-patient"/>
+  <version value="0.2.0"/>
+  <name value="EmrLisPatient"/>
   <title value="EMR-LIS Workflow Patient"/>
   <status value="active"/>
-  <date value="2021-03-15T23:15:11+00:00"/>
+  <date value="2021-06-15T21:03:30+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
+    <name value="I-TECH-UW"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"/>
+      <value value="www.github.com/i-tech-uw"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pmanko@uw.edu"/>
     </telecom>
   </contact>
   <description value="A patient used for EMR - LIS lab order and result communication."/>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>
@@ -414,7 +413,7 @@
       </base>
       <type>
         <code value="Identifier"/>
-        <profile value="http://openhie.org/fhir/StructureDefinition/emr-lab-openmrs-identifier"/>
+        <profile value="http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-openmrs-identifier"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1861,7 +1860,7 @@
       <min value="1"/>
       <type>
         <code value="Identifier"/>
-        <profile value="http://openhie.org/fhir/StructureDefinition/emr-lab-openmrs-identifier"/>
+        <profile value="http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-openmrs-identifier"/>
       </type>
     </element>
     <element id="Patient.name">

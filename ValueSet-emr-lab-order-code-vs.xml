@@ -5,26 +5,25 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="http://loinc.org"><code>http://loinc.org</code></a></li></ul></div>
   </text>
-  <url value="http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs"/>
-  <version value="0.1.0-test"/>
-  <name value="EmrLabOrderCodeVS"/>
+  <url value="http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-order-code-vs"/>
+  <version value="0.2.0"/>
+  <name value="EmrLisOrderCodeVS"/>
   <title value="EMR Lab Order Code"/>
   <status value="active"/>
-  <date value="2021-03-15T23:15:11+00:00"/>
+  <date value="2021-06-15T21:03:30+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
+    <name value="I-TECH-UW"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"/>
+      <value value="www.github.com/i-tech-uw"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pmanko@uw.edu"/>
     </telecom>
   </contact>
   <description value="The code for the lab order requested in the EMR."/>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
   <compose>
     <include>
       <system value="http://loinc.org"/>
