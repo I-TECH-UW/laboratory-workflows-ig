@@ -3,7 +3,7 @@
 
 err = 6, warn = 32, info = 0
 IG Publisher Version: 1.1.75
-Generated Wed Jun 23 19:17:20 UTC 2021. FHIR version 4.0.1 for emr.lis.ig#0.2.0 (canonical = http://i-tech-uw.github.io/emr-lis-ig)
+Generated Wed Jun 23 19:32:51 UTC 2021. FHIR version 4.0.1 for emr.lis.ig#0.2.0 (canonical = http://i-tech-uw.github.io/emr-lis-ig)
 
  Build Errors : 101 / 0 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-emr.lis.ig : 0 / 0 / 1
@@ -62,14 +62,14 @@ ERROR: /github/workspace/output/StructureDefinition-emr-lab-openmrs-identifier.p
 ERROR: /github/workspace/output/StructureDefinition-emr-lab-openmrs-identifier.profile.json.html#/html/body/div/div/div/p/a at Line 840, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-emr-lab-openmrs-identifier.profile.ttl.html#/html/body/div/div/div/p/a at Line 771, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-emr-lab-openmrs-identifier.profile.xml.html#/html/body/div/div/div/p/a at Line 770, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-emr-lab-patient-definitions.html#/html/body/div/div/div/p/a at Line 758, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-emr-lab-patient-definitions.html#/html/body/div/div/div/p/a at Line 862, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-emr-lab-patient-examples.html#/html/body/div/div/div/p/a at Line 272, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-emr-lab-patient-mappings.html#/html/body/div/div/div/p/a at Line 382, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-emr-lab-patient.html#/html/body/div/div/div/p/a at Line 798, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-emr-lab-patient-mappings.html#/html/body/div/div/div/p/a at Line 397, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-emr-lab-patient.html#/html/body/div/div/div/p/a at Line 864, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-emr-lab-patient.profile.history.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-emr-lab-patient.profile.json.html#/html/body/div/div/div/p/a at Line 2558, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-emr-lab-patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2256, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-emr-lab-patient.profile.xml.html#/html/body/div/div/div/p/a at Line 2348, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-emr-lab-patient.profile.json.html#/html/body/div/div/div/p/a at Line 2993, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-emr-lab-patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2626, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-emr-lab-patient.profile.xml.html#/html/body/div/div/div/p/a at Line 2734, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-emr-lab-service-request-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 431, column 262: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-emr-lab-service-request-definitions.html#/html/body/div/div/div/p/a at Line 733, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-emr-lab-service-request-examples.html#/html/body/div/div/div/p/a at Line 272, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
