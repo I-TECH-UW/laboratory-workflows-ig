@@ -2,8 +2,8 @@
 =========================================
 
 err = 6, warn = 32, info = 0
-IG Publisher Version: 1.1.73
-Generated Tue Jun 15 21:03:57 UTC 2021. FHIR version 4.0.1 for emr.lis.ig#0.2.0 (canonical = http://i-tech-uw.github.io/emr-lis-ig)
+IG Publisher Version: 1.1.75
+Generated Wed Jun 23 19:11:52 UTC 2021. FHIR version 4.0.1 for emr.lis.ig#0.2.0 (canonical = http://i-tech-uw.github.io/emr-lis-ig)
 
  Build Errors : 101 / 0 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-emr.lis.ig : 0 / 0 / 1
@@ -148,7 +148,7 @@ WARNING: StructureDefinition.where(url = 'http://i-tech-uw.github.io/emr-lis-ig/
 ERROR: http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-observation#Observation.specimen: The profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips has type Specimen which is not consistent with the stated type CodeableConcept
 INFORMATION: StructureDefinition/emr-lab-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/emr-lab-observation: StructureDefinition.differential.element.where(path = 'Observation.specimen'): The profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips has type Specimen which is not consistent with the stated type CodeableConcept
-ERROR: StructureDefinition/emr-lab-observation: StructureDefinition.snapshot.element[44].type[0].profile[0]: Extension http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips is for type Specimen, but the Observation.specimen element has type CodeableConcept
+ERROR: StructureDefinition/emr-lab-observation: StructureDefinition.snapshot.element[44].type[0].profile[0]: Extension http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips is for type StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips], but the Observation.specimen element has type CodeableConcept
 WARNING: StructureDefinition.where(url = 'http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-observation'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-openmrs-identifier.json ==
 INFORMATION: StructureDefinition/emr-lab-openmrs-identifier: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
