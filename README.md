@@ -16,20 +16,20 @@ Install ruby and ruby gems: https://www.ruby-lang.org/en/documentation/installat
 
 ### Install Jekyll gem
 
-gem install jekyll
+    gem install jekyll
 ### Install Sushi
-npm install -g fsh-sushi
-sushi --help
+    npm install -g fsh-sushi
+    sushi --help
 ### Update IG Publisher
-./_updatePublisher.sh
+    ./_updatePublisher.sh
 
 ### Run IG Publisher
-./_genonce.sh
+    ./_genonce.sh
 
 ## Open Published IG
-Open `./output/
+    Open `./output/
 
 
 ## Issues
-__https://github.com/pmanko/emr-lis-ig/issues__  
+https://github.com/I-TECH-UW/emr-lis-ig/issues 
 
