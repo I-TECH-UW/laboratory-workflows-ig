@@ -2,8 +2,8 @@
 =========================================
 
 err = 6, warn = 32, info = 0
-IG Publisher Version: 1.1.75
-Generated Wed Jun 23 19:32:51 UTC 2021. FHIR version 4.0.1 for emr.lis.ig#0.2.0 (canonical = http://i-tech-uw.github.io/emr-lis-ig)
+IG Publisher Version: 1.1.76
+Generated Mon Jul 05 14:42:39 UTC 2021. FHIR version 4.0.1 for emr.lis.ig#0.2.0 (canonical = http://i-tech-uw.github.io/emr-lis-ig)
 
  Build Errors : 101 / 0 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-emr.lis.ig : 0 / 0 / 1
@@ -124,9 +124,7 @@ ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 21
 ERROR: /github/workspace/output/spec.html#/html/body/div/div/div/p/a at Line 199, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 182, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 == /github/workspace/fsh-generated/resources/ImplementationGuide-emr.lis.ig.json ==
-INFORMATION: ImplementationGuide/emr.lis.ig: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 == /github/workspace/fsh-generated/resources/StructureDefinition-EmrLisLogicalModel.json ==
-INFORMATION: StructureDefinition/EmrLisLogicalModel: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/EmrLisLogicalModel: StructureDefinition.snapshot.element[3]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 ERROR: StructureDefinition/EmrLisLogicalModel: StructureDefinition.snapshot.element[4]: sdf-10: 'provide either a binding reference or a description (or both)' Rule 'provide either a binding reference or a description (or both)' Failed
 WARNING: StructureDefinition/EmrLisLogicalModel: StructureDefinition.snapshot.element[4]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
@@ -138,52 +136,40 @@ WARNING: StructureDefinition/EmrLisLogicalModel: StructureDefinition.differentia
 WARNING: StructureDefinition/EmrLisLogicalModel: StructureDefinition.differential.element[3]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-diagnostic-report.json ==
 ERROR: EMR-LIS Diagnostic Report.DiagnosticReport.status: Binding http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-diagnostic-report-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1
-INFORMATION: StructureDefinition/emr-lab-diagnostic-report: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/emr-lab-diagnostic-report: StructureDefinition: Binding http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-diagnostic-report-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1
 WARNING: StructureDefinition.where(url = 'http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-diagnostic-report'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-encounter.json ==
-INFORMATION: StructureDefinition/emr-lab-encounter: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-encounter'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-observation.json ==
 ERROR: http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-observation#Observation.specimen: The profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips has type Specimen which is not consistent with the stated type CodeableConcept
-INFORMATION: StructureDefinition/emr-lab-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/emr-lab-observation: StructureDefinition.differential.element.where(path = 'Observation.specimen'): The profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips has type Specimen which is not consistent with the stated type CodeableConcept
-ERROR: StructureDefinition/emr-lab-observation: StructureDefinition.snapshot.element[44].type[0].profile[0]: Extension http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips is for type StructureDefinition[http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips], but the Observation.specimen element has type CodeableConcept
+ERROR: StructureDefinition/emr-lab-observation: StructureDefinition.snapshot.element[44].type[0].profile[0]: Profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Specimen], but the Observation.specimen element has type CodeableConcept
 WARNING: StructureDefinition.where(url = 'http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-observation'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-openmrs-identifier.json ==
-INFORMATION: StructureDefinition/emr-lab-openmrs-identifier: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-openmrs-identifier'): The Implementation Guide contains no examples for this data type profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-patient.json ==
-INFORMATION: StructureDefinition/emr-lab-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-patient'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-service-request.json ==
-INFORMATION: StructureDefinition/emr-lab-service-request: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-task.json ==
 WARNING: EMR-LIS Workflow Task Resource.Task.status: Binding http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-status-vs could not be expanded
 WARNING: EMR-LIS Workflow Task Resource.Task.intent: Binding http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-intent-vs could not be expanded
-INFORMATION: StructureDefinition/emr-lab-task: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/emr-lab-task: StructureDefinition: Binding http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-status-vs could not be expanded
 WARNING: StructureDefinition/emr-lab-task: StructureDefinition: Binding http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-intent-vs could not be expanded
 WARNING: StructureDefinition.where(url = 'http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lis-patient-identifier-location.json ==
-INFORMATION: StructureDefinition/emr-lis-patient-identifier-location: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-patient-identifier-location'): The Implementation Guide contains no examples for this extension
 == /github/workspace/fsh-generated/resources/ValueSet-emr-lab-diagnostic-report-status-vs.json ==
-INFORMATION: ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 WARNING: ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[0]: The code diagnostic-report-status-partial is not valid in the system http://hl7.org/fhir/diagnostic-report-status
 WARNING: ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[1]: The code diagnostic-report-status-final is not valid in the system http://hl7.org/fhir/diagnostic-report-status
 WARNING: ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[2]: The code diagnostic-report-status-unknown is not valid in the system http://hl7.org/fhir/diagnostic-report-status
 WARNING: ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[3]: The code diagnostic-report-status-canceled is not valid in the system http://hl7.org/fhir/diagnostic-report-status
 WARNING: ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[4]: The code diagnostic-report-status-amended is not valid in the system http://hl7.org/fhir/diagnostic-report-status
 == /github/workspace/fsh-generated/resources/ValueSet-emr-lab-order-code-vs.json ==
-INFORMATION: ValueSet/emr-lab-order-code-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-intent-vs.json ==
-INFORMATION: ValueSet/emr-lab-task-intent-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 WARNING: ValueSet/emr-lab-task-intent-vs: ValueSet.compose[0].include[0].concept[0]: The code task-intent-order is not valid in the system http://hl7.org/fhir/ValueSet/task-intent
 WARNING: ValueSet.where(id = 'emr-lab-task-intent-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-intent
 == /github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-status-vs.json ==
-INFORMATION: ValueSet/emr-lab-task-status-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 WARNING: ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept[0]: The code task-status-requested is not valid in the system http://hl7.org/fhir/ValueSet/task-status
 WARNING: ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept[1]: The code task-status-rejected is not valid in the system http://hl7.org/fhir/ValueSet/task-status
 WARNING: ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept[2]: The code task-status-accepted is not valid in the system http://hl7.org/fhir/ValueSet/task-status
