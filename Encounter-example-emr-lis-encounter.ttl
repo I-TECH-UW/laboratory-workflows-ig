@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://i-tech-uw.github.io/emr-lis-ig/Encounter/example-emr-lis-encounter> a fhir:Encounter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-emr-lis-encounter"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-encounter";
+       fhir:index 0;
+       fhir:link <http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-encounter>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: in-progress</p><p><b>class</b>: <span title=\"{null null}\">inpatient encounter</span></p><p><b>subject</b>: <a href=\"Patient-example-emr-lis-patient.html\">Generated Summary: iSantePlus ID: 10012R (OFFICIAL); active; moses Mutesa ; gender: female; birthDate: 1988-03-02; </a></p></div>"
+  ];
+  fhir:Encounter.status [ fhir:value "in-progress"];
+  fhir:Encounter.class [
+     fhir:Coding.display [ fhir:value "inpatient encounter" ]
+  ];
+  fhir:Encounter.subject [
+     fhir:link <http://i-tech-uw.github.io/emr-lis-ig/Patient/example-emr-lis-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/example-emr-lis-patient" ];
+     fhir:Reference.type [ fhir:value "Patient" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://i-tech-uw.github.io/emr-lis-ig/Encounter/example-emr-lis-encounter.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

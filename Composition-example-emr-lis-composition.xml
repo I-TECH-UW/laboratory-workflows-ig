@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="example-emr-lis-composition"/>
+  <meta>
+    <profile value="http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-composition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: ">document</span></p><p><b>date</b>: 2021-06-06</p><p><b>author</b>: <a href="Practitioner-example-emr-lis-practitioner.html">Generated Summary: id: 1000AX; Moses Mutesa</a></p><p><b>title</b>: EMR-LIS Lab Composition</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <code value="document"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/example-emr-lis-patient"/>
+  </subject>
+  <date value="2021-06-06"/>
+  <author>
+    <reference value="Practitioner/example-emr-lis-practitioner"/>
+  </author>
+  <title value="EMR-LIS Lab Composition"/>
+  <section>
+    <entry>
+      <reference value="Task/example-emr-lis-task-requested"/>
+    </entry>
+  </section>
+  <section>
+    <entry>
+      <reference value="ServiceRequest/example-emr-lis-service-request-profile"/>
+    </entry>
+    <entry>
+      <reference value="ServiceRequest/example-emr-lis-service-request-1"/>
+    </entry>
+    <entry>
+      <reference value="ServiceRequest/example-emr-lis-service-request-2"/>
+    </entry>
+  </section>
+</Composition>

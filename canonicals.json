@@ -49,6 +49,13 @@
     "name": "EmrLisPatient"
   },
   {
+    "id": "emr-lab-practitioner",
+    "type": "StructureDefinition",
+    "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-practitioner",
+    "version": "0.2.0",
+    "name": "EmrLisPractitioner"
+  },
+  {
     "id": "emr-lab-service-request",
     "type": "StructureDefinition",
     "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request",
@@ -61,6 +68,13 @@
     "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task",
     "version": "0.2.0",
     "name": "EmrLisTask"
+  },
+  {
+    "id": "emr-lis-composition",
+    "type": "StructureDefinition",
+    "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-composition",
+    "version": "0.2.0",
+    "name": "EmrLisLabComposition"
   },
   {
     "id": "emr-lis-patient-identifier-location",

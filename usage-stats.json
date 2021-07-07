@@ -36,6 +36,12 @@
         "title": "EMR-LIS Workflow Patient"
       }
     ],
+    "Practitioner": [
+      {
+        "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-practitioner",
+        "title": "EMR-LIS Encounter"
+      }
+    ],
     "ServiceRequest": [
       {
         "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request",
@@ -47,9 +53,18 @@
         "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task",
         "title": "EMR-LIS Workflow Task Resource"
       }
+    ],
+    "Composition": [
+      {
+        "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-composition",
+        "title": "EMR-LIS Lab Order Composition"
+      }
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber": [
+      "Composition"
+    ],
     "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
       "DiagnosticReport.effective[x]",
       "Observation.effective[x]"
@@ -103,7 +118,9 @@
       "ImplementationGuide.definition.resource"
     ],
     "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-patient-identifier-location": [
-      "Identifier"
+      "Bundle.entry.resource.identifier",
+      "Identifier",
+      "Patient.identifier"
     ]
   }
 }

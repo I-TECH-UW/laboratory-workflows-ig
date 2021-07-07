@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://i-tech-uw.github.io/emr-lis-ig/DiagnosticReport/example-emr-lis-diagnostic-report> a fhir:DiagnosticReport;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-emr-lis-diagnostic-report"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-diagnostic-report";
+       fhir:index 0;
+       fhir:link <http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-diagnostic-report>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 22748-8}\">22748-8</span> (<span title=\"Codes: {http://loinc.org 22748-8}\">22748-8</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>Mar 3, 2011, 9:30:00 PM</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td><a href=\"Observation-example-emr-lis-observation.html\"><span title=\"Codes: {http://loinc.org 22748-8}\">22748-8</span></a></td><td>55 UI/L</td></tr></table></div>"
+  ];
+  fhir:DiagnosticReport.status [ fhir:value "final"];
+  fhir:DiagnosticReport.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:22748-8;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "22748-8" ]
+     ]
+  ];
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:22748-8;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "22748-8" ]
+     ]
+  ];
+  fhir:DiagnosticReport.subject [
+     fhir:Reference.reference [ fhir:value "example-emr-lis-patient" ];
+     fhir:Reference.type [ fhir:value "Patient" ]
+  ];
+  fhir:DiagnosticReport.effectiveDateTime [ fhir:value "2011-03-04T08:30:00+11:00"^^xsd:dateTime];
+  fhir:DiagnosticReport.result [
+     fhir:index 0;
+     fhir:link <http://i-tech-uw.github.io/emr-lis-ig/Observation/example-emr-lis-observation>;
+     fhir:Reference.reference [ fhir:value "Observation/example-emr-lis-observation" ];
+     fhir:Reference.type [ fhir:value "Observation" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://i-tech-uw.github.io/emr-lis-ig/DiagnosticReport/example-emr-lis-diagnostic-report.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://i-tech-uw.github.io/emr-lis-ig/ServiceRequest/example-emr-lis-service-request-profile> a fhir:ServiceRequest;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-emr-lis-service-request-profile"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request";
+       fhir:index 0;
+       fhir:link <http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 14682-9}\">14682-9</span></p><p><b>subject</b>: <a href=\"Patient-example-emr-lis-patient.html\">Generated Summary: iSantePlus ID: 10012R (OFFICIAL); active; moses Mutesa ; gender: female; birthDate: 1988-03-02; </a></p><p><b>encounter</b>: <a href=\"Encounter-example-emr-lis-encounter.html\">Generated Summary: status: in-progress; <span title=\"{null null}\">inpatient encounter</span></a></p></div>"
+  ];
+  fhir:ServiceRequest.status [ fhir:value "active"];
+  fhir:ServiceRequest.intent [ fhir:value "order"];
+  fhir:ServiceRequest.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:14682-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "14682-9" ]
+     ]
+  ];
+  fhir:ServiceRequest.subject [
+     fhir:link <http://i-tech-uw.github.io/emr-lis-ig/Patient/example-emr-lis-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/example-emr-lis-patient" ]
+  ];
+  fhir:ServiceRequest.encounter [
+     fhir:link <http://i-tech-uw.github.io/emr-lis-ig/Encounter/example-emr-lis-encounter>;
+     fhir:Reference.reference [ fhir:value "Encounter/example-emr-lis-encounter" ];
+     fhir:Reference.type [ fhir:value "Encounter" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://i-tech-uw.github.io/emr-lis-ig/ServiceRequest/example-emr-lis-service-request-profile.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

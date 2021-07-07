@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="example-emr-lis-practitioner"/>
+  <meta>
+    <profile value="http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1000AX</p><p><b>name</b>: Moses Mutesa</p></div>
+  </text>
+  <identifier>
+    <system value="http://fhir.openmrs.org/ext/provider/identifier"/>
+    <value value="1000AX"/>
+  </identifier>
+  <name>
+    <text value="Moses Mutesa"/>
+  </name>
+</Practitioner>

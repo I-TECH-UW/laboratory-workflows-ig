@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://i-tech-uw.github.io/emr-lis-ig/Composition/example-emr-lis-composition> a fhir:Composition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-emr-lis-composition"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-composition";
+       fhir:index 0;
+       fhir:link <http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-composition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: \">document</span></p><p><b>date</b>: 2021-06-06</p><p><b>author</b>: <a href=\"Practitioner-example-emr-lis-practitioner.html\">Generated Summary: id: 1000AX; Moses Mutesa</a></p><p><b>title</b>: EMR-LIS Lab Composition</p></div>"
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "document" ]
+     ]
+  ];
+  fhir:Composition.subject [
+     fhir:link <http://i-tech-uw.github.io/emr-lis-ig/Patient/example-emr-lis-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/example-emr-lis-patient" ]
+  ];
+  fhir:Composition.date [ fhir:value "2021-06-06"^^xsd:date];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:link <http://i-tech-uw.github.io/emr-lis-ig/Practitioner/example-emr-lis-practitioner>;
+     fhir:Reference.reference [ fhir:value "Practitioner/example-emr-lis-practitioner" ]
+  ];
+  fhir:Composition.title [ fhir:value "EMR-LIS Lab Composition"];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://i-tech-uw.github.io/emr-lis-ig/Task/example-emr-lis-task-requested>;
+       fhir:Reference.reference [ fhir:value "Task/example-emr-lis-task-requested" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://i-tech-uw.github.io/emr-lis-ig/ServiceRequest/example-emr-lis-service-request-profile>;
+       fhir:Reference.reference [ fhir:value "ServiceRequest/example-emr-lis-service-request-profile" ]
+     ], [
+       fhir:index 1;
+       fhir:link <http://i-tech-uw.github.io/emr-lis-ig/ServiceRequest/example-emr-lis-service-request-1>;
+       fhir:Reference.reference [ fhir:value "ServiceRequest/example-emr-lis-service-request-1" ]
+     ], [
+       fhir:index 2;
+       fhir:link <http://i-tech-uw.github.io/emr-lis-ig/ServiceRequest/example-emr-lis-service-request-2>;
+       fhir:Reference.reference [ fhir:value "ServiceRequest/example-emr-lis-service-request-2" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://i-tech-uw.github.io/emr-lis-ig/Composition/example-emr-lis-composition.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

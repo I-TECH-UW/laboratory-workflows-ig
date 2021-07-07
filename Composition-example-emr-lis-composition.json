@@ -1,0 +1,53 @@
+{
+  "resourceType": "Composition",
+  "id": "example-emr-lis-composition",
+  "meta": {
+    "profile": [
+      "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-composition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: \">document</span></p><p><b>date</b>: 2021-06-06</p><p><b>author</b>: <a href=\"Practitioner-example-emr-lis-practitioner.html\">Generated Summary: id: 1000AX; Moses Mutesa</a></p><p><b>title</b>: EMR-LIS Lab Composition</p></div>"
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "document"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example-emr-lis-patient"
+  },
+  "date": "2021-06-06",
+  "author": [
+    {
+      "reference": "Practitioner/example-emr-lis-practitioner"
+    }
+  ],
+  "title": "EMR-LIS Lab Composition",
+  "section": [
+    {
+      "entry": [
+        {
+          "reference": "Task/example-emr-lis-task-requested"
+        }
+      ]
+    },
+    {
+      "entry": [
+        {
+          "reference": "ServiceRequest/example-emr-lis-service-request-profile"
+        },
+        {
+          "reference": "ServiceRequest/example-emr-lis-service-request-1"
+        },
+        {
+          "reference": "ServiceRequest/example-emr-lis-service-request-2"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="example-emr-lis-encounter"/>
+  <meta>
+    <profile value="http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: in-progress</p><p><b>class</b>: <span title="{null null}">inpatient encounter</span></p><p><b>subject</b>: <a href="Patient-example-emr-lis-patient.html">Generated Summary: iSantePlus ID: 10012R (OFFICIAL); active; moses Mutesa ; gender: female; birthDate: 1988-03-02; </a></p></div>
+  </text>
+  <status value="in-progress"/>
+  <class>
+    <display value="inpatient encounter"/>
+  </class>
+  <subject>
+    <reference value="Patient/example-emr-lis-patient"/>
+    <type value="Patient"/>
+  </subject>
+</Encounter>

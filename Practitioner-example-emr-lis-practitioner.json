@@ -1,0 +1,24 @@
+{
+  "resourceType": "Practitioner",
+  "id": "example-emr-lis-practitioner",
+  "meta": {
+    "profile": [
+      "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-practitioner"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1000AX</p><p><b>name</b>: Moses Mutesa</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.openmrs.org/ext/provider/identifier",
+      "value": "1000AX"
+    }
+  ],
+  "name": [
+    {
+      "text": "Moses Mutesa"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "example-emr-lis-diagnostic-report",
+  "meta": {
+    "profile": [
+      "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-diagnostic-report"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 22748-8}\">22748-8</span> (<span title=\"Codes: {http://loinc.org 22748-8}\">22748-8</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>Mar 3, 2011, 9:30:00 PM</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td><a href=\"Observation-example-emr-lis-observation.html\"><span title=\"Codes: {http://loinc.org 22748-8}\">22748-8</span></a></td><td>55 UI/L</td></tr></table></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "22748-8"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "22748-8"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "example-emr-lis-patient",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2011-03-04T08:30:00+11:00",
+  "result": [
+    {
+      "reference": "Observation/example-emr-lis-observation",
+      "type": "Observation"
+    }
+  ]
+}

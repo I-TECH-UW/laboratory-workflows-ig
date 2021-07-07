@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://i-tech-uw.github.io/emr-lis-ig/Observation/example-emr-lis-observation> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-emr-lis-observation"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-observation";
+       fhir:index 0;
+       fhir:link <http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-observation>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: ebf83ba0-9d3c-497f-9aa0-d839ec506202</p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 22748-8}\">22748-8</span></p><p><b>subject</b>: <a href=\"Patient-example-emr-lis-patient.html\">Generated Summary: iSantePlus ID: 10012R (OFFICIAL); active; moses Mutesa ; gender: female; birthDate: 1988-03-02; </a></p><p><b>effective</b>: Mar 3, 2011, 9:30:00 PM</p><p><b>performer</b>: <a href=\"Practitioner-example-emr-lis-practitioner.html\">Generated Summary: id: 1000AX; Moses Mutesa</a></p><p><b>value</b>: 55 UI/L</p></div>"
+  ];
+  fhir:Observation.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://isanteplusdemo.com/openmrs/ws/fhir2/" ];
+     fhir:Identifier.value [ fhir:value "ebf83ba0-9d3c-497f-9aa0-d839ec506202" ]
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:22748-8;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "22748-8" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://i-tech-uw.github.io/emr-lis-ig/Patient/example-emr-lis-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/example-emr-lis-patient" ];
+     fhir:Reference.type [ fhir:value "Patient" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2011-03-04T08:30:00+11:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://i-tech-uw.github.io/emr-lis-ig/Practitioner/example-emr-lis-practitioner>;
+     fhir:Reference.reference [ fhir:value "Practitioner/example-emr-lis-practitioner" ]
+  ];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "55"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "UI/L" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "88" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://i-tech-uw.github.io/emr-lis-ig/Observation/example-emr-lis-observation.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

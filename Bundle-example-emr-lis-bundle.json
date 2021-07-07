@@ -1,0 +1,289 @@
+{
+  "resourceType": "Bundle",
+  "id": "example-emr-lis-bundle",
+  "type": "document",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Composition",
+        "id": "example-emr-lis-composition",
+        "meta": {
+          "profile": [
+            "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-composition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: \">document</span></p><p><b>date</b>: 2021-06-06</p><p><b>author</b>: <a href=\"#Practitioner_example-emr-lis-practitioner\">See above (Practitioner/example-emr-lis-practitioner)</a></p><p><b>title</b>: EMR-LIS Lab Composition</p></div>"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "code": "document"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/example-emr-lis-patient"
+        },
+        "date": "2021-06-06",
+        "author": [
+          {
+            "reference": "Practitioner/example-emr-lis-practitioner"
+          }
+        ],
+        "title": "EMR-LIS Lab Composition",
+        "section": [
+          {
+            "entry": [
+              {
+                "reference": "Task/example-emr-lis-task-requested"
+              }
+            ]
+          },
+          {
+            "entry": [
+              {
+                "reference": "ServiceRequest/example-emr-lis-service-request-profile"
+              },
+              {
+                "reference": "ServiceRequest/example-emr-lis-service-request-1"
+              },
+              {
+                "reference": "ServiceRequest/example-emr-lis-service-request-2"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "example-emr-lis-patient",
+        "meta": {
+          "profile": [
+            "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-patient"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: iSantePlus ID: 10012R (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: moses Mutesa </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p><p><b>deceased</b>: false</p><p><b>address</b>: haiti (HOME)</p></div>"
+        },
+        "identifier": [
+          {
+            "id": "5981a256-d60c-44b1-beae-9bdd2cf572f8",
+            "extension": [
+              {
+                "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-patient-identifier-location",
+                "valueReference": {
+                  "reference": "Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f",
+                  "type": "Location",
+                  "display": "Unknown Location"
+                }
+              }
+            ],
+            "use": "official",
+            "type": {
+              "text": "iSantePlus ID"
+            },
+            "value": "10012R"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "id": "511275de-e301-44a3-95d2-28d0d3b35387",
+            "family": "Mutesa",
+            "given": [
+              "moses"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1988-03-02",
+        "deceasedBoolean": false,
+        "address": [
+          {
+            "id": "d4f7c809-3d01-4032-b64d-4c22e8eccbbc",
+            "use": "home",
+            "country": "haiti"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "example-emr-lis-practitioner",
+        "meta": {
+          "profile": [
+            "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-practitioner"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1000AX</p><p><b>name</b>: Moses Mutesa</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "http://fhir.openmrs.org/ext/provider/identifier",
+            "value": "1000AX"
+          }
+        ],
+        "name": [
+          {
+            "text": "Moses Mutesa"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Task",
+        "id": "example-emr-lis-task-requested",
+        "meta": {
+          "profile": [
+            "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 88ffa7fb-0419-4097-8b45-24f0d843c5ea</p><p><b>basedOn</b>: </p><ul><li><a href=\"#ServiceRequest_example-emr-lis-service-request-1\">See above (ServiceRequest/example-emr-lis-service-request-1)</a></li><li><a href=\"#ServiceRequest_example-emr-lis-service-request-2\">See above (ServiceRequest/example-emr-lis-service-request-2)</a></li></ul><p><b>status</b>: requested</p><p><b>intent</b>: order</p><p><b>for</b>: <a href=\"#Patient_example-emr-lis-patient\">See above (Patient/example-emr-lis-patient)</a></p><p><b>authoredOn</b>: 2021-05-20</p><p><b>owner</b>: <a href=\"#Practitioner_example-emr-lis-practitioner\">See above (Practitioner/example-emr-lis-practitioner)</a></p></div>"
+        },
+        "identifier": [
+          {
+            "system": "http://isanteplus.org/ext/task/identifier",
+            "value": "88ffa7fb-0419-4097-8b45-24f0d843c5ea"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/example-emr-lis-service-request-1",
+            "type": "ServiceRequest"
+          },
+          {
+            "reference": "ServiceRequest/example-emr-lis-service-request-2",
+            "type": "ServiceRequest"
+          }
+        ],
+        "status": "requested",
+        "intent": "order",
+        "for": {
+          "reference": "Patient/example-emr-lis-patient"
+        },
+        "authoredOn": "2021-05-20",
+        "owner": {
+          "reference": "Practitioner/example-emr-lis-practitioner"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "example-emr-lis-service-request-profile",
+        "meta": {
+          "profile": [
+            "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 14682-9}\">14682-9</span></p><p><b>subject</b>: <a href=\"#Patient_example-emr-lis-patient\">See above (Patient/example-emr-lis-patient)</a></p><p><b>encounter</b>: <a href=\"Encounter-example-emr-lis-encounter.html\">Generated Summary: status: in-progress; <span title=\"{null null}\">inpatient encounter</span></a></p></div>"
+        },
+        "status": "active",
+        "intent": "order",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14682-9"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/example-emr-lis-patient"
+        },
+        "encounter": {
+          "reference": "Encounter/example-emr-lis-encounter",
+          "type": "Encounter"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "example-emr-lis-service-request-1",
+        "meta": {
+          "profile": [
+            "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>basedOn</b>: <a href=\"#ServiceRequest_example-emr-lis-service-request-profile\">See above (ServiceRequest/example-emr-lis-service-request-profile)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 14682-9}\">14682-9</span></p><p><b>subject</b>: <a href=\"#Patient_example-emr-lis-patient\">See above (Patient/example-emr-lis-patient)</a></p><p><b>encounter</b>: <a href=\"Encounter-example-emr-lis-encounter.html\">Generated Summary: status: in-progress; <span title=\"{null null}\">inpatient encounter</span></a></p></div>"
+        },
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/example-emr-lis-service-request-profile"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14682-9"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/example-emr-lis-patient"
+        },
+        "encounter": {
+          "reference": "Encounter/example-emr-lis-encounter",
+          "type": "Encounter"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "example-emr-lis-service-request-2",
+        "meta": {
+          "profile": [
+            "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>basedOn</b>: <a href=\"#ServiceRequest_example-emr-lis-service-request-profile\">See above (ServiceRequest/example-emr-lis-service-request-profile)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 14682-9}\">14682-9</span></p><p><b>subject</b>: <a href=\"#Patient_example-emr-lis-patient\">See above (Patient/example-emr-lis-patient)</a></p><p><b>encounter</b>: <a href=\"Encounter-example-emr-lis-encounter.html\">Generated Summary: status: in-progress; <span title=\"{null null}\">inpatient encounter</span></a></p></div>"
+        },
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/example-emr-lis-service-request-profile"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14682-9"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/example-emr-lis-patient"
+        },
+        "encounter": {
+          "reference": "Encounter/example-emr-lis-encounter",
+          "type": "Encounter"
+        }
+      }
+    }
+  ]
+}

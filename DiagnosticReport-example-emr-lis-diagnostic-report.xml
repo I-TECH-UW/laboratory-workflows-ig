@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="example-emr-lis-diagnostic-report"/>
+  <meta>
+    <profile value="http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-diagnostic-report"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://loinc.org 22748-8}">22748-8</span> (<span title="Codes: {http://loinc.org 22748-8}">22748-8</span>) </h2><table class="grid"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>Mar 3, 2011, 9:30:00 PM</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td><a href="Observation-example-emr-lis-observation.html"><span title="Codes: {http://loinc.org 22748-8}">22748-8</span></a></td><td>55 UI/L</td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="22748-8"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="22748-8"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="example-emr-lis-patient"/>
+    <type value="Patient"/>
+  </subject>
+  <effectiveDateTime value="2011-03-04T08:30:00+11:00"/>
+  <result>
+    <reference value="Observation/example-emr-lis-observation"/>
+    <type value="Observation"/>
+  </result>
+</DiagnosticReport>

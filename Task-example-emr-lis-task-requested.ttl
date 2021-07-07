@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://i-tech-uw.github.io/emr-lis-ig/Task/example-emr-lis-task-requested> a fhir:Task;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-emr-lis-task-requested"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task";
+       fhir:index 0;
+       fhir:link <http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 88ffa7fb-0419-4097-8b45-24f0d843c5ea</p><p><b>basedOn</b>: </p><ul><li><a href=\"ServiceRequest-example-emr-lis-service-request-1.html\">Generated Summary: status: active; intent: order; <span title=\"Codes: {http://loinc.org 14682-9}\">14682-9</span></a></li><li><a href=\"ServiceRequest-example-emr-lis-service-request-2.html\">Generated Summary: status: active; intent: order; <span title=\"Codes: {http://loinc.org 14682-9}\">14682-9</span></a></li></ul><p><b>status</b>: requested</p><p><b>intent</b>: order</p><p><b>for</b>: <a href=\"Patient-example-emr-lis-patient.html\">Generated Summary: iSantePlus ID: 10012R (OFFICIAL); active; moses Mutesa ; gender: female; birthDate: 1988-03-02; </a></p><p><b>authoredOn</b>: 2021-05-20</p><p><b>owner</b>: <a href=\"Practitioner-example-emr-lis-practitioner.html\">Generated Summary: id: 1000AX; Moses Mutesa</a></p></div>"
+  ];
+  fhir:Task.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://isanteplus.org/ext/task/identifier" ];
+     fhir:Identifier.value [ fhir:value "88ffa7fb-0419-4097-8b45-24f0d843c5ea" ]
+  ];
+  fhir:Task.basedOn [
+     fhir:index 0;
+     fhir:link <http://i-tech-uw.github.io/emr-lis-ig/ServiceRequest/example-emr-lis-service-request-1>;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/example-emr-lis-service-request-1" ];
+     fhir:Reference.type [ fhir:value "ServiceRequest" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://i-tech-uw.github.io/emr-lis-ig/ServiceRequest/example-emr-lis-service-request-2>;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/example-emr-lis-service-request-2" ];
+     fhir:Reference.type [ fhir:value "ServiceRequest" ]
+  ];
+  fhir:Task.status [ fhir:value "requested"];
+  fhir:Task.intent [ fhir:value "order"];
+  fhir:Task.for [
+     fhir:link <http://i-tech-uw.github.io/emr-lis-ig/Patient/example-emr-lis-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/example-emr-lis-patient" ]
+  ];
+  fhir:Task.authoredOn [ fhir:value "2021-05-20"^^xsd:date];
+  fhir:Task.owner [
+     fhir:link <http://i-tech-uw.github.io/emr-lis-ig/Practitioner/example-emr-lis-practitioner>;
+     fhir:Reference.reference [ fhir:value "Practitioner/example-emr-lis-practitioner" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://i-tech-uw.github.io/emr-lis-ig/Task/example-emr-lis-task-requested.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

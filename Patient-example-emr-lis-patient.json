@@ -1,0 +1,53 @@
+{
+  "resourceType": "Patient",
+  "id": "example-emr-lis-patient",
+  "meta": {
+    "profile": [
+      "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: iSantePlus ID: 10012R (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: moses Mutesa </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p><p><b>deceased</b>: false</p><p><b>address</b>: haiti (HOME)</p></div>"
+  },
+  "identifier": [
+    {
+      "id": "5981a256-d60c-44b1-beae-9bdd2cf572f8",
+      "extension": [
+        {
+          "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-patient-identifier-location",
+          "valueReference": {
+            "reference": "Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f",
+            "type": "Location",
+            "display": "Unknown Location"
+          }
+        }
+      ],
+      "use": "official",
+      "type": {
+        "text": "iSantePlus ID"
+      },
+      "value": "10012R"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "id": "511275de-e301-44a3-95d2-28d0d3b35387",
+      "family": "Mutesa",
+      "given": [
+        "moses"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1988-03-02",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "id": "d4f7c809-3d01-4032-b64d-4c22e8eccbbc",
+      "use": "home",
+      "country": "haiti"
+    }
+  ]
+}

@@ -3,10 +3,10 @@
   "name": "EmrLisIg",
   "package-id": "emr.lis.ig",
   "ig-ver": "0.2.0",
-  "date": "Mon, 05 Jul, 2021 14:42:12 +0000",
-  "errs": 6,
-  "warnings": 32,
-  "hints": 0,
+  "date": "Wed, 07 Jul, 2021 18:23:34 +0000",
+  "errs": 52,
+  "warnings": 30,
+  "hints": 3,
   "version": "4.0.1",
   "tool": "4.6.0 (3)"
 }

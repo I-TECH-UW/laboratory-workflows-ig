@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="example-emr-lis-service-request-1"/>
+  <meta>
+    <profile value="http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>basedOn</b>: <a href="ServiceRequest-example-emr-lis-service-request-profile.html">Generated Summary: status: active; intent: order; <span title="Codes: {http://loinc.org 14682-9}">14682-9</span></a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title="Codes: {http://loinc.org 14682-9}">14682-9</span></p><p><b>subject</b>: <a href="Patient-example-emr-lis-patient.html">Generated Summary: iSantePlus ID: 10012R (OFFICIAL); active; moses Mutesa ; gender: female; birthDate: 1988-03-02; </a></p><p><b>encounter</b>: <a href="Encounter-example-emr-lis-encounter.html">Generated Summary: status: in-progress; <span title="{null null}">inpatient encounter</span></a></p></div>
+  </text>
+  <basedOn>
+    <reference value="ServiceRequest/example-emr-lis-service-request-profile"/>
+  </basedOn>
+  <status value="active"/>
+  <intent value="order"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="14682-9"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example-emr-lis-patient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/example-emr-lis-encounter"/>
+    <type value="Encounter"/>
+  </encounter>
+</ServiceRequest>
