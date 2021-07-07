@@ -1,7 +1,7 @@
 Instance: example-emr-lis-patient
 InstanceOf: EmrLisPatient 
 Usage: #example 
-Description: "Example OpenMRS Patient"
+Description: "Example EMR-LIS Patient"
 Title:   "EMR-LIS Patient"
 * birthDate = "1988-03-02"
 * identifier.id = "5981a256-d60c-44b1-beae-9bdd2cf572f8"
@@ -44,7 +44,7 @@ Instance: example-emr-lis-service-request-1
 InstanceOf: EmrLisServiceRequest
 Usage: #example
 Description: "Example ServiceRequest resource representing a EMR-LIS Lab Order"
-Title: "EmrLis ServiceRequest 1"
+Title: "EMR-LIS ServiceRequest 1"
 * status = #active
 * intent = #order
 * code.coding.system = "http://loinc.org"
@@ -58,7 +58,7 @@ Instance: example-emr-lis-service-request-2
 InstanceOf: EmrLisServiceRequest
 Usage: #example
 Description: "Example ServiceRequest resource representing EMR-LIS Lab Order"
-Title: "BW PIMS ServiceRequest 1"
+Title: "EMR-LIS ServiceRequest 2"
 * status = #active
 * intent = #order
 * code.coding[+].system = "http://loinc.org"
@@ -72,7 +72,7 @@ Instance: example-emr-lis-service-request-profile
 InstanceOf: EmrLisServiceRequest
 Usage: #example
 Description: "Example ServiceRequest resource representing EMR-LIS Lab Order"
-Title: "EMR-LIS PIMS ServiceRequest Profile"
+Title: "EMR-LIS ServiceRequest Profile"
 * status = #active
 * intent = #order
 * code.coding[+].system = "http://loinc.org"
@@ -138,7 +138,7 @@ Instance: example-emr-lis-composition
 InstanceOf: EmrLisLabComposition
 Usage: #example
 Description: "Example Lab Order Composition"
-Title: "Example EMR-LIS Lab Composition"
+Title: "EMR-LIS Lab Composition"
 * title = "EMR-LIS Lab Composition"
 * type = #document
 * subject = Reference(example-emr-lis-patient)
@@ -154,7 +154,7 @@ Instance: example-emr-lis-bundle
 InstanceOf: Bundle
 Usage: #example
 Description: "Example Full EMR-LIS Lab Bundle"
-Title: "Example EMR-LIS Lab Bundle"
+Title: "EMR-LIS Lab Bundle"
 * type = #document
 * entry[+].resource = example-emr-lis-composition
 * entry[+].resource = example-emr-lis-patient
