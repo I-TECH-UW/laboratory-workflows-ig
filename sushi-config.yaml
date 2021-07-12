@@ -26,9 +26,9 @@ parameters:
   excludettl: true
  
 resources:
-  ExampleScenario/scenario-lab-order-fsh:
+  ExampleScenario/scenario-lab-order:
     name: Example Scenario - Lab Order Placement
-    description: Placement of a Laboratory Test Order
+    # description: Placement of a Laboratory Test Order
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │

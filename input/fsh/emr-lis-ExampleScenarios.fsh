@@ -3,10 +3,10 @@
 
 Alias: $m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
 
-Instance: scenario-lab-order-fsh
+Instance: scenario-lab-order
 InstanceOf: ExampleScenario
 Usage: #definition
-* url = "i-tech-uw.github.io/fhir/riziv/ExampleScenario/scenario-lab-order-fsh"
+* url = "i-tech-uw.github.io/fhir/riziv/ExampleScenario/scenario-lab-order"
 * version = "0.1.0"
 * name = "Lab Order Scenario"
 * status = #draft
@@ -45,19 +45,23 @@ Usage: #definition
 * process.step[=].operation.number = "1"
 * process.step[=].operation.initiator = "OrderCreator"
 * process.step[=].operation.receiver = "OrderRepository"
+* process.step[0].operation.name = "Create a new Laboratory Test Order"
+* process.step[=].operation.number = "2"
+* process.step[=].operation.initiator = "OrderRepository"
+* process.step[=].operation.receiver = "OrderReciever"
 * process.step[=].operation.response.resourceId = "lab-order-bundle.v0"
 * process.step[+].operation.name = "Accept Lab Order"
-* process.step[=].operation.number = "2"
+* process.step[=].operation.number = "3"
 * process.step[=].operation.initiator = "OrderReciever"
 * process.step[=].operation.receiver = "OrderRepository"
 * process.step[=].operation.request.resourceId = "lab-order-bundle.v1"
 * process.step[+].operation.name = "Update Lab Order with Results"
-* process.step[=].operation.number = "3"
+* process.step[=].operation.number = "4"
 * process.step[=].operation.initiator = "OrderReciever"
 * process.step[=].operation.receiver = "OrderRepository"
 * process.step[=].operation.request.resourceId = "lab-order-bundle.v2"
 * process.step[+].operation.name = "Update Lab Order with Results"
-* process.step[=].operation.number = "4"
+* process.step[=].operation.number = "5"
 * process.step[=].operation.initiator = "OrderRepository"
 * process.step[=].operation.receiver = "OrderCreator"
 * process.step[=].operation.request.resourceId = "lab-order-bundle.v2"
