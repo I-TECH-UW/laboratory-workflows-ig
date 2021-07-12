@@ -1,15 +1,16 @@
 ﻿EmrLisIg : Validation Results
 =========================================
 
-err = 52, warn = 30, info = 3
+err = 52, warn = 28, info = 3
 IG Publisher Version: 1.1.76
-Generated Mon Jul 12 21:39:24 UTC 2021. FHIR version 4.0.1 for emr.lis.ig#0.2.0 (canonical = http://i-tech-uw.github.io/emr-lis-ig)
+Generated Mon Jul 12 21:44:25 UTC 2021. FHIR version 4.0.1 for emr.lis.ig#0.2.0 (canonical = http://i-tech-uw.github.io/emr-lis-ig)
 
- Build Errors : 510 / 0 / 0
+ Build Errors : 526 / 0 / 0
  /github/workspace/fsh-generated/resources/Bundle-example-emr-lis-bundle : 39 / 3 / 17
  /github/workspace/fsh-generated/resources/Composition-example-emr-lis-composition : 2 / 1 / 2
  /github/workspace/fsh-generated/resources/DiagnosticReport-example-emr-lis-diagnostic-report : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-example-emr-lis-encounter : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ExampleScenario-scenario-lab-order-fsh : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-emr.lis.ig : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-emr-lis-observation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-example-emr-lis-patient : 1 / 2 / 1
@@ -32,7 +33,7 @@ Generated Mon Jul 12 21:39:24 UTC 2021. FHIR version 4.0.1 for emr.lis.ig#0.2.0 
  /github/workspace/fsh-generated/resources/ValueSet-emr-lab-diagnostic-report-status-vs : 0 / 5 / 1
  /github/workspace/fsh-generated/resources/ValueSet-emr-lab-order-code-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-intent-vs : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-status-vs : 0 / 5 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-status-vs : 0 / 2 / 1
 </table>
 == n/a ==
 ERROR: /github/workspace/output/Bundle-example-emr-lis-bundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
@@ -95,6 +96,22 @@ ERROR: /github/workspace/output/Encounter-example-emr-lis-encounter.ttl.html#/ht
 ERROR: /github/workspace/output/Encounter-example-emr-lis-encounter.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
 ERROR: /github/workspace/output/Encounter-example-emr-lis-encounter.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Encounter-example-emr-lis-encounter.xml.html#/html/body/div/div/div/p/a at Line 244, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-lab-order-fsh.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-lab-order-fsh.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-lab-order-fsh.change.history.html#/html/body/div/div/div/p/a at Line 237, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-lab-order-fsh.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 106, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-lab-order-fsh.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 109, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-lab-order-fsh.html#/html/body/div/div/div/div/div/div/p/a at Line 197, column 414: The link 'www.github.com/i-tech-uw' for "www.github.com/i-tech-uw" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-lab-order-fsh.html#/html/body/div/div/div/p/a at Line 224, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-lab-order-fsh.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-lab-order-fsh.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-lab-order-fsh.json.html#/html/body/div/div/div/p/a at Line 357, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-lab-order-fsh.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-lab-order-fsh.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-lab-order-fsh.ttl.html#/html/body/div/div/div/p/a at Line 348, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-lab-order-fsh.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-lab-order-fsh.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 111, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/ExampleScenario-scenario-lab-order-fsh.xml.html#/html/body/div/div/div/p/a at Line 344, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/Observation-example-emr-lis-observation.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
 ERROR: /github/workspace/output/Observation-example-emr-lis-observation.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Observation-example-emr-lis-observation.change.history.html#/html/body/div/div/div/p/a at Line 237, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
@@ -526,7 +543,7 @@ ERROR: /github/workspace/output/ValueSet-emr-lab-task-status-vs.xml.html#/html/b
 ERROR: /github/workspace/output/ValueSet-emr-lab-task-status-vs.xml.html#/html/body/div/div/div/p/a at Line 274, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 106, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 109, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 516, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 540, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/background.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 106, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
 ERROR: /github/workspace/output/background.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 109, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/background.html#/html/body/div/div/div/p/a at Line 187, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
@@ -599,6 +616,8 @@ WARNING: Composition/example-emr-lis-composition: Composition.type.coding[0]: A 
 ERROR: DiagnosticReport/example-emr-lis-diagnostic-report: DiagnosticReport.status: The value provided ('final') is not in the value set http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-diagnostic-report-status-vs (http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-diagnostic-report-status-vs), and a code is required from this value set) (error message = Not in value set http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-diagnostic-report-status-vs)
 ERROR: DiagnosticReport/example-emr-lis-diagnostic-report: DiagnosticReport.subject: Unable to resolve resource 'example-emr-lis-patient'
 == /github/workspace/fsh-generated/resources/Encounter-example-emr-lis-encounter.json ==
+== /github/workspace/fsh-generated/resources/ExampleScenario-scenario-lab-order-fsh.json ==
+WARNING: ExampleScenario/scenario-lab-order-fsh: ExampleScenario: esc-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == /github/workspace/fsh-generated/resources/ImplementationGuide-emr.lis.ig.json ==
 == /github/workspace/fsh-generated/resources/Observation-example-emr-lis-observation.json ==
 == /github/workspace/fsh-generated/resources/Patient-example-emr-lis-patient.json ==
@@ -649,11 +668,8 @@ WARNING: ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet.compose[0].inclu
 WARNING: ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[4]: The code diagnostic-report-status-amended is not valid in the system http://hl7.org/fhir/diagnostic-report-status
 == /github/workspace/fsh-generated/resources/ValueSet-emr-lab-order-code-vs.json ==
 == /github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-intent-vs.json ==
-WARNING: ValueSet/emr-lab-task-intent-vs: ValueSet.compose[0].include[0].concept[0]: The code task-intent-order is not valid in the system http://hl7.org/fhir/ValueSet/task-intent
+WARNING: ValueSet/emr-lab-task-intent-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'emr-lab-task-intent-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-intent
 == /github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-status-vs.json ==
-WARNING: ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept[0]: The code task-status-requested is not valid in the system http://hl7.org/fhir/ValueSet/task-status
-WARNING: ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept[1]: The code task-status-rejected is not valid in the system http://hl7.org/fhir/ValueSet/task-status
-WARNING: ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept[2]: The code task-status-accepted is not valid in the system http://hl7.org/fhir/ValueSet/task-status
-WARNING: ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept[3]: The code task-status-completed is not valid in the system http://hl7.org/fhir/ValueSet/task-status
+WARNING: ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'emr-lab-task-status-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-status

@@ -11,7 +11,7 @@
   "title": "EMR-LIS Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-07-12T21:38:54+00:00",
+  "date": "2021-07-12T21:43:53+00:00",
   "publisher": "I-TECH-UW",
   "contact": [
     {
@@ -682,6 +682,20 @@
         "name": "EMR-LIS Requested Lab Task",
         "description": "Example Task for Requested Lab Orders and Results for EMR-LIS integration",
         "exampleCanonical": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ExampleScenario"
+          }
+        ],
+        "reference": {
+          "reference": "ExampleScenario/scenario-lab-order-fsh"
+        },
+        "name": "Example Scenario - Lab Order Placement",
+        "description": "Placement of a Laboratory Test Order",
+        "exampleBoolean": false
       }
     ],
     "page": {

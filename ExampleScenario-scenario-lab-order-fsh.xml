@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExampleScenario xmlns="http://hl7.org/fhir">
+  <id value="scenario-lab-order-fsh"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>i-tech-uw.github.io/fhir/riziv/ExampleScenario/scenario-lab-order-fsh</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: Lab Order Scenario</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: Sep 10, 2019, 11:00:00 PM</p><p><b>publisher</b>: I-TECH-UW</p><p><b>contact</b>: I-TECH-UW: <a href="www.github.com/i-tech-uw">www.github.com/i-tech-uw</a>,<a href="mailto:pmanko@uw.edu">pmanko@uw.edu</a></p><p><b>jurisdiction</b>: <span title="Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 056}">Belgium (BEL)</span></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: OrderCreator</p><p><b>type</b>: person</p><p><b>name</b>: Order Creator (Care Provider)</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: OrderRepository</p><p><b>type</b>: entity</p><p><b>name</b>: Order Repository</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: SPEC</p><p><b>type</b>: person</p><p><b>name</b>: Order Reciever (Laboratory Technician)</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: lab-order-bundle.v0</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Lab Order Bundle for Placed Lab Order</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: lab-order-bundle.v1</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Lab Order Bundle - Order Accepted</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: lab-order-bundle.v2</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Lab Order Bundle - Results Added</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: EB</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Empty Bundle</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Laboratory Ordering Use Case</p><p><b>description</b>: See OpenHIE Architecture V3 Section 4.5</p><p><b>preConditions</b>: The patient visits their GP and shows signs of illness. The GP will order a set of tests to be performed.</p><p><b>postConditions</b>: The patient's lab order is persisted in the Order Repository, and includes an updated status of `Completed` and order results.</p><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 1</p><p><b>name</b>: Create a new Laboratory Test Order</p><p><b>initiator</b>: OrderCreator</p><p><b>receiver</b>: OrderRepository</p><h3>Responses</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>lab-order-bundle.v0</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 2</p><p><b>name</b>: Accept Lab Order</p><p><b>initiator</b>: OrderReciever</p><p><b>receiver</b>: OrderRepository</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>lab-order-bundle.v1</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 3</p><p><b>name</b>: Update Lab Order with Results</p><p><b>initiator</b>: OrderReciever</p><p><b>receiver</b>: OrderRepository</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>lab-order-bundle.v2</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>name</b>: Update Lab Order with Results</p><p><b>initiator</b>: OrderRepository</p><p><b>receiver</b>: OrderCreator</p><h3>Requests</h3><table class="grid"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>lab-order-bundle.v2</td></tr></table></blockquote></blockquote></blockquote></div>
+  </text>
+  <url value="i-tech-uw.github.io/fhir/riziv/ExampleScenario/scenario-lab-order-fsh"/>
+  <version value="0.2.0"/>
+  <name value="Lab Order Scenario"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2019-09-11T00:00:00.000+01:00"/>
+  <publisher value="I-TECH-UW"/>
+  <contact>
+    <name value="I-TECH-UW"/>
+    <telecom>
+      <system value="url"/>
+      <value value="www.github.com/i-tech-uw"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pmanko@uw.edu"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+    </coding>
+  </jurisdiction>
+  <actor>
+    <actorId value="OrderCreator"/>
+    <type value="person"/>
+    <name value="Order Creator (Care Provider)"/>
+  </actor>
+  <actor>
+    <actorId value="OrderRepository"/>
+    <type value="entity"/>
+    <name value="Order Repository"/>
+  </actor>
+  <actor>
+    <actorId value="SPEC"/>
+    <type value="person"/>
+    <name value="Order Reciever (Laboratory Technician)"/>
+  </actor>
+  <instance>
+    <resourceId value="lab-order-bundle.v0"/>
+    <resourceType value="Bundle"/>
+    <name value="Lab Order Bundle for Placed Lab Order"/>
+  </instance>
+  <instance>
+    <resourceId value="lab-order-bundle.v1"/>
+    <resourceType value="Bundle"/>
+    <name value="Lab Order Bundle - Order Accepted"/>
+  </instance>
+  <instance>
+    <resourceId value="lab-order-bundle.v2"/>
+    <resourceType value="Bundle"/>
+    <name value="Lab Order Bundle - Results Added"/>
+  </instance>
+  <instance>
+    <resourceId value="EB"/>
+    <resourceType value="Bundle"/>
+    <name value="Empty Bundle"/>
+  </instance>
+  <process>
+    <title value="Laboratory Ordering Use Case"/>
+    <description value="See OpenHIE Architecture V3 Section 4.5"/>
+    <preConditions value="The patient visits their GP and shows signs of illness. The GP will order a set of tests to be performed."/>
+    <postConditions value="The patient&#39;s lab order is persisted in the Order Repository, and includes an updated status of `Completed` and order results."/>
+    <step>
+      <operation>
+        <number value="1"/>
+        <name value="Create a new Laboratory Test Order"/>
+        <initiator value="OrderCreator"/>
+        <receiver value="OrderRepository"/>
+        <response>
+          <resourceId value="lab-order-bundle.v0"/>
+        </response>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="2"/>
+        <name value="Accept Lab Order"/>
+        <initiator value="OrderReciever"/>
+        <receiver value="OrderRepository"/>
+        <request>
+          <resourceId value="lab-order-bundle.v1"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="3"/>
+        <name value="Update Lab Order with Results"/>
+        <initiator value="OrderReciever"/>
+        <receiver value="OrderRepository"/>
+        <request>
+          <resourceId value="lab-order-bundle.v2"/>
+        </request>
+      </operation>
+    </step>
+    <step>
+      <operation>
+        <number value="4"/>
+        <name value="Update Lab Order with Results"/>
+        <initiator value="OrderRepository"/>
+        <receiver value="OrderCreator"/>
+        <request>
+          <resourceId value="lab-order-bundle.v2"/>
+        </request>
+      </operation>
+    </step>
+  </process>
+</ExampleScenario>

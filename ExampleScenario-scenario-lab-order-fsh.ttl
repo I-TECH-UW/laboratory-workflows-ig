@@ -1,0 +1,139 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://i-tech-uw.github.io/emr-lis-ig/ExampleScenario/scenario-lab-order-fsh> a fhir:ExampleScenario;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "scenario-lab-order-fsh"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>i-tech-uw.github.io/fhir/riziv/ExampleScenario/scenario-lab-order-fsh</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: Lab Order Scenario</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: Sep 10, 2019, 11:00:00 PM</p><p><b>publisher</b>: I-TECH-UW</p><p><b>contact</b>: I-TECH-UW: <a href=\"www.github.com/i-tech-uw\">www.github.com/i-tech-uw</a>,<a href=\"mailto:pmanko@uw.edu\">pmanko@uw.edu</a></p><p><b>jurisdiction</b>: <span title=\"Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 056}\">Belgium (BEL)</span></p><blockquote><p><b>actor</b></p><p><b>actorId</b>: OrderCreator</p><p><b>type</b>: person</p><p><b>name</b>: Order Creator (Care Provider)</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: OrderRepository</p><p><b>type</b>: entity</p><p><b>name</b>: Order Repository</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: SPEC</p><p><b>type</b>: person</p><p><b>name</b>: Order Reciever (Laboratory Technician)</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: lab-order-bundle.v0</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Lab Order Bundle for Placed Lab Order</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: lab-order-bundle.v1</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Lab Order Bundle - Order Accepted</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: lab-order-bundle.v2</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Lab Order Bundle - Results Added</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: EB</p><p><b>resourceType</b>: Bundle</p><p><b>name</b>: Empty Bundle</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Laboratory Ordering Use Case</p><p><b>description</b>: See OpenHIE Architecture V3 Section 4.5</p><p><b>preConditions</b>: The patient visits their GP and shows signs of illness. The GP will order a set of tests to be performed.</p><p><b>postConditions</b>: The patient's lab order is persisted in the Order Repository, and includes an updated status of `Completed` and order results.</p><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 1</p><p><b>name</b>: Create a new Laboratory Test Order</p><p><b>initiator</b>: OrderCreator</p><p><b>receiver</b>: OrderRepository</p><h3>Responses</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>lab-order-bundle.v0</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 2</p><p><b>name</b>: Accept Lab Order</p><p><b>initiator</b>: OrderReciever</p><p><b>receiver</b>: OrderRepository</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>lab-order-bundle.v1</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 3</p><p><b>name</b>: Update Lab Order with Results</p><p><b>initiator</b>: OrderReciever</p><p><b>receiver</b>: OrderRepository</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>lab-order-bundle.v2</td></tr></table></blockquote></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>operation</b></p><p><b>number</b>: 4</p><p><b>name</b>: Update Lab Order with Results</p><p><b>initiator</b>: OrderRepository</p><p><b>receiver</b>: OrderCreator</p><h3>Requests</h3><table class=\"grid\"><tr><td>-</td><td><b>ResourceId</b></td></tr><tr><td>*</td><td>lab-order-bundle.v2</td></tr></table></blockquote></blockquote></blockquote></div>"
+  ];
+  fhir:ExampleScenario.url [ fhir:value "i-tech-uw.github.io/fhir/riziv/ExampleScenario/scenario-lab-order-fsh"];
+  fhir:ExampleScenario.version [ fhir:value "0.2.0"];
+  fhir:ExampleScenario.name [ fhir:value "Lab Order Scenario"];
+  fhir:ExampleScenario.status [ fhir:value "draft"];
+  fhir:ExampleScenario.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:ExampleScenario.date [ fhir:value "2019-09-11T00:00:00.000+01:00"^^xsd:dateTime];
+  fhir:ExampleScenario.publisher [ fhir:value "I-TECH-UW"];
+  fhir:ExampleScenario.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "I-TECH-UW" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "www.github.com/i-tech-uw" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pmanko@uw.edu" ]
+     ]
+  ];
+  fhir:ExampleScenario.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "056" ]
+     ]
+  ];
+  fhir:ExampleScenario.actor [
+     fhir:index 0;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "OrderCreator" ];
+     fhir:ExampleScenario.actor.type [ fhir:value "person" ];
+     fhir:ExampleScenario.actor.name [ fhir:value "Order Creator (Care Provider)" ]
+  ], [
+     fhir:index 1;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "OrderRepository" ];
+     fhir:ExampleScenario.actor.type [ fhir:value "entity" ];
+     fhir:ExampleScenario.actor.name [ fhir:value "Order Repository" ]
+  ], [
+     fhir:index 2;
+     fhir:ExampleScenario.actor.actorId [ fhir:value "SPEC" ];
+     fhir:ExampleScenario.actor.type [ fhir:value "person" ];
+     fhir:ExampleScenario.actor.name [ fhir:value "Order Reciever (Laboratory Technician)" ]
+  ];
+  fhir:ExampleScenario.instance [
+     fhir:index 0;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "lab-order-bundle.v0" ];
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "Bundle" ];
+     fhir:ExampleScenario.instance.name [ fhir:value "Lab Order Bundle for Placed Lab Order" ]
+  ], [
+     fhir:index 1;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "lab-order-bundle.v1" ];
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "Bundle" ];
+     fhir:ExampleScenario.instance.name [ fhir:value "Lab Order Bundle - Order Accepted" ]
+  ], [
+     fhir:index 2;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "lab-order-bundle.v2" ];
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "Bundle" ];
+     fhir:ExampleScenario.instance.name [ fhir:value "Lab Order Bundle - Results Added" ]
+  ], [
+     fhir:index 3;
+     fhir:ExampleScenario.instance.resourceId [ fhir:value "EB" ];
+     fhir:ExampleScenario.instance.resourceType [ fhir:value "Bundle" ];
+     fhir:ExampleScenario.instance.name [ fhir:value "Empty Bundle" ]
+  ];
+  fhir:ExampleScenario.process [
+     fhir:index 0;
+     fhir:ExampleScenario.process.title [ fhir:value "Laboratory Ordering Use Case" ];
+     fhir:ExampleScenario.process.description [ fhir:value "See OpenHIE Architecture V3 Section 4.5" ];
+     fhir:ExampleScenario.process.preConditions [ fhir:value "The patient visits their GP and shows signs of illness. The GP will order a set of tests to be performed." ];
+     fhir:ExampleScenario.process.postConditions [ fhir:value "The patient's lab order is persisted in the Order Repository, and includes an updated status of `Completed` and order results." ];
+     fhir:ExampleScenario.process.step [
+       fhir:index 0;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "1" ];
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Create a new Laboratory Test Order" ];
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "OrderCreator" ];
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "OrderRepository" ];
+         fhir:ExampleScenario.process.step.operation.response [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "lab-order-bundle.v0" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "2" ];
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Accept Lab Order" ];
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "OrderReciever" ];
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "OrderRepository" ];
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "lab-order-bundle.v1" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "3" ];
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Update Lab Order with Results" ];
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "OrderReciever" ];
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "OrderRepository" ];
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "lab-order-bundle.v2" ]
+         ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ExampleScenario.process.step.operation [
+         fhir:ExampleScenario.process.step.operation.number [ fhir:value "4" ];
+         fhir:ExampleScenario.process.step.operation.name [ fhir:value "Update Lab Order with Results" ];
+         fhir:ExampleScenario.process.step.operation.initiator [ fhir:value "OrderRepository" ];
+         fhir:ExampleScenario.process.step.operation.receiver [ fhir:value "OrderCreator" ];
+         fhir:ExampleScenario.process.step.operation.request [
+           fhir:ExampleScenario.instance.containedInstance.resourceId [ fhir:value "lab-order-bundle.v2" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://i-tech-uw.github.io/emr-lis-ig/ExampleScenario/scenario-lab-order-fsh.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

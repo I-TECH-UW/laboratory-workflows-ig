@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "EMR-LIS Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-07-12T21:38:54+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-07-12T21:43:53+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "I-TECH-UW"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -698,6 +698,20 @@
          fhir:value "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task";
          fhir:link <http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task>
        ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ExampleScenario" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://i-tech-uw.github.io/emr-lis-ig/ExampleScenario/scenario-lab-order-fsh>;
+         fhir:Reference.reference [ fhir:value "ExampleScenario/scenario-lab-order-fsh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Scenario - Lab Order Placement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Placement of a Laboratory Test Order" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
