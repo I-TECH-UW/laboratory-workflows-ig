@@ -3,7 +3,7 @@
 
 err = 52, warn = 30, info = 3
 IG Publisher Version: 1.1.76
-Generated Mon Jul 12 21:33:48 UTC 2021. FHIR version 4.0.1 for emr.lis.ig#0.2.0 (canonical = http://i-tech-uw.github.io/emr-lis-ig)
+Generated Mon Jul 12 21:39:24 UTC 2021. FHIR version 4.0.1 for emr.lis.ig#0.2.0 (canonical = http://i-tech-uw.github.io/emr-lis-ig)
 
  Build Errors : 510 / 0 / 0
  /github/workspace/fsh-generated/resources/Bundle-example-emr-lis-bundle : 39 / 3 / 17
