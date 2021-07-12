@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExampleScenario xmlns="http://hl7.org/fhir">
+  <id value="scenario-lab-ordering"/>
+  <version value="0.0.1"/>
+  <name value="LabOrderingScenario"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2021-07-14T00:00:00.000+01:00"/>
+  <publisher value="I-TECH-UW"/>
+  <actor>
+    <actorId value="OrderCreator"/>
+    <type value="person"/>
+    <name value="(GP)"/>
+  </actor>
+  <actor>
+    <actorId value="OrderRepository"/>
+    <type value="entity"/>
+    <name value="Order Repository"/>
+  </actor>
+  <actor>
+    <actorId value="OrderReciever"/>
+    <type value="person"/>
+    <name value="(Lab Operator)"/>
+  </actor>
+
+  <instance>
+    <resourceId value="lab-order-bundle.v0"/>
+    <resourceType value="Bundle"/>
+    <name value="Bundle for Placed Lab Order"/>
+  </instance>
+
+  <instance>
+    <resourceId value="EB"/>
+    <resourceType value="Bundle"/>
+    <name value="Empty Bundle"/>
+  </instance>
+
+
+  <instance>
+    <resourceId value="lab-order-bundle.v1"/>
+    <resourceType value="Bundle"/>
+    <name value= "Lab Order Bundle Updated Status"/>
+  </instance>
+
+  <instance>
+    <resourceId value="lab-order-bundle.v2"/>
+    <resourceType value="Bundle"/>
+    <name value="Lab Order Bundle Updated Results"/>
+  </instance>
+
+  <process>
+    <title value="Laboratory Ordering Use Case"/>
+    <description value="description"/>
+    <preConditions value="The patient visits their GP and shows signs of illness. The GP will order a set of tests to be performed."/>
+    <postConditions value="The patient's lab order is persisted in the Order Repository, and includes an updated status of `Completed` and order results."/>
+
+    <step>
+      <operation>
+        <name value="Create a new Laboratory Test Order"/>
+        <number value="1"/>
+        <initiator value="OrderCreator"/>
+        <receiver value="OrderRepository"/>
+        <response>
+          <resourceId value="lab-order-bundle.v0"/>
+        </response>
+      </operation>
+    </step>
+
+    <step>
+      <operation>
+        <name value="Create a new Laboratory Test Order"/>
+        <number value="2"/>
+        <initiator value="OrderRepository"/>
+        <receiver value="OrderReciever"/>
+        <response>
+          <resourceId value="lab-order-bundle.v0"/>
+        </response>
+      </operation>
+    </step>
+
+    <step>
+      <operation>
+        <name value="Accept Lab Order"/>
+        <number value="3"/>
+        <initiator value="OrderReciever"/>
+        <receiver value="OrderRepository"/>
+        <response>
+          <resourceId value="lab-order-bundle.v1"/>
+        </response>
+      </operation>
+    </step>
+
+    <step>
+      <operation>
+        <name value="Update Lab Order with Results"/>
+        <number value="3"/>
+        <initiator value="OrderReciever"/>
+        <receiver value="OrderRepository"/>
+        <response>
+          <resourceId value="lab-order-bundle.v2"/>
+        </response>
+      </operation>
+    </step>
+
+  </process>
+</ExampleScenario>
