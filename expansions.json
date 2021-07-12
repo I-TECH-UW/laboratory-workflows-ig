@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "0cb2cb8d-8292-489c-bb7f-a0079086ab0e",
+  "id" : "7b248921-bbeb-4d97-9c69-9a5df1d40998",
   "meta" : {
-    "lastUpdated" : "2021-07-07T18:23:34.130+00:00"
+    "lastUpdated" : "2021-07-12T21:33:14.093+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -5045,7 +5045,7 @@
       "name" : "EmrLisDiagnosticReportStatusVS",
       "title" : "EMR-LIS Diagnostic Report Status Flag",
       "status" : "active",
-      "date" : "2021-07-07T18:23:34+00:00",
+      "date" : "2021-07-12T21:33:14+00:00",
       "publisher" : "I-TECH-UW",
       "contact" : [{
         "name" : "I-TECH-UW",
@@ -5060,8 +5060,8 @@
       }],
       "description" : "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html",
       "expansion" : {
-        "identifier" : "urn:uuid:1e4718c8-ccf8-4f63-a11d-0ad3b8cc8291",
-        "timestamp" : "2021-07-07T18:23:50+00:00",
+        "identifier" : "urn:uuid:792857d1-93fd-4fe8-8377-1fc0e3f692cb",
+        "timestamp" : "2021-07-12T21:33:33+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
