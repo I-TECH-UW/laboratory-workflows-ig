@@ -68,7 +68,7 @@ Usage: #definition
 * differential.element[=].short = "Patient Logical ID"
 * differential.element[=].definition = "Patient Logical ID"
 * differential.element[=].type.code = #id
-* differential.element[=].min = 0
+* differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
 * differential.element[=].mapping[=].map = "TO DO"
@@ -83,7 +83,7 @@ Usage: #definition
 * differential.element[+].id = "Patient.Identifier"
 * differential.element[=].path = "EmrLisLogicalModel.Patient.Identifier"
 * differential.element[=].short = "An identifier for this patient."
-* differential.element[=].definition = ""
+* differential.element[=].definition = "Patient Identifier"
 * differential.element[=].type.code = #Identifier
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
@@ -115,7 +115,7 @@ Usage: #definition
 * differential.element[=].mapping[+].identity = "FHIR-R4"
 * differential.element[=].mapping[=].map = "EmrLisPatient.active"
 
-//Patient.name
+//Patient.Name
 * differential.element[+].id = "Patient.Name"
 * differential.element[=].path = "EmrLisLogicalModel.Patient.Name"
 * differential.element[=].short = "Patient Name"
@@ -140,7 +140,7 @@ Usage: #definition
 * differential.element[=].definition = "Patient Contact"
 * differential.element[=].type.code =  #ContactPoint
 * differential.element[=].min = 0
-* differential.element[=].max = "1"
+* differential.element[=].max = "*"
 * differential.element[=].mapping[+].identity = "OpenELIS"
 * differential.element[=].mapping[=].map = "TO DO"
 * differential.element[=].mapping[+].identity = "OpenMRS"
@@ -237,11 +237,11 @@ Usage: #definition
 * differential.element[=].mapping[+].identity = "FHIR-R4"
 * differential.element[=].mapping[=].map = "EmrLisTask"
 
-//LabTask.id
-* differential.element[+].id = "LabTask.id"
-* differential.element[=].path = "EmrLisLogicalModel.LabTask.id"
+//LabTask.Id
+* differential.element[+].id = "LabTask.Id"
+* differential.element[=].path = "EmrLisLogicalModel.LabTask.Id"
 * differential.element[=].short = "EMR-LIS Workflow Task Id"
-* differential.element[=].definition = "EMR-LIS Workflow Task Id"
+* differential.element[=].definition = "EMR-LIS Workflow Task Logical Id Id"
 * differential.element[=].type.code = #id
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
@@ -254,7 +254,76 @@ Usage: #definition
 * differential.element[=].mapping[+].identity = "FHIR-R4"
 * differential.element[=].mapping[=].map = "EmrLisTask.id"
 
-//LabTask.for
+//LabTask.Status
+* differential.element[+].id = "LabTask.Status"
+* differential.element[=].path = "EmrLisLogicalModel.LabTask.Status"
+* differential.element[=].short = "EMR-LIS LabTask Status"
+* differential.element[=].definition = "EMR-LIS LabTask Status"
+* differential.element[=].type.code = #code
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "FhirTask.status"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "FhirTask.status"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisTask.status"
+
+//LabTask.Intent
+* differential.element[+].id = "LabTask.Intent"
+* differential.element[=].path = "EmrLisLogicalModel.LabTask.Intent"
+* differential.element[=].short = "EMR-LIS LabTask Intent"
+* differential.element[=].definition = "Indicates the level of actionability associated with the Task"
+* differential.element[=].type.code = #code
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "FhirTask.intent"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "FhirTask.intent"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisTask.intent"
+
+//LabTask.LabOrder
+* differential.element[+].id = "LabTask.LabOrder"
+* differential.element[=].path = "EmrLisLogicalModel.LabTask.LabOrder"
+* differential.element[=].short = "EMR-LIS LabTask LabOrder"
+* differential.element[=].definition = "LabOrder fulfilled by this Task"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "*"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "FhirTask.basedOn"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "FhirTask.basedOn"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisTask.basedOn"
+
+
+//LabTask.Encounter
+* differential.element[+].id = "LabTask.Encounter"
+* differential.element[=].path = "EmrLisLogicalModel.LabTask.Encounter"
+* differential.element[=].short = "EMR-LIS LabTask Encounter"
+* differential.element[=].definition = "Encounter during which this task originated"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "FhirTask.encounter"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "FhirTask.encounter"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisTask.encounter"
+
+//LabTask.Patient
 * differential.element[+].id = "LabTask.Patient"
 * differential.element[=].path = "EmrLisLogicalModel.LabTask.Patient"
 * differential.element[=].short = "EMR-LIS Task Patient"
@@ -271,19 +340,786 @@ Usage: #definition
 * differential.element[=].mapping[+].identity = "FHIR-R4"
 * differential.element[=].mapping[=].map = "EmrLisTask.for"
 
-//LabTask.status
-* differential.element[+].id = "LabTask.status"
-* differential.element[=].path = "EmrLisLogicalModel.LabTask.Status"
-* differential.element[=].short = "EMR-LIS LabTask Status"
-* differential.element[=].definition = "EMR-LIS LabTask Status"
+//LabTask.Requester
+* differential.element[+].id = "LabTask.Requester"
+* differential.element[=].path = "EmrLisLogicalModel.LabTask.Requester"
+* differential.element[=].short = "EMR-LIS Task Requester"
+* differential.element[=].definition = "The requester of the lab order "
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "FhirTask.owner"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "FhirTask.owner"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisTask.owner"
+
+//LabTask.Input
+* differential.element[+].id = "LabTask.Input"
+* differential.element[=].path = "EmrLisLogicalModel.LabTask.Input"
+* differential.element[=].short = "EMR-LIS Task Input"
+* differential.element[=].definition = "Information used to perform task"
+* differential.element[=].type.code = #CodeableConcept
+* differential.element[=].min = 0
+* differential.element[=].max = "*"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "FhirTask.input"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "FhirTask.input"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisTask.input"
+
+//LabTask.Result
+* differential.element[+].id = "LabTask.Result"
+* differential.element[=].path = "EmrLisLogicalModel.LabTask.Result"
+* differential.element[=].short = "EMR-LIS Task Result"
+* differential.element[=].definition = "Lab Order Result"
+* differential.element[=].type.code = #CodeableConcept
+* differential.element[=].min = 0
+* differential.element[=].max = "*"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "FhirTask.output"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "FhirTask.output"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisTask.output"
+
+//LabTask.OrderDate
+* differential.element[+].id = "LabTask.OrderDate"
+* differential.element[=].path = "EmrLisLogicalModel.LabTask.OrderDate"
+* differential.element[=].short = "EMR-LIS Task OrderDate"
+* differential.element[=].definition = "Date Lab Order was authored on"
+* differential.element[=].type.code = #date
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "FhirTask.dateCreated"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "FhirTask.dateCreated"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisTask.authoredOn"
+
+//LabTask.DateModified
+* differential.element[+].id = "LabTask.DateModified"
+* differential.element[=].path = "EmrLisLogicalModel.LabTask.DateModified"
+* differential.element[=].short = "EMR-LIS Task DateModified"
+* differential.element[=].definition = "Date Lab Order was modified on"
+* differential.element[=].type.code = #date
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "FhirTask.dateChanged"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "FhirTask.dateChanged"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisTask.lastModified"
+
+/**
+ Lab Order
+*/
+* differential.element[+].id = "LabOrder"
+* differential.element[=].path = "EmrLisLogicalModel.LabOrder"
+* differential.element[=].short = "EMR-LIS Lab Order Logical Model"
+* differential.element[=].definition = "Logical model of a EMR-LIS Lab Order"
+* differential.element[=].type.code = #BackboneElement
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "TestOrder"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "TestOrder"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisServiceRequest"
+
+
+// LabOrder.Id
+* differential.element[+].id = "LabOrder.Id"
+* differential.element[=].path = "EmrLisLogicalModel.LabOrder.Id"
+* differential.element[=].short = "EMR-LIS Lab Order Id"
+* differential.element[=].definition = "EMR-LIS Lab Order Logical Id"
+* differential.element[=].type.code = #id
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "TestOrder.uuid"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "TestOrder.uuid"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisServiceRequest.id"
+
+
+// LabOrder.Status
+* differential.element[+].id = "LabOrder.Status"
+* differential.element[=].path = "EmrLisLogicalModel.LabOrder.Status"
+* differential.element[=].short = "EMR-LIS Lab Order Status"
+* differential.element[=].definition = "EMR-LIS Lab Order Status"
 * differential.element[=].type.code = #code
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
 * differential.element[=].mapping[=].map = "TO DO"
 * differential.element[=].mapping[+].identity = "OpenMRS"
-* differential.element[=].mapping[=].map = "FhirTask.status"
+* differential.element[=].mapping[=].map = "Task.status"
 * differential.element[=].mapping[+].identity = "iSantePlus"
-* differential.element[=].mapping[=].map = "FhirTask.status"
+* differential.element[=].mapping[=].map = "Task.status"
 * differential.element[=].mapping[+].identity = "FHIR-R4"
-* differential.element[=].mapping[=].map = "EmrLisTask.status"
+* differential.element[=].mapping[=].map = "EmrLisServiceRequest.status"
+
+// LabOrder.LabTest
+* differential.element[+].id = "LabOrder.LabTest"
+* differential.element[=].path = "EmrLisLogicalModel.LabOrder.LabTest"
+* differential.element[=].short = "EMR-LIS Lab Order LabTest"
+* differential.element[=].definition = "LabTest being requested/ordered"
+* differential.element[=].type.code = #CodeableConcept
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "TestOrder.concept"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "TestOrder.concept"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisServiceRequest.code"
+
+// LabOrder.Patient
+* differential.element[+].id = "LabOrder.Patient"
+* differential.element[=].path = "EmrLisLogicalModel.LabOrder.Patient"
+* differential.element[=].short = "EMR-LIS Lab Order Patient"
+* differential.element[=].definition = "The subject of the lab order"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "TestOrder.patient"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "TestOrder.patient"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisServiceRequest.subject"
+
+// LabOrder.Requester
+* differential.element[+].id = "LabOrder.Requester"
+* differential.element[=].path = "EmrLisLogicalModel.LabOrder.Requester"
+* differential.element[=].short = "EMR-LIS Lab Order Requester"
+* differential.element[=].definition = "The requester of the lab order"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "TestOrder.orderer"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "TestOrder.orderer"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisServiceRequest.requester"
+
+// LabOrder.Perfomer
+* differential.element[+].id = "LabOrder.Perfomer"
+* differential.element[=].path = "EmrLisLogicalModel.LabOrder.Perfomer"
+* differential.element[=].short = "EMR-LIS Lab Order Perfomer"
+* differential.element[=].definition = "The Perfomer of the lab order"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Task.owner"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Task.owner"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisServiceRequest.performer"
+
+// LabOrder.OrderDate
+* differential.element[+].id = "LabOrder.OrderDate"
+* differential.element[=].path = "EmrLisLogicalModel.LabOrder.OrderDate"
+* differential.element[=].short = "EMR-LIS Lab Order OrderDate"
+* differential.element[=].definition = "Date Lab Order was authored on"
+* differential.element[=].type.code = #date
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "TestOrder.effectiveEndDate"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "TestOrder.effectiveEndDate"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisServiceRequest.authoredOn"
+
+
+/**
+ Lab Result
+*/
+* differential.element[+].id = "LabResult"
+* differential.element[=].path = "EmrLisLogicalModel.LabResult"
+* differential.element[=].short = "Result for Lab Orders"
+* differential.element[=].definition = "Result for Lab Orders"
+* differential.element[=].type.code = #BackboneElement
+* differential.element[=].min = 0
+* differential.element[=].max = "*"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Obs"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Obs"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisDiagnosticReport"
+
+// LabResult.Id
+* differential.element[+].id = "LabResult.Id"
+* differential.element[=].path = "EmrLisLogicalModel.LabResult.Id"
+* differential.element[=].short = "LabResult Logical Id"
+* differential.element[=].definition = "LabResult Logical Id"
+* differential.element[=].type.code = #id
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Obs.uuid"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Obs.uuid"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisDiagnosticReport.id"
+
+// LabResult.Status
+* differential.element[+].id = "LabResult.Status"
+* differential.element[=].path = "EmrLisLogicalModel.LabResult.Status"
+* differential.element[=].short = "LabResult Status"
+* differential.element[=].definition = "LabResult Status"
+* differential.element[=].type.code = #code
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Obs.status"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Obs.status"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisDiagnosticReport.status"
+
+// LabResult.LabTest
+* differential.element[+].id = "LabResult.LabTest"
+* differential.element[=].path = "EmrLisLogicalModel.LabResult.LabTest"
+* differential.element[=].short = "Lab Test for LabResult"
+* differential.element[=].definition = "Lab Test for LabResult"
+* differential.element[=].type.code = #CodeableConcept
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Obs.concept"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Obs.concept"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisDiagnosticReport.code"
+
+// LabResult.Category
+* differential.element[+].id = "LabResult.Category"
+* differential.element[=].path = "EmrLisLogicalModel.LabResult.Category"
+* differential.element[=].short = "LabResult Category"
+* differential.element[=].definition = "LabResult Category"
+* differential.element[=].type.code = #CodeableConcept
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisDiagnosticReport.category"
+
+// LabResult.Encounter
+* differential.element[+].id = "LabResult.Encounter"
+* differential.element[=].path = "EmrLisLogicalModel.LabResult.Encounter"
+* differential.element[=].short = "LabResult Encounter"
+* differential.element[=].definition = "Encounter during which this LabResult originated"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Obs.encounter"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Obs.encounter"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisDiagnosticReport.encounter"
+
+// LabResult.Patient
+* differential.element[+].id = "LabResult.Patient"
+* differential.element[=].path = "EmrLisLogicalModel.LabResult.Encounter"
+* differential.element[=].short = "LabResult Patient"
+* differential.element[=].definition = "The subject to whom the  LabResult belongs"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Obs.person"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Obs.person"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisDiagnosticReport.subject"
+
+// LabResult.DateCreated
+* differential.element[+].id = "LabResult.DateCreated"
+* differential.element[=].path = "EmrLisLogicalModel.LabResult.DateCreated"
+* differential.element[=].short = "LabResult DateCreated"
+* differential.element[=].definition = "Date Lab result was Created"
+* differential.element[=].type.code = #date
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Obs.dateCreated"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Obs.dateCreated"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisDiagnosticReport.effectiveDateTime"
+
+// LabResult.Observation
+* differential.element[+].id = "LabResult.Observation"
+* differential.element[=].path = "EmrLisLogicalModel.LabResult.DateCreated"
+* differential.element[=].short = "LabResult Observation"
+* differential.element[=].definition = "Observation for the LabResult"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "*"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Obs.groupMembers"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Obs.groupMembers"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisDiagnosticReport.result"
+
+/**
+ Observation
+*/
+* differential.element[+].id = "Observation"
+* differential.element[=].path = "EmrLisLogicalModel.Observation"
+* differential.element[=].short = "Observation for Lab Orders"
+* differential.element[=].definition = "Observation for Lab Order Results"
+* differential.element[=].type.code = #BackboneElement
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Obs"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Obs"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisObservation"
+
+//Observation.Id
+* differential.element[+].id = "Observation.Id"
+* differential.element[=].path = "EmrLisLogicalModel.Observation.Id"
+* differential.element[=].short = "Observation Logical Id"
+* differential.element[=].definition = "Observation Logical Id"
+* differential.element[=].type.code = #BackboneElement
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Obs.uuid"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Obs.uuid"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisObservation.id"
+
+//Observation.identifier
+* differential.element[+].id = "Observation.Identifier"
+* differential.element[=].path = "EmrLisLogicalModel.Observation.Identifier"
+* differential.element[=].short = "An identifier for this Observation"
+* differential.element[=].definition = "Observation Identifier"
+* differential.element[=].type.code = #Identifier
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisObservation.identifier"
+
+//Observation.Status
+* differential.element[+].id = "Observation.Status"
+* differential.element[=].path = "EmrLisLogicalModel.Observation.Status"
+* differential.element[=].short = "Observation Status"
+* differential.element[=].definition = "Observation Status"
+* differential.element[=].type.code = #code
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Obs.status"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Obs.status"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisObservation.status"
+
+//Observation.Encounter
+* differential.element[+].id = "Observation.Encounter"
+* differential.element[=].path = "EmrLisLogicalModel.Observation.Encounter"
+* differential.element[=].short = "Observation Encounter"
+* differential.element[=].definition = "Encounter during which this Observation originated"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Obs.encounter"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Obs.encounter"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisObservation.encounter"
+
+// Observation.Patient
+* differential.element[+].id = "Observation.Patient"
+* differential.element[=].path = "EmrLisLogicalModel.Observation.Encounter"
+* differential.element[=].short = "Observation Patient"
+* differential.element[=].definition = "The subject to whom the  Observation belongs"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Obs.person"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Obs.person"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisObservation.subject"
+
+// Observation.LabTest
+* differential.element[+].id = "Observation.LabTest"
+* differential.element[=].path = "EmrLisLogicalModel.Observation.LabTest"
+* differential.element[=].short = "Lab Test for Observation"
+* differential.element[=].definition = "Lab Test for Observation"
+* differential.element[=].type.code = #CodeableConcept
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Obs.concept"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Obs.concept"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisObservation.code"
+
+// Observation.Value
+* differential.element[+].id = "Observation.Value"
+* differential.element[=].path = "EmrLisLogicalModel.Observation.Value"
+* differential.element[=].short = "Value  for Observation"
+* differential.element[=].definition = "Value for Observation"
+* differential.element[=].type.code = #CodeableConcept
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Obs.value[x]"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Obs.value[x]"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisObservation.value[x]"
+
+// Observation.Component
+* differential.element[+].id = "Observation.Component"
+* differential.element[=].path = "EmrLisLogicalModel.Observation.LabTest"
+* differential.element[=].short = "Component for Observation"
+* differential.element[=].definition = "Component for Observation"
+* differential.element[=].type.code = #CodeableConcept
+* differential.element[=].min = 0
+* differential.element[=].max = "*"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Obs.groupMembers"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Obs.groupMembers"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisObservation.component"
+
+/**
+ Encounter
+*/
+* differential.element[+].id = "Encounter"
+* differential.element[=].path = "EmrLisLogicalModel.Encounter"
+* differential.element[=].short = "Encounter during which Lab Oders are Created"
+* differential.element[=].definition = "Encounter during which Lab Oders are Created"
+* differential.element[=].type.code = #BackboneElement
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Encounter"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Encounter"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisEncounter"
+
+
+// Encounter.Id
+* differential.element[+].id = "Encounter.Id"
+* differential.element[=].path = "EmrLisLogicalModel.Encounter.Id"
+* differential.element[=].short = "Encounter Logical Id"
+* differential.element[=].definition = "Encounter Logical Id"
+* differential.element[=].type.code = #id
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Encounter.uuid"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Encounter.uuid"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisEncounter.id"
+
+// Encounter.Status
+* differential.element[+].id = "Encounter.Status"
+* differential.element[=].path = "EmrLisLogicalModel.Encounter.Status"
+* differential.element[=].short = "Encounter Status"
+* differential.element[=].definition = "Encounter Status"
+* differential.element[=].type.code = #code
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Encounter.status"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Encounter.status"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisEncounter.status"
+
+// Encounter.Patient
+* differential.element[+].id = "Encounter.Patient"
+* differential.element[=].path = "EmrLisLogicalModel.Encounter.Patient"
+* differential.element[=].short = "Encounter Patient"
+* differential.element[=].definition = "Encounter Patient"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Encounter.patient"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Encounter.patient"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisEncounter.subject"
+
+
+// Encounter.Provider
+* differential.element[+].id = "Encounter.Provider"
+* differential.element[=].path = "EmrLisLogicalModel.Encounter.Provider"
+* differential.element[=].short = "Encounter Provider"
+* differential.element[=].definition = "Encounter Provider"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Encounter.participant"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Encounter.participant"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisEncounter.serviceProvider"
+
+// Encounter.Location
+* differential.element[+].id = "Encounter.Location"
+* differential.element[=].path = "EmrLisLogicalModel.Encounter.Location"
+* differential.element[=].short = "Encounter Location"
+* differential.element[=].definition = "Encounter Location"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Encounter.location"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Encounter.location"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisEncounter.location"
+
+
+/**
+ Requester
+*/
+* differential.element[+].id = "Requester"
+* differential.element[=].path = "EmrLisLogicalModel.Requester"
+* differential.element[=].short = "Lab Order Requester"
+* differential.element[=].definition = "Lab Order Requester"
+* differential.element[=].type.code = #BackboneElement
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Provider"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Provider"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisPractitioner"
+
+//Requester.Id
+* differential.element[+].id = "Requester.Id"
+* differential.element[=].path = "EmrLisLogicalModel.Requester.Id"
+* differential.element[=].short = "Requester Logical ID"
+* differential.element[=].definition = "Requester Logical ID"
+* differential.element[=].type.code = #id
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Provider.uuid"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Provider.uuid"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisPractitioner.id"
+
+//Requester.Identifier
+* differential.element[+].id = "Requester.Identifier"
+* differential.element[=].path = "EmrLisLogicalModel.Requester.Identifier"
+* differential.element[=].short = "Requester Identifier"
+* differential.element[=].definition = "Requester Identifier"
+* differential.element[=].type.code = #Identifier
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Provider.identifier"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Provider.identifier"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisPractitioner.identifier"
+
+
+//Requester.Name
+* differential.element[+].id = "Requester.Name"
+* differential.element[=].path = "EmrLisLogicalModel.Requester.Name"
+* differential.element[=].short = "Requester Name"
+* differential.element[=].definition = "Patient Name"
+* differential.element[=].type.code = #HumanName
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Provider.names"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Provider.name"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisPractitioner.name"
+
+//Requester.Gender
+* differential.element[+].id = "Requester.Gender"
+* differential.element[=].path = "EmrLisLogicalModel.Requester.Gender"
+* differential.element[=].short = "Requester Gender"
+* differential.element[=].definition = "Requester Gender"
+* differential.element[=].type.code =  #code
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Provider.gender"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Provider.gender"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisPractitioner.gender"
+
+//Requester.BirthDate
+* differential.element[+].id = "Requester.BirthDate"
+* differential.element[=].path = "EmrLisLogicalModel.Requester.BirthDate"
+* differential.element[=].short = "Requester Date of Birth"
+* differential.element[=].definition = "Requester Date of Birth"
+* differential.element[=].type.code =  #date
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Provider.birthdate"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Provider.birthdate"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisPractitioner.birthDate"
+
+//Requester.Address
+* differential.element[+].id = "Requester.Address"
+* differential.element[=].path = "EmrLisLogicalModel.Requester.Address"
+* differential.element[=].short = "Requester Address"
+* differential.element[=].definition = "Requester Address"
+* differential.element[=].type.code =  #Address
+* differential.element[=].min = 0
+* differential.element[=].max = "*"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "Provider.address"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "Provider.address"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisPractitioner.address"
+
+//Requester.Active
+* differential.element[+].id = "Requester.Active"
+* differential.element[=].path = "EmrLisLogicalModel.Requester.Active"
+* differential.element[=].short = "Requester Active Flag"
+* differential.element[=].definition = "Flag for distinguishing between active and not active Requester"
+* differential.element[=].type.code = #boolean
+* differential.element[=].binding.strength = #extensible
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "OpenELIS"
+* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[+].identity = "OpenMRS"
+* differential.element[=].mapping[=].map = "not Patient.retired"
+* differential.element[=].mapping[+].identity = "iSantePlus"
+* differential.element[=].mapping[=].map = "not Patient.retired"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "EmrLisPractitioner.active"
+
