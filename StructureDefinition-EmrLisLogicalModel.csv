@@ -1,7 +1,7 @@
 "Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: OpenELIS Global v2","Mapping: OpenMRS RefApp 2.9","Mapping: iSantePlus 2","Mapping: FHIR Release 4","Mapping: RIM Mapping"
-"EmrLisLogicalModel","","","",0,*,"","","","","Base for all elements","Base definition for all elements in a resource.","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+"EmrLisLogicalModel","","","",0,*,"","","","","Base for all elements","EmrLisLogicalModel","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","n/a"
+","","","","","n/a"
 "EmrLisLogicalModel.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "EmrLisLogicalModel.extension","","extensions
@@ -10,10 +10,126 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "EmrLisLogicalModel.Patient","","","",0,1,"","","","BackboneElement {[]} {[]}
-","EMR-LIS Patient Logical Model","Logical model of EMR-LIS Patient","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Patient",0,1,"","","TODO","TODO","TODO","EmrLisPatient"
-"EmrLisLogicalModel.Patient.Active","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Patient Active Flag","Flag for distinguishing between active and not active Patients","","","","","","","","","",,"extensible","","","",,,,"EmrLisLogicalModel.Patient.Active",0,1,"","","TODO","TODO","TODO","EmrLisPatient.active"
+","EMR-LIS Patient Logical Model","Logical model of EMR-LIS Patient","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Patient",0,1,"","","TO DO","Patient","Patient","EmrLisPatient"
+"EmrLisLogicalModel.Patient.Id","","","",1,1,"","","","id {[]} {[]}
+","Patient Logical ID","Patient Logical ID","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Patient.Id",1,1,"","","TO DO","Patient.uuid","Patient.uuid","EmrLisPatient.id"
+"EmrLisLogicalModel.Patient.Identifier","","","",0,1,"","","","Identifier {[]} {[]}
+","An identifier for this patient.","Patient Identifier","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Patient.Identifier",0,1,"","","TO DO","Patient.activeIdentifiers","Patient.activeIdentifiers","EmrLisPatient.identifier"
+"EmrLisLogicalModel.Patient.Active","","","",0,1,"","","","boolean {[]} {[]}
+","Patient Active Flag","Flag for distinguishing between active and not active Patients","","","","","","","","","",,"extensible","","","",,,,"EmrLisLogicalModel.Patient.Active",0,1,"","","TO DO","not Patient.voided","not Patient.voided","EmrLisPatient.active"
+"EmrLisLogicalModel.Patient.Name","","","",0,*,"","","","HumanName {[]} {[]}
+","Patient Name","Patient Name","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Patient.Name",0,*,"","","TO DO","Patient.names","Patient.names","EmrLisPatient.name"
+"EmrLisLogicalModel.Patient.Contact","","","",0,*,"","","","ContactPoint {[]} {[]}
+","Patient Contact","Patient Contact","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Patient.Contact",0,*,"","","TO DO","Person.personAttribute","Person.personAttribute","EmrLisPatient.telecom"
+"EmrLisLogicalModel.Patient.Gender","","","",1,1,"","","","code {[]} {[]}
+","Patient Gender","Patient Gender","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Patient.Gender",1,1,"","","TO DO","Patient.gender","Patient.gender","EmrLisPatient.gender"
+"EmrLisLogicalModel.Patient.BirthDate","","","",0,1,"","","","date {[]} {[]}
+","Patient Date of Birth","Patient Date of Birth","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Patient.BirthDate",0,1,"","","TO DO","Patient.birthdate","Patient.birthdate","EmrLisPatient.birthDate"
+"EmrLisLogicalModel.Patient.Address","","","",0,*,"","","","Address {[]} {[]}
+","Patient Address","Patient Address","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Patient.Address",0,*,"","","TO DO","Patient.addresses","Patient.addresses","EmrLisPatient.address"
+"EmrLisLogicalModel.Patient.DeceasedDateTime","","","",0,1,"","","","date {[]} {[]}
+","Patient Death Date","Patient Death Date","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Patient.DeceasedDateTime",0,1,"","","TO DO","Patient.deathDate or Patient.dead","Patient.deathDate or Patient.dead","EmrLisPatient.deceased"
 "EmrLisLogicalModel.LabTask","","","",0,1,"","","","BackboneElement {[]} {[]}
-","EMR-LIS Workflow Task","A task for tracking the full lifecycle of a EMR-LIS Lab Order Workflow between EMRs and LISs","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabTask",0,1,"","","TODO","TODO","TODO","EmrLisTask"
+","EMR-LIS Workflow Task","A task for tracking the full lifecycle of a EMR-LIS Lab Order Workflow between EMRs and LISs","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabTask",0,1,"","","TO DO","FhirTask","FhirTask","EmrLisTask"
+"EmrLisLogicalModel.LabTask.Id","","","",1,1,"","","","id {[]} {[]}
+","EMR-LIS Workflow Task Id","EMR-LIS Workflow Task Logical Id Id","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabTask.Id",1,1,"","","TO DO","FhirTask.id","FhirTask.id","EmrLisTask.id"
+"EmrLisLogicalModel.LabTask.Status","","","",0,1,"","","","code {[]} {[]}
+","EMR-LIS LabTask Status","EMR-LIS LabTask Status","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabTask.Status",0,1,"","","TO DO","FhirTask.status","FhirTask.status","EmrLisTask.status"
+"EmrLisLogicalModel.LabTask.Intent","","","",0,1,"","","","code {[]} {[]}
+","EMR-LIS LabTask Intent","Indicates the level of actionability associated with the Task","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabTask.Intent",0,1,"","","TO DO","FhirTask.intent","FhirTask.intent","EmrLisTask.intent"
+"EmrLisLogicalModel.LabTask.LabOrder","","","",1,*,"","","","Reference {[]} {[]}
+","EMR-LIS LabTask LabOrder","LabOrder fulfilled by this Task","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabTask.LabOrder",1,*,"","","TO DO","FhirTask.basedOn","FhirTask.basedOn","EmrLisTask.basedOn"
+"EmrLisLogicalModel.LabTask.Encounter","","","",0,1,"","","","Reference {[]} {[]}
+","EMR-LIS LabTask Encounter","Encounter during which this task originated","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabTask.Encounter",0,1,"","","TO DO","FhirTask.encounter","FhirTask.encounter","EmrLisTask.encounter"
 "EmrLisLogicalModel.LabTask.Patient","","","",1,1,"","","","Reference {[]} {[]}
-","EMR-LIS Patient","The Patient for whom the lab order was created.","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabTask.Patient",1,1,"","","TODO","TODO","TODO","EmrLisTask.for"
+","EMR-LIS Task Patient","The Patient for whom the lab order was created.","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabTask.Patient",1,1,"","","TO DO","FhirTask.for","FhirTask.for","EmrLisTask.for"
+"EmrLisLogicalModel.LabTask.Requester","","","",1,1,"","","","Reference {[]} {[]}
+","EMR-LIS Task Requester","The requester of the lab order ","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabTask.Requester",1,1,"","","TO DO","FhirTask.owner","FhirTask.owner","EmrLisTask.owner"
+"EmrLisLogicalModel.LabTask.Input","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","EMR-LIS Task Input","Information used to perform task","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabTask.Input",0,*,"","","TO DO","FhirTask.input","FhirTask.input","EmrLisTask.input"
+"EmrLisLogicalModel.LabTask.Result","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","EMR-LIS Task Result","Lab Order Result","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabTask.Result",0,*,"","","TO DO","FhirTask.output","FhirTask.output","EmrLisTask.output"
+"EmrLisLogicalModel.LabTask.OrderDate","","","",1,1,"","","","date {[]} {[]}
+","EMR-LIS Task OrderDate","Date Lab Order was authored on","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabTask.OrderDate",1,1,"","","TO DO","FhirTask.dateCreated","FhirTask.dateCreated","EmrLisTask.authoredOn"
+"EmrLisLogicalModel.LabTask.DateModified","","","",0,1,"","","","date {[]} {[]}
+","EMR-LIS Task DateModified","Date Lab Order was modified on","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabTask.DateModified",0,1,"","","TO DO","FhirTask.dateChanged","FhirTask.dateChanged","EmrLisTask.lastModified"
+"EmrLisLogicalModel.LabOrder","","","",0,1,"","","","BackboneElement {[]} {[]}
+","EMR-LIS Lab Order Logical Model","Logical model of a EMR-LIS Lab Order","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabOrder",0,1,"","","TO DO","TestOrder","TestOrder","EmrLisServiceRequest"
+"EmrLisLogicalModel.LabOrder.Id","","","",1,1,"","","","id {[]} {[]}
+","EMR-LIS Lab Order Id","EMR-LIS Lab Order Logical Id","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabOrder.Id",1,1,"","","TO DO","TestOrder.uuid","TestOrder.uuid","EmrLisServiceRequest.id"
+"EmrLisLogicalModel.LabOrder.Status","","","",0,1,"","","","code {[]} {[]}
+","EMR-LIS Lab Order Status","EMR-LIS Lab Order Status","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabOrder.Status",0,1,"","","TO DO","Task.status","Task.status","EmrLisServiceRequest.status"
+"EmrLisLogicalModel.LabOrder.LabTest","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","EMR-LIS Lab Order LabTest","LabTest being requested/ordered","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabOrder.LabTest",1,1,"","","TO DO","TestOrder.concept","TestOrder.concept","EmrLisServiceRequest.code"
+"EmrLisLogicalModel.LabOrder.Patient","","","",1,1,"","","","Reference {[]} {[]}
+","EMR-LIS Lab Order Patient","The subject of the lab order","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabOrder.Patient",1,1,"","","TO DO","TestOrder.patient","TestOrder.patient","EmrLisServiceRequest.subject"
+"EmrLisLogicalModel.LabOrder.Requester","","","",1,1,"","","","Reference {[]} {[]}
+","EMR-LIS Lab Order Requester","The requester of the lab order","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabOrder.Requester",1,1,"","","TO DO","TestOrder.orderer","TestOrder.orderer","EmrLisServiceRequest.requester"
+"EmrLisLogicalModel.LabOrder.Perfomer","","","",1,1,"","","","Reference {[]} {[]}
+","EMR-LIS Lab Order Perfomer","The Perfomer of the lab order","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabOrder.Perfomer",1,1,"","","TO DO","Task.owner","Task.owner","EmrLisServiceRequest.performer"
+"EmrLisLogicalModel.LabOrder.OrderDate","","","",1,1,"","","","date {[]} {[]}
+","EMR-LIS Lab Order OrderDate","Date Lab Order was authored on","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabOrder.OrderDate",1,1,"","","TO DO","TestOrder.effectiveEndDate","TestOrder.effectiveEndDate","EmrLisServiceRequest.authoredOn"
+"EmrLisLogicalModel.LabResult","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Result for Lab Orders","Result for Lab Orders","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabResult",0,*,"","","TO DO","Obs","Obs","EmrLisDiagnosticReport"
+"EmrLisLogicalModel.LabResult.Id","","","",1,1,"","","","id {[]} {[]}
+","LabResult Logical Id","LabResult Logical Id","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabResult.Id",1,1,"","","TO DO","Obs.uuid","Obs.uuid","EmrLisDiagnosticReport.id"
+"EmrLisLogicalModel.LabResult.Status","","","",1,1,"","","","code {[]} {[]}
+","LabResult Status","LabResult Status","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabResult.Status",1,1,"","","TO DO","Obs.status","Obs.status","EmrLisDiagnosticReport.status"
+"EmrLisLogicalModel.LabResult.LabTest","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Lab Test for LabResult","Lab Test for LabResult","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabResult.LabTest",1,1,"","","TO DO","Obs.concept","Obs.concept","EmrLisDiagnosticReport.code"
+"EmrLisLogicalModel.LabResult.Category","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","LabResult Category","LabResult Category","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabResult.Category",1,1,"","","TO DO","TO DO","TO DO","EmrLisDiagnosticReport.category"
+"EmrLisLogicalModel.LabResult.Encounter","","","",1,1,"","","","Reference {[]} {[]}
+","LabResult Encounter","Encounter during which this LabResult originated","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabResult.Encounter",1,1,"","","TO DO","Obs.encounter","Obs.encounter","EmrLisDiagnosticReport.encounter"
+"EmrLisLogicalModel.LabResult.Encounter","","","",1,1,"","","","Reference {[]} {[]}
+","LabResult Patient","The subject to whom the  LabResult belongs","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabResult.Encounter",1,1,"","","TO DO","Obs.person","Obs.person","EmrLisDiagnosticReport.subject"
+"EmrLisLogicalModel.LabResult.DateCreated","","","",1,1,"","","","date {[]} {[]}
+","LabResult DateCreated","Date Lab result was Created","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabResult.DateCreated",1,1,"","","TO DO","Obs.dateCreated","Obs.dateCreated","EmrLisDiagnosticReport.effectiveDateTime"
+"EmrLisLogicalModel.LabResult.DateCreated","","","",1,*,"","","","Reference {[]} {[]}
+","LabResult Observation","Observation for the LabResult","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.LabResult.DateCreated",1,*,"","","TO DO","Obs.groupMembers","Obs.groupMembers","EmrLisDiagnosticReport.result"
+"EmrLisLogicalModel.Observation","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Observation for Lab Orders","Observation for Lab Order Results","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Observation",0,1,"","","TO DO","Obs","Obs","EmrLisObservation"
+"EmrLisLogicalModel.Observation.Id","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Observation Logical Id","Observation Logical Id","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Observation.Id",1,1,"","","TO DO","Obs.uuid","Obs.uuid","EmrLisObservation.id"
+"EmrLisLogicalModel.Observation.Identifier","","","",0,1,"","","","Identifier {[]} {[]}
+","An identifier for this Observation","Observation Identifier","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Observation.Identifier",0,1,"","","TO DO","TO DO","TO DO","EmrLisObservation.identifier"
+"EmrLisLogicalModel.Observation.Status","","","",1,1,"","","","code {[]} {[]}
+","Observation Status","Observation Status","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Observation.Status",1,1,"","","TO DO","Obs.status","Obs.status","EmrLisObservation.status"
+"EmrLisLogicalModel.Observation.Encounter","","","",1,1,"","","","Reference {[]} {[]}
+","Observation Encounter","Encounter during which this Observation originated","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Observation.Encounter",1,1,"","","TO DO","Obs.encounter","Obs.encounter","EmrLisObservation.encounter"
+"EmrLisLogicalModel.Observation.Encounter","","","",1,1,"","","","Reference {[]} {[]}
+","Observation Patient","The subject to whom the  Observation belongs","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Observation.Encounter",1,1,"","","TO DO","Obs.person","Obs.person","EmrLisObservation.subject"
+"EmrLisLogicalModel.Observation.LabTest","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Lab Test for Observation","Lab Test for Observation","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Observation.LabTest",1,1,"","","TO DO","Obs.concept","Obs.concept","EmrLisObservation.code"
+"EmrLisLogicalModel.Observation.Value","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Value  for Observation","Value for Observation","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Observation.Value",1,1,"","","TO DO","Obs.value[x]","Obs.value[x]","EmrLisObservation.value[x]"
+"EmrLisLogicalModel.Observation.LabTest","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Component for Observation","Component for Observation","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Observation.LabTest",0,*,"","","TO DO","Obs.groupMembers","Obs.groupMembers","EmrLisObservation.component"
+"EmrLisLogicalModel.Encounter","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Encounter during which Lab Oders are Created","Encounter during which Lab Oders are Created","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Encounter",0,1,"","","TO DO","Encounter","Encounter","EmrLisEncounter"
+"EmrLisLogicalModel.Encounter.Id","","","",0,1,"","","","id {[]} {[]}
+","Encounter Logical Id","Encounter Logical Id","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Encounter.Id",0,1,"","","TO DO","Encounter.uuid","Encounter.uuid","EmrLisEncounter.id"
+"EmrLisLogicalModel.Encounter.Status","","","",0,1,"","","","code {[]} {[]}
+","Encounter Status","Encounter Status","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Encounter.Status",0,1,"","","TO DO","Encounter.status","Encounter.status","EmrLisEncounter.status"
+"EmrLisLogicalModel.Encounter.Patient","","","",0,1,"","","","Reference {[]} {[]}
+","Encounter Patient","Encounter Patient","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Encounter.Patient",0,1,"","","TO DO","Encounter.patient","Encounter.patient","EmrLisEncounter.subject"
+"EmrLisLogicalModel.Encounter.Provider","","","",0,1,"","","","Reference {[]} {[]}
+","Encounter Provider","Encounter Provider","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Encounter.Provider",0,1,"","","TO DO","Encounter.participant","Encounter.participant","EmrLisEncounter.serviceProvider"
+"EmrLisLogicalModel.Encounter.Location","","","",0,1,"","","","Reference {[]} {[]}
+","Encounter Location","Encounter Location","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Encounter.Location",0,1,"","","TO DO","Encounter.location","Encounter.location","EmrLisEncounter.location"
+"EmrLisLogicalModel.Requester","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Lab Order Requester","Lab Order Requester","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Requester",0,1,"","","TO DO","Provider","Provider","EmrLisPractitioner"
+"EmrLisLogicalModel.Requester.Id","","","",1,1,"","","","id {[]} {[]}
+","Requester Logical ID","Requester Logical ID","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Requester.Id",1,1,"","","TO DO","Provider.uuid","Provider.uuid","EmrLisPractitioner.id"
+"EmrLisLogicalModel.Requester.Identifier","","","",1,1,"","","","Identifier {[]} {[]}
+","Requester Identifier","Requester Identifier","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Requester.Identifier",1,1,"","","TO DO","Provider.identifier","Provider.identifier","EmrLisPractitioner.identifier"
+"EmrLisLogicalModel.Requester.Name","","","",1,1,"","","","HumanName {[]} {[]}
+","Requester Name","Patient Name","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Requester.Name",1,1,"","","TO DO","Provider.names","Provider.name","EmrLisPractitioner.name"
+"EmrLisLogicalModel.Requester.Gender","","","",1,1,"","","","code {[]} {[]}
+","Requester Gender","Requester Gender","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Requester.Gender",1,1,"","","TO DO","Provider.gender","Provider.gender","EmrLisPractitioner.gender"
+"EmrLisLogicalModel.Requester.BirthDate","","","",0,1,"","","","date {[]} {[]}
+","Requester Date of Birth","Requester Date of Birth","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Requester.BirthDate",0,1,"","","TO DO","Provider.birthdate","Provider.birthdate","EmrLisPractitioner.birthDate"
+"EmrLisLogicalModel.Requester.Address","","","",0,*,"","","","Address {[]} {[]}
+","Requester Address","Requester Address","","","","","","","","","",,,,,"",,,,"EmrLisLogicalModel.Requester.Address",0,*,"","","TO DO","Provider.address","Provider.address","EmrLisPractitioner.address"
+"EmrLisLogicalModel.Requester.Active","","","",0,1,"","","","boolean {[]} {[]}
+","Requester Active Flag","Flag for distinguishing between active and not active Requester","","","","","","","","","",,"extensible","","","",,,,"EmrLisLogicalModel.Requester.Active",0,1,"","","TO DO","not Patient.retired","not Patient.retired","EmrLisPractitioner.active"

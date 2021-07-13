@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="192f8cc8-f745-4ddb-80fc-cb655b9b7c04"/>
+  <id value="adf7c1c2-e73f-497b-a43d-b89fb547374b"/>
   <meta>
-    <lastUpdated value="2021-07-12T21:43:53.472+00:00"/>
+    <lastUpdated value="2021-07-13T19:13:10.389+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -13130,7 +13130,7 @@
         <name value="EmrLisDiagnosticReportStatusVS"/>
         <title value="EMR-LIS Diagnostic Report Status Flag"/>
         <status value="active"/>
-        <date value="2021-07-12T21:43:53+00:00"/>
+        <date value="2021-07-13T19:13:10+00:00"/>
         <publisher value="I-TECH-UW"/>
         <contact>
           <name value="I-TECH-UW"/>
@@ -13145,8 +13145,8 @@
         </contact>
         <description value="The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html"/>
         <expansion>
-          <identifier value="urn:uuid:061a7752-11ee-48d8-ab9a-3bfc15ff146f"/>
-          <timestamp value="2021-07-12T21:44:10+00:00"/>
+          <identifier value="urn:uuid:1d61f786-dea8-4661-a6e7-3de00f9d4c3f"/>
+          <timestamp value="2021-07-13T19:13:27+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

@@ -13,7 +13,7 @@ Records in the OpenHIE Architecture, based on the OpenMRS EMR and the OpenELIS L
   <title value="EMR-LIS Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-07-12T21:43:53+00:00"/>
+  <date value="2021-07-13T19:13:10+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
     <name value="I-TECH-UW"/>
@@ -489,17 +489,6 @@ Records in the OpenHIE Architecture, based on the OpenMRS EMR and the OpenELIS L
       <name value="EMR-LIS Requested Lab Task"/>
       <description value="Example Task for Requested Lab Orders and Results for EMR-LIS integration"/>
       <exampleCanonical value="http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExampleScenario"/>
-      </extension>
-      <reference>
-        <reference value="ExampleScenario/scenario-lab-order-fsh"/>
-      </reference>
-      <name value="Example Scenario - Lab Order Placement"/>
-      <description value="Placement of a Laboratory Test Order"/>
-      <exampleBoolean value="false"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

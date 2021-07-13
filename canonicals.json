@@ -110,12 +110,5 @@
     "url": "http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-status-vs",
     "version": "0.2.0",
     "name": "EmrLisTaskStatusVS"
-  },
-  {
-    "id": "scenario-lab-order-fsh",
-    "type": "ExampleScenario",
-    "url": "i-tech-uw.github.io/fhir/riziv/ExampleScenario/scenario-lab-order-fsh",
-    "version": "0.2.0",
-    "name": "Lab Order Scenario"
   }
 ]
