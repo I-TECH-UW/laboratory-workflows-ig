@@ -1,4 +1,4 @@
-# EMR-LIS Communication Implementation Guide
+# OpenHIE Laboratory Workflows Implementation Guide
 
 ![CI](https://github.com/pmanko/emr-lmis-ig/workflows/CI/badge.svg)
 
