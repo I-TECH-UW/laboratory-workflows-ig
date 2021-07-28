@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "EmrLisDiagnosticReport"];
   fhir:StructureDefinition.title [ fhir:value "EMR-LIS Diagnostic Report"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-07-27T07:49:28+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-28T19:11:31+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "I-TECH-UW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
