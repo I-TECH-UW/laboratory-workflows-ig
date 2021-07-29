@@ -13,7 +13,7 @@ in the OpenHIE Architecture.</p>
   <title value="Laboratory Workflows Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-07-29T21:12:40+00:00"/>
+  <date value="2021-07-29T21:26:22+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
     <name value="I-TECH-UW"/>
@@ -387,8 +387,8 @@ in the OpenHIE Architecture.</p>
       <reference>
         <reference value="Composition/example-laboratory-composition"/>
       </reference>
-      <name value="Laboratory Lab Composition"/>
-      <description value="Example Lab Order Composition"/>
+      <name value="Laboratory Composition"/>
+      <description value="Example Laboratory Composition"/>
       <exampleCanonical value="http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-composition"/>
     </resource>
     <resource>
@@ -451,6 +451,17 @@ in the OpenHIE Architecture.</p>
         <valueString value="ServiceRequest"/>
       </extension>
       <reference>
+        <reference value="ServiceRequest/example-laboratory-service-request"/>
+      </reference>
+      <name value="Laboratory ServiceRequest"/>
+      <description value="Example ServiceRequest resource representing a Lab Test Order"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-service-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
         <reference value="ServiceRequest/example-laboratory-service-request-1"/>
       </reference>
       <name value="Laboratory ServiceRequest 1"/>
@@ -478,6 +489,28 @@ in the OpenHIE Architecture.</p>
       <name value="Laboratory ServiceRequest Panel"/>
       <description value="Example ServiceRequest resource representing a Lab Test Order Panel"/>
       <exampleCanonical value="http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-service-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/example-laboratory-simple-bundle"/>
+      </reference>
+      <name value="Single Test Laboratory Bundle"/>
+      <description value="Example Single Test Laboratory Bundle"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/example-laboratory-simple-composition"/>
+      </reference>
+      <name value="Laboratory Single Order Composition"/>
+      <description value="Example Single Lab Order Composition"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-composition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

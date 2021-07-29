@@ -11,7 +11,7 @@
   "title": "Laboratory Workflows Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-07-29T21:12:40+00:00",
+  "date": "2021-07-29T21:26:22+00:00",
   "publisher": "I-TECH-UW",
   "contact": [
     {
@@ -553,8 +553,8 @@
         "reference": {
           "reference": "Composition/example-laboratory-composition"
         },
-        "name": "Laboratory Lab Composition",
-        "description": "Example Lab Order Composition",
+        "name": "Laboratory Composition",
+        "description": "Example Laboratory Composition",
         "exampleCanonical": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-composition"
       },
       {
@@ -635,6 +635,20 @@
           }
         ],
         "reference": {
+          "reference": "ServiceRequest/example-laboratory-service-request"
+        },
+        "name": "Laboratory ServiceRequest",
+        "description": "Example ServiceRequest resource representing a Lab Test Order",
+        "exampleCanonical": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-service-request"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
           "reference": "ServiceRequest/example-laboratory-service-request-1"
         },
         "name": "Laboratory ServiceRequest 1",
@@ -668,6 +682,34 @@
         "name": "Laboratory ServiceRequest Panel",
         "description": "Example ServiceRequest resource representing a Lab Test Order Panel",
         "exampleCanonical": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-service-request"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/example-laboratory-simple-bundle"
+        },
+        "name": "Single Test Laboratory Bundle",
+        "description": "Example Single Test Laboratory Bundle",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/example-laboratory-simple-composition"
+        },
+        "name": "Laboratory Single Order Composition",
+        "description": "Example Single Lab Order Composition",
+        "exampleCanonical": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-composition"
       },
       {
         "extension": [

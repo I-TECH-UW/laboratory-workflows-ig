@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="example-laboratory-simple-composition"/>
+  <meta>
+    <profile value="http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-composition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: ">document</span></p><p><b>date</b>: 2021-06-08</p><p><b>author</b>: <a href="Practitioner-example-laboratory-practitioner.html">Generated Summary: id: 1000AX; Moses Mutesa</a></p><p><b>title</b>: Laboratory Single Order Composition</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <code value="document"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/example-laboratory-patient"/>
+  </subject>
+  <date value="2021-06-08"/>
+  <author>
+    <reference value="Practitioner/example-laboratory-practitioner"/>
+  </author>
+  <title value="Laboratory Single Order Composition"/>
+  <section>
+    <entry>
+      <reference value="Task/example-laboratory-task-requested"/>
+    </entry>
+  </section>
+  <section>
+    <entry>
+      <reference value="ServiceRequest/example-laboratory-service-request"/>
+    </entry>
+  </section>
+</Composition>

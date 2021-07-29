@@ -1,0 +1,47 @@
+{
+  "resourceType": "Composition",
+  "id": "example-laboratory-simple-composition",
+  "meta": {
+    "profile": [
+      "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-composition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: \">document</span></p><p><b>date</b>: 2021-06-08</p><p><b>author</b>: <a href=\"Practitioner-example-laboratory-practitioner.html\">Generated Summary: id: 1000AX; Moses Mutesa</a></p><p><b>title</b>: Laboratory Single Order Composition</p></div>"
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "document"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example-laboratory-patient"
+  },
+  "date": "2021-06-08",
+  "author": [
+    {
+      "reference": "Practitioner/example-laboratory-practitioner"
+    }
+  ],
+  "title": "Laboratory Single Order Composition",
+  "section": [
+    {
+      "entry": [
+        {
+          "reference": "Task/example-laboratory-task-requested"
+        }
+      ]
+    },
+    {
+      "entry": [
+        {
+          "reference": "ServiceRequest/example-laboratory-service-request"
+        }
+      ]
+    }
+  ]
+}

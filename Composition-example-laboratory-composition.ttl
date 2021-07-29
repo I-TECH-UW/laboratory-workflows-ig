@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: \">document</span></p><p><b>date</b>: 2021-06-06</p><p><b>author</b>: <a href=\"Practitioner-example-laboratory-practitioner.html\">Generated Summary: id: 1000AX; Moses Mutesa</a></p><p><b>title</b>: Laboratory Lab Composition</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: \">document</span></p><p><b>date</b>: 2021-06-06</p><p><b>author</b>: <a href=\"Practitioner-example-laboratory-practitioner.html\">Generated Summary: id: 1000AX; Moses Mutesa</a></p><p><b>title</b>: Laboratory Composition</p></div>"
   ];
   fhir:Composition.status [ fhir:value "final"];
   fhir:Composition.type [
@@ -36,7 +36,7 @@
      fhir:link <http://i-tech-uw.github.io/laboratory-workflows-ig/Practitioner/example-laboratory-practitioner>;
      fhir:Reference.reference [ fhir:value "Practitioner/example-laboratory-practitioner" ]
   ];
-  fhir:Composition.title [ fhir:value "Laboratory Lab Composition"];
+  fhir:Composition.title [ fhir:value "Laboratory Composition"];
   fhir:Composition.section [
      fhir:index 0;
      fhir:Composition.section.entry [
