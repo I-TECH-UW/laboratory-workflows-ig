@@ -147,6 +147,34 @@ Title: "Laboratory Lab Composition"
 * section[labOrders].entry[+] = Reference(example-laboratory-service-request-1)
 * section[labOrders].entry[+] = Reference(example-laboratory-service-request-2)
 
+Instance: example-laboratory-simple-bundle
+InstanceOf: Bundle
+Usage: #example
+Description: "Example Single Test Laboratory Bundle"
+Title: "Single Test Laboratory Bundle"
+* type = #document
+* entry[+].resource = example-laboratory-simple-composition
+* entry[+].resource = example-laboratory-patient
+* entry[+].resource = example-laboratory-practitioner
+* entry[+].resource = example-laboratory-task-requested
+* entry[+].resource = example-laboratory-service-request-1
+
+Instance: example-laboratory-composition
+InstanceOf: LaboratoryLabComposition
+Usage: #example
+Description: "Example Lab Order Composition"
+Title: "Laboratory Lab Composition"
+* title = "Laboratory Lab Composition"
+* type = #document
+* subject = Reference(example-laboratory-patient)
+* date = "2021-06-06"
+* status = #final
+* author = Reference(example-laboratory-practitioner)
+* section[labTask].entry[+] = Reference(example-laboratory-task-requested)
+* section[labOrders].entry[+] = Reference(example-laboratory-service-request-panel)
+* section[labOrders].entry[+] = Reference(example-laboratory-service-request-1)
+* section[labOrders].entry[+] = Reference(example-laboratory-service-request-2)
+
 Instance: example-laboratory-bundle
 InstanceOf: Bundle
 Usage: #example
