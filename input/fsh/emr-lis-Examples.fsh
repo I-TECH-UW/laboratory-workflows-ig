@@ -1,14 +1,14 @@
-Instance: example-emr-lis-patient
-InstanceOf: EmrLisPatient 
+Instance: example-laboratory-patient
+InstanceOf: LaboratoryPatient 
 Usage: #example 
-Description: "Example EMR-LIS Patient"
-Title:   "EMR-LIS Patient"
+Description: "Example Laboratory Patient"
+Title:   "Laboratory Patient"
 * birthDate = "1988-03-02"
 * identifier.id = "5981a256-d60c-44b1-beae-9bdd2cf572f8"
 * identifier.use = #official
 * identifier.type.text = "iSantePlus ID"
 * identifier.value = "10012R"
-* identifier.extension.url = "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-patient-identifier-location"
+* identifier.extension.url = "http://i-tech-uw.github.io/laboratory-ig/StructureDefinition/laboratory-patient-identifier-location"
 * identifier.extension.valueReference.reference = "Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f"
 * identifier.extension.valueReference.type = "Location"
 * identifier.extension.valueReference.display = "Unknown Location"
@@ -23,88 +23,85 @@ Title:   "EMR-LIS Patient"
 * address.country = "haiti"
 
 
-Instance: example-emr-lis-task-requested
-InstanceOf: EmrLisTask 
+Instance: example-laboratory-task-requested
+InstanceOf: LaboratoryTask 
 Usage: #example 
-Description: "Example Task for Requested Lab Orders and Results for EMR-LIS integration"
-Title:   "EMR-LIS Requested Lab Task"
+Description: "Example Task for Requested Lab Orders"
+Title:   "Lab Order Task - Requested"
 * identifier.value = "88ffa7fb-0419-4097-8b45-24f0d843c5ea"
 * identifier.system = "http://isanteplus.org/ext/task/identifier"   
-* basedOn[+] = Reference(example-emr-lis-service-request-1)
+* basedOn[+] = Reference(example-laboratory-service-request-1)
 * basedOn[=].type = "ServiceRequest"
-* basedOn[+] = Reference(example-emr-lis-service-request-2)
+* basedOn[+] = Reference(example-laboratory-service-request-2)
 * basedOn[=].type = "ServiceRequest"
 * status = #requested
 * intent = #order
-* for = Reference(example-emr-lis-patient)
+* for = Reference(example-laboratory-patient)
 * authoredOn = "2021-05-20"
-* owner = Reference(example-emr-lis-practitioner)
+* owner = Reference(example-laboratory-practitioner)
 
-Instance: example-emr-lis-service-request-1
-InstanceOf: EmrLisServiceRequest
+Instance: example-laboratory-service-request-1
+InstanceOf: LaboratoryServiceRequest
 Usage: #example
-Description: "Example ServiceRequest resource representing a EMR-LIS Lab Order"
-Title: "EMR-LIS ServiceRequest 1"
+Description: "Example ServiceRequest resource representing a Lab Test Order"
+Title: "Laboratory ServiceRequest 1"
 * status = #active
 * intent = #order
 * code.coding.system = "http://loinc.org"
 * code.coding.code = #14682-9
-* basedOn[+] = Reference(example-emr-lis-service-request-profile)
-* subject = Reference(example-emr-lis-patient)
-* encounter = Reference(example-emr-lis-encounter)
-* encounter.type = "Encounter"
+* basedOn[+] = Reference(example-laboratory-service-request-panel)
+* subject = Reference(example-laboratory-patient)
+* encounter = Reference(example-laboratory-encounter)
 
-Instance: example-emr-lis-service-request-2
-InstanceOf: EmrLisServiceRequest
+Instance: example-laboratory-service-request-2
+InstanceOf: LaboratoryServiceRequest
 Usage: #example
-Description: "Example ServiceRequest resource representing EMR-LIS Lab Order"
-Title: "EMR-LIS ServiceRequest 2"
+Description: "Example ServiceRequest resource representing a Lab Test Order"
+Title: "Laboratory ServiceRequest 2"
 * status = #active
 * intent = #order
 * code.coding[+].system = "http://loinc.org"
 * code.coding[=].code = #14682-9
-* basedOn[+] = Reference(example-emr-lis-service-request-profile)
-* subject = Reference(example-emr-lis-patient)
-* encounter = Reference(example-emr-lis-encounter)
-* encounter.type = "Encounter" 
+* basedOn[+] = Reference(example-laboratory-service-request-panel)
+* subject = Reference(example-laboratory-patient)
+* encounter = Reference(example-laboratory-encounter)
 
-Instance: example-emr-lis-service-request-profile
-InstanceOf: EmrLisServiceRequest
+Instance: example-laboratory-service-request-panel
+InstanceOf: LaboratoryServiceRequest
 Usage: #example
-Description: "Example ServiceRequest resource representing EMR-LIS Lab Order"
-Title: "EMR-LIS ServiceRequest Profile"
+Description: "Example ServiceRequest resource representing a Lab Test Order Panel"
+Title: "Laboratory ServiceRequest Panel"
 * status = #active
 * intent = #order
 * code.coding[+].system = "http://loinc.org"
 * code.coding[=].code = #14682-9
-* subject = Reference(example-emr-lis-patient)
-* encounter = Reference(example-emr-lis-encounter)
-* encounter.type = "Encounter"
+* subject = Reference(example-laboratory-patient)
+* encounter = Reference(example-laboratory-encounter)
 
-Instance: example-emr-lis-practitioner
-InstanceOf: EmrLisPractitioner
+Instance: example-laboratory-practitioner
+InstanceOf: LaboratoryPractitioner
 Usage: #example
-Description: "Example Emrs-LIS Practitioner"
-Title: "EMR-LIS Practitioner"
+Description: "Example Laboratory Practitioner"
+Title: "Laboratory Practitioner"
 * name[+].text = "Moses Mutesa"
 * identifier[+].value = "1000AX"
 * identifier[=].system = "http://fhir.openmrs.org/ext/provider/identifier"  
 
-Instance: example-emr-lis-encounter
-InstanceOf: EmrLisEncounter
+Instance: example-laboratory-encounter
+InstanceOf: LaboratoryEncounter
 Usage: #example
-Description: "Example EMR-LIS Encounter"
-Title: "EMR-LIS Encounter"
-* subject = Reference(example-emr-lis-patient) 
+Description: "Example Laboratory Encounter"
+Title: "Laboratory Encounter"
+* subject = Reference(example-laboratory-patient) 
 * subject.type = "Patient"
 * status = #in-progress
 * class.display = "inpatient encounter"  
 
-Instance: example-emr-lis-observation
-InstanceOf: EmrLisObservation
+Instance: example-laboratory-observation
+InstanceOf: LaboratoryObservation
 Usage: #example
-Description: "Example EmrLis Observation"
-Title: "EMR-LIS Observation"
+Description: "Example Laboratory Observation"
+Title: "Laboratory Observation"
 * identifier.system = "https://isanteplusdemo.com/openmrs/ws/fhir2/" 
 * identifier.value = "ebf83ba0-9d3c-497f-9aa0-d839ec506202"
 * code.coding[+].system = "http://loinc.org"
@@ -112,54 +109,54 @@ Title: "EMR-LIS Observation"
 * valueQuantity.value = 55.0
 * valueQuantity.unit = "UI/L"
 * valueQuantity.code = #88
-* subject = Reference(example-emr-lis-patient)
+* subject = Reference(example-laboratory-patient)
 * subject.type = "Patient"
 * status = #final
-* performer = Reference(example-emr-lis-practitioner)
+* performer = Reference(example-laboratory-practitioner)
 * effectiveDateTime = "2011-03-04T08:30:00+11:00"
 
-Instance: example-emr-lis-diagnostic-report
-InstanceOf: EmrLisDiagnosticReport
+Instance: example-laboratory-diagnostic-report
+InstanceOf: LaboratoryDiagnosticReport
 Usage: #example
-Description: "Example EMR-LIS DiagnosticReport"
-Title: "EMR-LIS DiagnosticReport"
+Description: "Example Laboratory DiagnosticReport"
+Title: "Laboratory DiagnosticReport"
 * code.coding[+].system = "http://loinc.org"
 * code.coding[=].code = #22748-8
 * category.coding[+].system = "http://loinc.org"
 * category.coding[=].code = #22748-8
 * effectiveDateTime = "2011-03-04T08:30:00+11:00"
-* subject.reference = "example-emr-lis-patient" 
+* subject.reference = "example-laboratory-patient" 
 * subject.type = "Patient"
-* result = Reference(example-emr-lis-observation)
+* result = Reference(example-laboratory-observation)
 * result.type = "Observation"
 * status = #final
 
-Instance: example-emr-lis-composition
-InstanceOf: EmrLisLabComposition
+Instance: example-laboratory-composition
+InstanceOf: LaboratoryLabComposition
 Usage: #example
 Description: "Example Lab Order Composition"
-Title: "EMR-LIS Lab Composition"
-* title = "EMR-LIS Lab Composition"
+Title: "Laboratory Lab Composition"
+* title = "Laboratory Lab Composition"
 * type = #document
-* subject = Reference(example-emr-lis-patient)
+* subject = Reference(example-laboratory-patient)
 * date = "2021-06-06"
 * status = #final
-* author = Reference(example-emr-lis-practitioner)
-* section[labTask].entry[+] = Reference(example-emr-lis-task-requested)
-* section[labOrders].entry[+] = Reference(example-emr-lis-service-request-profile)
-* section[labOrders].entry[+] = Reference(example-emr-lis-service-request-1)
-* section[labOrders].entry[+] = Reference(example-emr-lis-service-request-2)
+* author = Reference(example-laboratory-practitioner)
+* section[labTask].entry[+] = Reference(example-laboratory-task-requested)
+* section[labOrders].entry[+] = Reference(example-laboratory-service-request-panel)
+* section[labOrders].entry[+] = Reference(example-laboratory-service-request-1)
+* section[labOrders].entry[+] = Reference(example-laboratory-service-request-2)
 
-Instance: example-emr-lis-bundle
+Instance: example-laboratory-bundle
 InstanceOf: Bundle
 Usage: #example
-Description: "Example Full EMR-LIS Lab Bundle"
-Title: "EMR-LIS Lab Bundle"
+Description: "Example Full Laboratory Bundle"
+Title: "Laboratory Bundle"
 * type = #document
-* entry[+].resource = example-emr-lis-composition
-* entry[+].resource = example-emr-lis-patient
-* entry[+].resource = example-emr-lis-practitioner
-* entry[+].resource = example-emr-lis-task-requested
-* entry[+].resource = example-emr-lis-service-request-profile
-* entry[+].resource = example-emr-lis-service-request-1
-* entry[+].resource = example-emr-lis-service-request-2
+* entry[+].resource = example-laboratory-composition
+* entry[+].resource = example-laboratory-patient
+* entry[+].resource = example-laboratory-practitioner
+* entry[+].resource = example-laboratory-task-requested
+* entry[+].resource = example-laboratory-service-request-panel
+* entry[+].resource = example-laboratory-service-request-1
+* entry[+].resource = example-laboratory-service-request-2

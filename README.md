@@ -1,6 +1,6 @@
 # OpenHIE Laboratory Workflows Implementation Guide
 
-![CI](https://github.com/pmanko/emr-lmis-ig/workflows/CI/badge.svg)
+[![Build & Publish](https://github.com/I-TECH-UW/laboratory-workflows-ig/actions/workflows/publish.yml/badge.svg)](https://github.com/I-TECH-UW/laboratory-workflows-ig/actions/workflows/publish.yml)
 
 ## Overview
 This implementation guide is based on the OpenHIE Architecture specifications for Laboratory Workflows defined in the [OpenHIE Architecture Specifications](https://ohie.org/download/openhie-architecture-specification) in **Section 4.5**. 
@@ -31,5 +31,5 @@ Install ruby and ruby gems: https://www.ruby-lang.org/en/documentation/installat
 
 
 ## Issues
-https://github.com/I-TECH-UW/emr-lis-ig/issues 
+https://github.com/I-TECH-UW/laboratory-workflows-ig/issues 
 
