@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "LaboratoryDiagnosticReport"];
   fhir:StructureDefinition.title [ fhir:value "Laboratory Diagnostic Report"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-07-29T21:02:45+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-29T21:04:00+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "I-TECH-UW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
