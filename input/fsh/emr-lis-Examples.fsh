@@ -40,6 +40,21 @@ Title:   "Lab Order Task - Requested"
 * authoredOn = "2021-05-20"
 * owner = Reference(example-laboratory-practitioner)
 
+Instance: example-laboratory-task-simple-requested
+InstanceOf: LaboratoryTask 
+Usage: #example 
+Description: "Example Simple Task for Requested Lab Orders"
+Title:   "Lab Order Task - Simple Requested"
+* identifier.value = "88ffa7fb-0419-4097-8b45-24f0d843a5ea"
+* identifier.system = "http://i-tech-uw.github.io/lab-workflow-ig/ext/task/identifier"   
+* basedOn[+] = Reference(example-laboratory-service-request)
+* basedOn[=].type = "ServiceRequest"
+* status = #requested
+* intent = #order
+* for = Reference(example-laboratory-patient)
+* authoredOn = "2021-02-20"
+* owner = Reference(example-laboratory-practitioner)
+
 Instance: example-laboratory-service-request
 InstanceOf: LaboratoryServiceRequest
 Usage: #example
@@ -50,7 +65,6 @@ Title: "Laboratory ServiceRequest"
 * code.coding.system = "http://loinc.org"
 * code.coding.code = #14682-9
 * subject = Reference(example-laboratory-patient)
-* encounter = Reference(example-laboratory-encounter)
 
 Instance: example-laboratory-service-request-1
 InstanceOf: LaboratoryServiceRequest
@@ -166,7 +180,7 @@ Title: "Single Test Laboratory Bundle"
 * entry[+].resource = example-laboratory-simple-composition
 * entry[+].resource = example-laboratory-patient
 * entry[+].resource = example-laboratory-practitioner
-* entry[+].resource = example-laboratory-task-requested
+* entry[+].resource = example-laboratory-task-simple-requested
 * entry[+].resource = example-laboratory-service-request
 
 Instance: example-laboratory-composition
