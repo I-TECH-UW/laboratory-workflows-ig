@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "60f0220b-5391-41ca-b001-4e977502c4d0",
+  "id" : "9963140a-cbb0-4928-ba87-e149d3c1897f",
   "meta" : {
-    "lastUpdated" : "2021-07-29T21:04:00.869+00:00"
+    "lastUpdated" : "2021-07-29T21:12:40.719+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "LaboratoryDiagnosticReportStatusVS",
       "title" : "Laboratory Diagnostic Report Status Flag",
       "status" : "active",
-      "date" : "2021-07-29T21:04:00+00:00",
+      "date" : "2021-07-29T21:12:40+00:00",
       "publisher" : "I-TECH-UW",
       "contact" : [{
         "name" : "I-TECH-UW",
@@ -34,8 +34,8 @@
       }],
       "description" : "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html",
       "expansion" : {
-        "identifier" : "urn:uuid:d3e26596-ce93-4f1a-8213-5593270f89e2",
-        "timestamp" : "2021-07-29T21:05:31+00:00",
+        "identifier" : "urn:uuid:57935db7-19b5-4b5d-b5cc-cd8506dcf7e3",
+        "timestamp" : "2021-07-29T21:13:02+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
