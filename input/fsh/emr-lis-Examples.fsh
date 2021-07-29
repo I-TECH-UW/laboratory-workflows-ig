@@ -30,9 +30,9 @@ Description: "Example Task for Requested Lab Orders"
 Title:   "Lab Order Task - Requested"
 * identifier.value = "88ffa7fb-0419-4097-8b45-24f0d843c5ea"
 * identifier.system = "http://isanteplus.org/ext/task/identifier"   
-* basedOn[+] = Reference(example-laboratory-service-request-1)
+* basedOn[+] = Reference(example-laboratory-service-request-panel)
 * basedOn[=].type = "ServiceRequest"
-* basedOn[+] = Reference(example-laboratory-service-request-2)
+* basedOn[+] = Reference(example-laboratory-service-request)
 * basedOn[=].type = "ServiceRequest"
 * status = #requested
 * intent = #order
