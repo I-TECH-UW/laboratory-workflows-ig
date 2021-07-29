@@ -13,7 +13,7 @@ in the OpenHIE Architecture.</p>
   <title value="Laboratory Workflows Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-07-29T21:26:22+00:00"/>
+  <date value="2021-07-29T21:35:39+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
     <name value="I-TECH-UW"/>
@@ -521,6 +521,17 @@ in the OpenHIE Architecture.</p>
       </reference>
       <name value="Lab Order Task - Requested"/>
       <description value="Example Task for Requested Lab Orders"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/example-laboratory-task-simple-requested"/>
+      </reference>
+      <name value="Lab Order Task - Simple Requested"/>
+      <description value="Example Simple Task for Requested Lab Orders"/>
       <exampleCanonical value="http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-task"/>
     </resource>
     <page>

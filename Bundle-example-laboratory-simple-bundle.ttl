@@ -145,7 +145,7 @@
      fhir:index 3;
      fhir:Bundle.entry.resource [
        a fhir:Task;
-       fhir:Resource.id [ fhir:value "example-laboratory-task-requested" ];
+       fhir:Resource.id [ fhir:value "example-laboratory-task-simple-requested" ];
        fhir:Resource.meta [
          fhir:Meta.profile [
            fhir:value "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-task";
@@ -155,22 +155,17 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 88ffa7fb-0419-4097-8b45-24f0d843c5ea</p><p><b>basedOn</b>: </p><ul><li><a href=\"ServiceRequest-example-laboratory-service-request-1.html\">Generated Summary: status: active; intent: order; <span title=\"Codes: {http://loinc.org 14682-9}\">14682-9</span></a></li><li><a href=\"ServiceRequest-example-laboratory-service-request-2.html\">Generated Summary: status: active; intent: order; <span title=\"Codes: {http://loinc.org 14682-9}\">14682-9</span></a></li></ul><p><b>status</b>: requested</p><p><b>intent</b>: order</p><p><b>for</b>: <a href=\"#Patient_example-laboratory-patient\">See above (Patient/example-laboratory-patient)</a></p><p><b>authoredOn</b>: 2021-05-20</p><p><b>owner</b>: <a href=\"#Practitioner_example-laboratory-practitioner\">See above (Practitioner/example-laboratory-practitioner)</a></p></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 88ffa7fb-0419-4097-8b45-24f0d843a5ea</p><p><b>basedOn</b>: <a href=\"#ServiceRequest_example-laboratory-service-request\">See above (ServiceRequest/example-laboratory-service-request)</a></p><p><b>status</b>: requested</p><p><b>intent</b>: order</p><p><b>for</b>: <a href=\"#Patient_example-laboratory-patient\">See above (Patient/example-laboratory-patient)</a></p><p><b>authoredOn</b>: 2021-02-20</p><p><b>owner</b>: <a href=\"#Practitioner_example-laboratory-practitioner\">See above (Practitioner/example-laboratory-practitioner)</a></p></div>"
        ];
        fhir:Task.identifier [
          fhir:index 0;
-         fhir:Identifier.system [ fhir:value "http://isanteplus.org/ext/task/identifier" ];
-         fhir:Identifier.value [ fhir:value "88ffa7fb-0419-4097-8b45-24f0d843c5ea" ]
+         fhir:Identifier.system [ fhir:value "http://i-tech-uw.github.io/lab-workflow-ig/ext/task/identifier" ];
+         fhir:Identifier.value [ fhir:value "88ffa7fb-0419-4097-8b45-24f0d843a5ea" ]
        ];
        fhir:Task.basedOn [
          fhir:index 0;
-         fhir:link <http://i-tech-uw.github.io/laboratory-workflows-ig/ServiceRequest/example-laboratory-service-request-1>;
-         fhir:Reference.reference [ fhir:value "ServiceRequest/example-laboratory-service-request-1" ];
-         fhir:Reference.type [ fhir:value "ServiceRequest" ]
-       ], [
-         fhir:index 1;
-         fhir:link <http://i-tech-uw.github.io/laboratory-workflows-ig/ServiceRequest/example-laboratory-service-request-2>;
-         fhir:Reference.reference [ fhir:value "ServiceRequest/example-laboratory-service-request-2" ];
+         fhir:link <http://i-tech-uw.github.io/laboratory-workflows-ig/ServiceRequest/example-laboratory-service-request>;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-laboratory-service-request" ];
          fhir:Reference.type [ fhir:value "ServiceRequest" ]
        ];
        fhir:Task.status [ fhir:value "requested" ];
@@ -179,7 +174,7 @@
          fhir:link <http://i-tech-uw.github.io/laboratory-workflows-ig/Patient/example-laboratory-patient>;
          fhir:Reference.reference [ fhir:value "Patient/example-laboratory-patient" ]
        ];
-       fhir:Task.authoredOn [ fhir:value "2021-05-20"^^xsd:date ];
+       fhir:Task.authoredOn [ fhir:value "2021-02-20"^^xsd:date ];
        fhir:Task.owner [
          fhir:link <http://i-tech-uw.github.io/laboratory-workflows-ig/Practitioner/example-laboratory-practitioner>;
          fhir:Reference.reference [ fhir:value "Practitioner/example-laboratory-practitioner" ]
@@ -199,7 +194,7 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 14682-9}\">14682-9</span></p><p><b>subject</b>: <a href=\"#Patient_example-laboratory-patient\">See above (Patient/example-laboratory-patient)</a></p><p><b>encounter</b>: <a href=\"Encounter-example-laboratory-encounter.html\">Generated Summary: status: in-progress; <span title=\"{null null}\">inpatient encounter</span></a></p></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 14682-9}\">14682-9</span></p><p><b>subject</b>: <a href=\"#Patient_example-laboratory-patient\">See above (Patient/example-laboratory-patient)</a></p></div>"
        ];
        fhir:ServiceRequest.status [ fhir:value "active" ];
        fhir:ServiceRequest.intent [ fhir:value "order" ];
@@ -214,10 +209,6 @@
        fhir:ServiceRequest.subject [
          fhir:link <http://i-tech-uw.github.io/laboratory-workflows-ig/Patient/example-laboratory-patient>;
          fhir:Reference.reference [ fhir:value "Patient/example-laboratory-patient" ]
-       ];
-       fhir:ServiceRequest.encounter [
-         fhir:link <http://i-tech-uw.github.io/laboratory-workflows-ig/Encounter/example-laboratory-encounter>;
-         fhir:Reference.reference [ fhir:value "Encounter/example-laboratory-encounter" ]
        ]
      ]
   ] .

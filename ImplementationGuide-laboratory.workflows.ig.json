@@ -11,7 +11,7 @@
   "title": "Laboratory Workflows Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-07-29T21:26:22+00:00",
+  "date": "2021-07-29T21:35:39+00:00",
   "publisher": "I-TECH-UW",
   "contact": [
     {
@@ -723,6 +723,20 @@
         },
         "name": "Lab Order Task - Requested",
         "description": "Example Task for Requested Lab Orders",
+        "exampleCanonical": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-task"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Task"
+          }
+        ],
+        "reference": {
+          "reference": "Task/example-laboratory-task-simple-requested"
+        },
+        "name": "Lab Order Task - Simple Requested",
+        "description": "Example Simple Task for Requested Lab Orders",
         "exampleCanonical": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-task"
       }
     ],

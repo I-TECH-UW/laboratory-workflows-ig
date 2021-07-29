@@ -102,23 +102,19 @@
   <entry>
     <resource>
       <Task>
-        <id value="example-laboratory-task-requested"/>
+        <id value="example-laboratory-task-simple-requested"/>
         <meta>
           <profile value="http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-task"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 88ffa7fb-0419-4097-8b45-24f0d843c5ea</p><p><b>basedOn</b>: </p><ul><li><a href="ServiceRequest-example-laboratory-service-request-1.html">Generated Summary: status: active; intent: order; <span title="Codes: {http://loinc.org 14682-9}">14682-9</span></a></li><li><a href="ServiceRequest-example-laboratory-service-request-2.html">Generated Summary: status: active; intent: order; <span title="Codes: {http://loinc.org 14682-9}">14682-9</span></a></li></ul><p><b>status</b>: requested</p><p><b>intent</b>: order</p><p><b>for</b>: <a href="#Patient_example-laboratory-patient">See above (Patient/example-laboratory-patient)</a></p><p><b>authoredOn</b>: 2021-05-20</p><p><b>owner</b>: <a href="#Practitioner_example-laboratory-practitioner">See above (Practitioner/example-laboratory-practitioner)</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 88ffa7fb-0419-4097-8b45-24f0d843a5ea</p><p><b>basedOn</b>: <a href="#ServiceRequest_example-laboratory-service-request">See above (ServiceRequest/example-laboratory-service-request)</a></p><p><b>status</b>: requested</p><p><b>intent</b>: order</p><p><b>for</b>: <a href="#Patient_example-laboratory-patient">See above (Patient/example-laboratory-patient)</a></p><p><b>authoredOn</b>: 2021-02-20</p><p><b>owner</b>: <a href="#Practitioner_example-laboratory-practitioner">See above (Practitioner/example-laboratory-practitioner)</a></p></div>
         </text>
         <identifier>
-          <system value="http://isanteplus.org/ext/task/identifier"/>
-          <value value="88ffa7fb-0419-4097-8b45-24f0d843c5ea"/>
+          <system value="http://i-tech-uw.github.io/lab-workflow-ig/ext/task/identifier"/>
+          <value value="88ffa7fb-0419-4097-8b45-24f0d843a5ea"/>
         </identifier>
         <basedOn>
-          <reference value="ServiceRequest/example-laboratory-service-request-1"/>
-          <type value="ServiceRequest"/>
-        </basedOn>
-        <basedOn>
-          <reference value="ServiceRequest/example-laboratory-service-request-2"/>
+          <reference value="ServiceRequest/example-laboratory-service-request"/>
           <type value="ServiceRequest"/>
         </basedOn>
         <status value="requested"/>
@@ -126,7 +122,7 @@
         <for>
           <reference value="Patient/example-laboratory-patient"/>
         </for>
-        <authoredOn value="2021-05-20"/>
+        <authoredOn value="2021-02-20"/>
         <owner>
           <reference value="Practitioner/example-laboratory-practitioner"/>
         </owner>
@@ -141,7 +137,7 @@
           <profile value="http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-service-request"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title="Codes: {http://loinc.org 14682-9}">14682-9</span></p><p><b>subject</b>: <a href="#Patient_example-laboratory-patient">See above (Patient/example-laboratory-patient)</a></p><p><b>encounter</b>: <a href="Encounter-example-laboratory-encounter.html">Generated Summary: status: in-progress; <span title="{null null}">inpatient encounter</span></a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title="Codes: {http://loinc.org 14682-9}">14682-9</span></p><p><b>subject</b>: <a href="#Patient_example-laboratory-patient">See above (Patient/example-laboratory-patient)</a></p></div>
         </text>
         <status value="active"/>
         <intent value="order"/>
@@ -154,9 +150,6 @@
         <subject>
           <reference value="Patient/example-laboratory-patient"/>
         </subject>
-        <encounter>
-          <reference value="Encounter/example-laboratory-encounter"/>
-        </encounter>
       </ServiceRequest>
     </resource>
   </entry>
