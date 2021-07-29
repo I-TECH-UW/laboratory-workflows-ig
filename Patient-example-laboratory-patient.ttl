@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://i-tech-uw.github.io/laboratory-workflows-ig/Patient/example-laboratory-patient> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-laboratory-patient"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-patient";
+       fhir:index 0;
+       fhir:link <http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: iSantePlus ID: 10012R (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: moses Mutesa </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p><p><b>deceased</b>: false</p><p><b>address</b>: haiti (HOME)</p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "5981a256-d60c-44b1-beae-9bdd2cf572f8" ];
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://i-tech-uw.github.io/laboratory-ig/StructureDefinition/laboratory-patient-identifier-location" ];
+       fhir:Extension.valueReference [
+         fhir:link <http://i-tech-uw.github.io/laboratory-workflows-ig/Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f>;
+         fhir:Reference.reference [ fhir:value "Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f" ];
+         fhir:Reference.type [ fhir:value "Location" ];
+         fhir:Reference.display [ fhir:value "Unknown Location" ]
+       ]
+     ];
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.text [ fhir:value "iSantePlus ID" ]
+     ];
+     fhir:Identifier.value [ fhir:value "10012R" ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "511275de-e301-44a3-95d2-28d0d3b35387" ];
+     fhir:HumanName.family [ fhir:value "Mutesa" ];
+     fhir:HumanName.given [
+       fhir:value "moses";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.birthDate [ fhir:value "1988-03-02"^^xsd:date];
+  fhir:Patient.deceasedBoolean [ fhir:value "false"^^xsd:boolean];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "d4f7c809-3d01-4032-b64d-4c22e8eccbbc" ];
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.country [ fhir:value "haiti" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://i-tech-uw.github.io/laboratory-workflows-ig/Patient/example-laboratory-patient.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

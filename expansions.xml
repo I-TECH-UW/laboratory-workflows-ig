@@ -1,11 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="c9fccf8c-3ac9-480e-b037-ce36491c35de"/>
+  <id value="8dbdb392-482f-46fd-a3ff-44b3661891c4"/>
   <meta>
-    <lastUpdated value="2021-07-28T19:11:31.677+00:00"/>
+    <lastUpdated value="2021-07-29T21:02:45.744+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-diagnostic-report-status-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="laboratory-diagnostic-report-status-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html">DiagnosticReportStatus v4.0.1 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html">
+                <code>http://hl7.org/fhir/diagnostic-report-status</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-partial"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-partial">diagnostic-report-status-partial</a>
+                </td>
+                <td>Partial</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-final"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-final">diagnostic-report-status-final</a>
+                </td>
+                <td>Final</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-unknown"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-unknown">diagnostic-report-status-unknown</a>
+                </td>
+                <td>Unknown</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-canceled"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-canceled">diagnostic-report-status-canceled</a>
+                </td>
+                <td>Canceled</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-amended"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-amended">diagnostic-report-status-amended</a>
+                </td>
+                <td>Amended</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-diagnostic-report-status-vs"/>
+        <version value="0.2.0"/>
+        <name value="LaboratoryDiagnosticReportStatusVS"/>
+        <title value="Laboratory Diagnostic Report Status Flag"/>
+        <status value="active"/>
+        <date value="2021-07-29T21:02:45+00:00"/>
+        <publisher value="I-TECH-UW"/>
+        <contact>
+          <name value="I-TECH-UW"/>
+          <telecom>
+            <system value="url"/>
+            <value value="www.github.com/i-tech-uw"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="pmanko@uw.edu"/>
+          </telecom>
+        </contact>
+        <description value="The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html"/>
+        <expansion>
+          <identifier value="urn:uuid:4e1c6b7d-a065-4ef7-9642-3d503966f7a8"/>
+          <timestamp value="2021-07-29T21:03:01+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/diagnostic-report-status|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="diagnostic-report-status-partial"/>
+            <display value="Partial"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="diagnostic-report-status-final"/>
+            <display value="Final"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="diagnostic-report-status-unknown"/>
+            <display value="Unknown"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="diagnostic-report-status-canceled"/>
+            <display value="Canceled"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="diagnostic-report-status-amended"/>
+            <display value="Amended"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <resource>
       <ValueSet>
@@ -13048,138 +13180,6 @@
             <system value="http://loinc.org"/>
             <code value="10898-5"/>
             <display value="Eastern equine encephalitis virus IgM Ab [Titer] in Serum by Immunofluorescence"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-diagnostic-report-status-vs"/>
-    <resource>
-      <ValueSet>
-        <id value="emr-lab-diagnostic-report-status-vs"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html">DiagnosticReportStatus v4.0.1 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html">
-                <code>http://hl7.org/fhir/diagnostic-report-status</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-partial"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-partial">diagnostic-report-status-partial</a>
-                </td>
-                <td>Partial</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-final"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-final">diagnostic-report-status-final</a>
-                </td>
-                <td>Final</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-unknown"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-unknown">diagnostic-report-status-unknown</a>
-                </td>
-                <td>Unknown</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-canceled"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-canceled">diagnostic-report-status-canceled</a>
-                </td>
-                <td>Canceled</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-amended"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-amended">diagnostic-report-status-amended</a>
-                </td>
-                <td>Amended</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-diagnostic-report-status-vs"/>
-        <version value="0.2.0"/>
-        <name value="EmrLisDiagnosticReportStatusVS"/>
-        <title value="EMR-LIS Diagnostic Report Status Flag"/>
-        <status value="active"/>
-        <date value="2021-07-28T19:11:31+00:00"/>
-        <publisher value="I-TECH-UW"/>
-        <contact>
-          <name value="I-TECH-UW"/>
-          <telecom>
-            <system value="url"/>
-            <value value="www.github.com/i-tech-uw"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="pmanko@uw.edu"/>
-          </telecom>
-        </contact>
-        <description value="The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html"/>
-        <expansion>
-          <identifier value="urn:uuid:ae20ecad-d4ca-4550-82ee-3b3cb654d4de"/>
-          <timestamp value="2021-07-28T19:11:54+00:00"/>
-          <total value="5"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/diagnostic-report-status|4.0.1"/>
-          </parameter>
-          <contains>
-            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
-            <code value="diagnostic-report-status-partial"/>
-            <display value="Partial"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
-            <code value="diagnostic-report-status-final"/>
-            <display value="Final"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
-            <code value="diagnostic-report-status-unknown"/>
-            <display value="Unknown"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
-            <code value="diagnostic-report-status-canceled"/>
-            <display value="Canceled"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
-            <code value="diagnostic-report-status-amended"/>
-            <display value="Amended"/>
           </contains>
         </expansion>
       </ValueSet>

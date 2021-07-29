@@ -1,114 +1,114 @@
 [
   {
-    "id": "emr.lis.ig",
+    "id": "laboratory.workflows.ig",
     "type": "ImplementationGuide",
-    "url": "http://i-tech-uw.github.io/emr-lis-ig/ImplementationGuide/emr.lis.ig",
+    "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/ImplementationGuide/laboratory.workflows.ig",
     "version": "0.2.0",
-    "name": "EmrLisIg"
+    "name": "LaboratoryIg"
   },
   {
-    "id": "EmrLisLogicalModel",
+    "id": "LaboratoryLogicalModel",
     "type": "StructureDefinition",
-    "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/EmrLisLogicalModel",
+    "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/LaboratoryLogicalModel",
     "version": "0.2.0",
-    "name": "EmrLisLogicalModel"
+    "name": "LaboratoryLogicalModel"
   },
   {
-    "id": "emr-lab-diagnostic-report",
+    "id": "laboratory-composition",
     "type": "StructureDefinition",
-    "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-diagnostic-report",
+    "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-composition",
     "version": "0.2.0",
-    "name": "EmrLisDiagnosticReport"
+    "name": "LaboratoryLabComposition"
   },
   {
-    "id": "emr-lab-encounter",
+    "id": "laboratory-diagnostic-report",
     "type": "StructureDefinition",
-    "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-encounter",
+    "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-diagnostic-report",
     "version": "0.2.0",
-    "name": "EmrLisEncounter"
+    "name": "LaboratoryDiagnosticReport"
   },
   {
-    "id": "emr-lab-observation",
+    "id": "laboratory-encounter",
     "type": "StructureDefinition",
-    "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-observation",
+    "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-encounter",
     "version": "0.2.0",
-    "name": "EmrLisObservation"
+    "name": "LaboratoryEncounter"
   },
   {
-    "id": "emr-lab-openmrs-identifier",
+    "id": "laboratory-observation",
     "type": "StructureDefinition",
-    "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-openmrs-identifier",
+    "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-observation",
     "version": "0.2.0",
-    "name": "EmrLisOpenmrsIdentifier"
+    "name": "LaboratoryObservation"
   },
   {
-    "id": "emr-lab-patient",
+    "id": "laboratory-openmrs-identifier",
     "type": "StructureDefinition",
-    "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-patient",
+    "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-openmrs-identifier",
     "version": "0.2.0",
-    "name": "EmrLisPatient"
+    "name": "LaboratoryOpenmrsIdentifier"
   },
   {
-    "id": "emr-lab-practitioner",
+    "id": "laboratory-patient",
     "type": "StructureDefinition",
-    "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-practitioner",
+    "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-patient",
     "version": "0.2.0",
-    "name": "EmrLisPractitioner"
+    "name": "LaboratoryPatient"
   },
   {
-    "id": "emr-lab-service-request",
+    "id": "laboratory-patient-identifier-location",
     "type": "StructureDefinition",
-    "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request",
+    "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-patient-identifier-location",
     "version": "0.2.0",
-    "name": "EmrLisServiceRequest"
+    "name": "LaboratoryPatientIdentifierLocationExtension"
   },
   {
-    "id": "emr-lab-task",
+    "id": "laboratory-practitioner",
     "type": "StructureDefinition",
-    "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task",
+    "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-practitioner",
     "version": "0.2.0",
-    "name": "EmrLisTask"
+    "name": "LaboratoryPractitioner"
   },
   {
-    "id": "emr-lis-composition",
+    "id": "laboratory-service-request",
     "type": "StructureDefinition",
-    "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-composition",
+    "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-service-request",
     "version": "0.2.0",
-    "name": "EmrLisLabComposition"
+    "name": "LaboratoryServiceRequest"
   },
   {
-    "id": "emr-lis-patient-identifier-location",
+    "id": "laboratory-task",
     "type": "StructureDefinition",
-    "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-patient-identifier-location",
+    "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-task",
     "version": "0.2.0",
-    "name": "EmrLisPatientIdentifierLocationExtension"
+    "name": "LaboratoryTask"
   },
   {
-    "id": "emr-lab-diagnostic-report-status-vs",
+    "id": "laboratory-diagnostic-report-status-vs",
     "type": "ValueSet",
-    "url": "http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-diagnostic-report-status-vs",
+    "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-diagnostic-report-status-vs",
     "version": "0.2.0",
-    "name": "EmrLisDiagnosticReportStatusVS"
+    "name": "LaboratoryDiagnosticReportStatusVS"
   },
   {
-    "id": "emr-lab-order-code-vs",
+    "id": "laboratory-order-code-vs",
     "type": "ValueSet",
-    "url": "http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-order-code-vs",
+    "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-order-code-vs",
     "version": "0.2.0",
-    "name": "EmrLisOrderCodeVS"
+    "name": "LaboratoryOrderCodeVS"
   },
   {
-    "id": "emr-lab-task-intent-vs",
+    "id": "laboratory-task-intent-vs",
     "type": "ValueSet",
-    "url": "http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-intent-vs",
+    "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-task-intent-vs",
     "version": "0.2.0",
-    "name": "EmrLisTaskIntentVS"
+    "name": "LaboratoryTaskIntentVS"
   },
   {
-    "id": "emr-lab-task-status-vs",
+    "id": "laboratory-task-status-vs",
     "type": "ValueSet",
-    "url": "http://i-tech-uw.github.io/emr-lis-ig/ValueSet/emr-lab-task-status-vs",
+    "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-task-status-vs",
     "version": "0.2.0",
-    "name": "EmrLisTaskStatusVS"
+    "name": "LaboratoryTaskStatusVS"
   }
 ]

@@ -1,63 +1,63 @@
 {
-  "package": "emr.lis.ig",
+  "package": "laboratory.workflows.ig",
   "version": "0.2.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-patient-identifier-location",
-      "title": "EMR-LIS Patient Identifier Location Extension",
+      "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-patient-identifier-location",
+      "title": "Laboratory Patient Identifier Location Extension",
       "types": [
         "Reference"
       ]
     }
   ],
   "profiles": {
+    "Composition": [
+      {
+        "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-composition",
+        "title": "Laboratory Order Composition"
+      }
+    ],
     "DiagnosticReport": [
       {
-        "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-diagnostic-report",
-        "title": "EMR-LIS Diagnostic Report"
+        "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-diagnostic-report",
+        "title": "Laboratory Diagnostic Report"
       }
     ],
     "Encounter": [
       {
-        "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-encounter",
-        "title": "EMR-LIS Encounter"
+        "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-encounter",
+        "title": "Laboratory Encounter"
       }
     ],
     "Observation": [
       {
-        "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-observation",
-        "title": "EMR-LIS Observation"
+        "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-observation",
+        "title": "Laboratory Observation"
       }
     ],
     "Patient": [
       {
-        "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-patient",
-        "title": "EMR-LIS Workflow Patient"
+        "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-patient",
+        "title": "Laboratory Workflow Patient"
       }
     ],
     "Practitioner": [
       {
-        "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-practitioner",
-        "title": "EMR-LIS Encounter"
+        "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-practitioner",
+        "title": "Laboratory Encounter"
       }
     ],
     "ServiceRequest": [
       {
-        "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-service-request",
-        "title": "EMR-LIS Service Request"
+        "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-service-request",
+        "title": "Laboratory Service Request"
       }
     ],
     "Task": [
       {
-        "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lab-task",
-        "title": "EMR-LIS Workflow Task Resource"
-      }
-    ],
-    "Composition": [
-      {
-        "url": "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-composition",
-        "title": "EMR-LIS Lab Order Composition"
+        "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-task",
+        "title": "Laboratory Workflow Task Resource"
       }
     ]
   },
@@ -114,10 +114,12 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://i-tech-uw.github.io/emr-lis-ig/StructureDefinition/emr-lis-patient-identifier-location": [
+    "http://i-tech-uw.github.io/laboratory-ig/StructureDefinition/laboratory-patient-identifier-location": [
       "Bundle.entry.resource.identifier",
-      "Identifier",
       "Patient.identifier"
+    ],
+    "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-patient-identifier-location": [
+      "Identifier"
     ]
   }
 }

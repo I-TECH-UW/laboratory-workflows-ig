@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="example-laboratory-patient"/>
+  <meta>
+    <profile value="http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: iSantePlus ID: 10012R (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: moses Mutesa </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p><p><b>deceased</b>: false</p><p><b>address</b>: haiti (HOME)</p></div>
+  </text>
+  <identifier id="5981a256-d60c-44b1-beae-9bdd2cf572f8">
+    <extension url="http://i-tech-uw.github.io/laboratory-ig/StructureDefinition/laboratory-patient-identifier-location">
+      <valueReference>
+        <reference value="Location/8d6c993e-c2cc-11de-8d13-0010c6dffd0f"/>
+        <type value="Location"/>
+        <display value="Unknown Location"/>
+      </valueReference>
+    </extension>
+    <use value="official"/>
+    <type>
+      <text value="iSantePlus ID"/>
+    </type>
+    <value value="10012R"/>
+  </identifier>
+  <active value="true"/>
+  <name id="511275de-e301-44a3-95d2-28d0d3b35387">
+    <family value="Mutesa"/>
+    <given value="moses"/>
+  </name>
+  <gender value="female"/>
+  <birthDate value="1988-03-02"/>
+  <deceasedBoolean value="false"/>
+  <address id="d4f7c809-3d01-4032-b64d-4c22e8eccbbc">
+    <use value="home"/>
+    <country value="haiti"/>
+  </address>
+</Patient>
