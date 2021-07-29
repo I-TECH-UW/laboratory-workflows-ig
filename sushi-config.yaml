@@ -2,19 +2,19 @@
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: emr.lis.ig
-canonical: http://i-tech-uw.github.io/emr-lis-ig
-name: EmrLisIg
+id: laboratory.workflows.ig
+canonical: http://i-tech-uw.github.io/laboratory-workflows-ig
+name: LaboratoryIg
 status: draft
 version: 0.2.0
 fhirVersion: 4.0.1
 # copyright:
 copyrightYear: 2021+
 releaseLabel: ci-build
-title: EMR-LIS Implementation Guide
+title: Laboratory Workflows Implementation Guide
 description: |
-  Implementation guide for FHIR-based communication between Lab Systems and Electronic Medical 
-  Records in the OpenHIE Architecture, based on the OpenMRS EMR and the OpenELIS LIS. 
+  Implementation guide for FHIR-based communication for Laboratory Test Orders and Results
+  in the OpenHIE Architecture.
 license: CC-BY-SA-4.0
 publisher:
   name: I-TECH-UW

@@ -1,6 +1,6 @@
-Profile:        EmrLisOpenmrsIdentifier
+Profile:        LaboratoryOpenmrsIdentifier
 Parent:         Identifier
-Id:             emr-lab-openmrs-identifier
-Title:          "EMR-LIS Workflow OpenMRS Identifier"
+Id:             laboratory-openmrs-identifier
+Title:          "Laboratory Workflow OpenMRS Identifier"
 Description:    "A identifier for OpenMRS"
-* extension contains EmrLisPatientIdentifierLocationExtension named location 1..1
+* extension contains LaboratoryPatientIdentifierLocationExtension named location 1..1
