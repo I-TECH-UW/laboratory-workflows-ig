@@ -40,6 +40,18 @@ Title:   "Lab Order Task - Requested"
 * authoredOn = "2021-05-20"
 * owner = Reference(example-laboratory-practitioner)
 
+Instance: example-laboratory-service-request
+InstanceOf: LaboratoryServiceRequest
+Usage: #example
+Description: "Example ServiceRequest resource representing a Lab Test Order"
+Title: "Laboratory ServiceRequest"
+* status = #active
+* intent = #order
+* code.coding.system = "http://loinc.org"
+* code.coding.code = #14682-9
+* subject = Reference(example-laboratory-patient)
+* encounter = Reference(example-laboratory-encounter)
+
 Instance: example-laboratory-service-request-1
 InstanceOf: LaboratoryServiceRequest
 Usage: #example
@@ -131,21 +143,19 @@ Title: "Laboratory DiagnosticReport"
 * result.type = "Observation"
 * status = #final
 
-Instance: example-laboratory-composition
+Instance: example-laboratory-simple-composition
 InstanceOf: LaboratoryLabComposition
 Usage: #example
-Description: "Example Lab Order Composition"
-Title: "Laboratory Lab Composition"
-* title = "Laboratory Lab Composition"
+Description: "Example Single Lab Order Composition"
+Title: "Laboratory Single Order Composition"
+* title = "Laboratory Single Order Composition"
 * type = #document
 * subject = Reference(example-laboratory-patient)
-* date = "2021-06-06"
+* date = "2021-06-08"
 * status = #final
 * author = Reference(example-laboratory-practitioner)
 * section[labTask].entry[+] = Reference(example-laboratory-task-requested)
-* section[labOrders].entry[+] = Reference(example-laboratory-service-request-panel)
-* section[labOrders].entry[+] = Reference(example-laboratory-service-request-1)
-* section[labOrders].entry[+] = Reference(example-laboratory-service-request-2)
+* section[labOrders].entry[+] = Reference(example-laboratory-service-request)
 
 Instance: example-laboratory-simple-bundle
 InstanceOf: Bundle
@@ -157,14 +167,14 @@ Title: "Single Test Laboratory Bundle"
 * entry[+].resource = example-laboratory-patient
 * entry[+].resource = example-laboratory-practitioner
 * entry[+].resource = example-laboratory-task-requested
-* entry[+].resource = example-laboratory-service-request-1
+* entry[+].resource = example-laboratory-service-request
 
 Instance: example-laboratory-composition
 InstanceOf: LaboratoryLabComposition
 Usage: #example
-Description: "Example Lab Order Composition"
-Title: "Laboratory Lab Composition"
-* title = "Laboratory Lab Composition"
+Description: "Example Laboratory Composition"
+Title: "Laboratory Composition"
+* title = "Laboratory Composition"
 * type = #document
 * subject = Reference(example-laboratory-patient)
 * date = "2021-06-06"
