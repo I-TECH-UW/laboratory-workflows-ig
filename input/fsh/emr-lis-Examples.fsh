@@ -238,8 +238,8 @@ Title: "Laboratory Bundle"
 Instance: example-transaction-response-bundle
 InstanceOf: Bundle
 Usage: #example
-Description: "Example Full Laboratory Bundle"
-Title: "Laboratory Bundle"
+Description: "Example Transaction Response Bundle"
+Title: "Transaction Response Bundle"
 * type = #transaction-response
 * link[+].relation = #self
 * link[=].url = "responding.server.org/fhir"
