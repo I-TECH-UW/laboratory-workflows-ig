@@ -11,7 +11,7 @@
   "title": "Laboratory Workflows Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-08-04T04:43:22+00:00",
+  "date": "2021-08-04T04:50:19+00:00",
   "publisher": "I-TECH-UW",
   "contact": [
     {
@@ -763,8 +763,8 @@
         "reference": {
           "reference": "Bundle/example-transaction-response-bundle"
         },
-        "name": "Laboratory Bundle",
-        "description": "Example Full Laboratory Bundle",
+        "name": "Transaction Response Bundle",
+        "description": "Example Transaction Response Bundle",
         "exampleBoolean": true
       }
     ],

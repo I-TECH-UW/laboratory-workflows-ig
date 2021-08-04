@@ -13,7 +13,7 @@ in the OpenHIE Architecture.</p>
   <title value="Laboratory Workflows Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-08-04T04:43:22+00:00"/>
+  <date value="2021-08-04T04:50:19+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
     <name value="I-TECH-UW"/>
@@ -552,8 +552,8 @@ in the OpenHIE Architecture.</p>
       <reference>
         <reference value="Bundle/example-transaction-response-bundle"/>
       </reference>
-      <name value="Laboratory Bundle"/>
-      <description value="Example Full Laboratory Bundle"/>
+      <name value="Transaction Response Bundle"/>
+      <description value="Example Transaction Response Bundle"/>
       <exampleBoolean value="true"/>
     </resource>
     <page>
