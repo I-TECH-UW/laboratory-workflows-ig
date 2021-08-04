@@ -190,19 +190,19 @@ Description: "Example Single Test Laboratory Transaction Bundle"
 Title: "Single Test Laboratory Bundle - Transaction"
 * type = #transaction
 * entry[+].resource = example-laboratory-simple-composition
-* entry[=].request.method = "PUT"
+* entry[=].request.method = #PUT
 * entry[=].request.url = "Composition/example-laboratory-simple-composition"
 * entry[+].resource = example-laboratory-patient
-* entry[=].request.method = "PUT"
+* entry[=].request.method = #PUT
 * entry[=].request.url = "Patient/example-laboratory-patient"
 * entry[+].resource = example-laboratory-practitioner
-* entry[=].request.method = "PUT"
+* entry[=].request.method = #PUT
 * entry[=].request.url = "Practitioner/example-laboratory-practitioner"
 * entry[+].resource = example-laboratory-task-simple-requested
-* entry[=].request.method = "PUT"
+* entry[=].request.method = #PUT
 * entry[=].request.url = "Task/example-laboratory-task-simple-requested"
 * entry[+].resource = example-laboratory-service-request
-* entry[=].request.method = "PUT"
+* entry[=].request.method = #PUT
 * entry[=].request.url = "ServiceRequest/example-laboratory-service-request"
 
 Instance: example-laboratory-composition
@@ -243,4 +243,13 @@ Title: "Laboratory Bundle"
 * type = #transaction-response
 * link[+].relation = #self
 * link[=].url = "responding.server.org/fhir"
-* entry[+].response = {"status": "201 Created", "location": Reference(example-laboratory-composition)}
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "Composition/example-laboratory-composition"
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "Patient/example-laboratory-patient"
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "Provider/example-laboratory-provider"
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "Task/example-laboratory-task-simple-requested"
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "ServiceRequest/example-laboratory-service-request"
