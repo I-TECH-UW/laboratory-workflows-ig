@@ -234,3 +234,13 @@ Title: "Laboratory Bundle"
 * entry[+].resource = example-laboratory-service-request-panel
 * entry[+].resource = example-laboratory-service-request-1
 * entry[+].resource = example-laboratory-service-request-2
+
+Instance: example-transaction-response-bundle
+InstanceOf: Bundle
+Usage: #example
+Description: "Example Full Laboratory Bundle"
+Title: "Laboratory Bundle"
+* type = #transaction-response
+* link[+].relation = #self
+* link[=].url = "responding.server.org/fhir"
+* entry[+].response = {"status": "201 Created", "location": Reference(example-laboratory-composition)}
