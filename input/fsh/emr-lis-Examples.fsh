@@ -183,6 +183,28 @@ Title: "Single Test Laboratory Bundle"
 * entry[+].resource = example-laboratory-task-simple-requested
 * entry[+].resource = example-laboratory-service-request
 
+Instance: example-laboratory-simple-bundle-transaction
+InstanceOf: Bundle
+Usage: #example
+Description: "Example Single Test Laboratory Transaction Bundle"
+Title: "Single Test Laboratory Bundle - Transaction"
+* type = #transaction
+* entry[+].resource = example-laboratory-simple-composition
+* entry[=].request.method = "PUT"
+* entry[=].request.url = "Composition/example-laboratory-simple-composition"
+* entry[+].resource = example-laboratory-patient
+* entry[=].request.method = "PUT"
+* entry[=].request.url = "Patient/example-laboratory-patient"
+* entry[+].resource = example-laboratory-practitioner
+* entry[=].request.method = "PUT"
+* entry[=].request.url = "Practitioner/example-laboratory-practitioner"
+* entry[+].resource = example-laboratory-task-simple-requested
+* entry[=].request.method = "PUT"
+* entry[=].request.url = "Task/example-laboratory-task-simple-requested"
+* entry[+].resource = example-laboratory-service-request
+* entry[=].request.method = "PUT"
+* entry[=].request.url = "ServiceRequest/example-laboratory-service-request"
+
 Instance: example-laboratory-composition
 InstanceOf: LaboratoryLabComposition
 Usage: #example
