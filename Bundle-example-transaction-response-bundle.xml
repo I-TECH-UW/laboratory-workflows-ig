@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="example-transaction-response-bundle"/>
+  <type value="transaction-response"/>
+  <link>
+    <relation value="self"/>
+    <url value="responding.server.org/fhir"/>
+  </link>
+  <entry>
+    <response>
+      <status value="201 Created"/>
+      <location value="Composition/example-laboratory-composition"/>
+    </response>
+  </entry>
+  <entry>
+    <response>
+      <status value="201 Created"/>
+      <location value="Patient/example-laboratory-patient"/>
+    </response>
+  </entry>
+  <entry>
+    <response>
+      <status value="201 Created"/>
+      <location value="Provider/example-laboratory-provider"/>
+    </response>
+  </entry>
+  <entry>
+    <response>
+      <status value="201 Created"/>
+      <location value="Task/example-laboratory-task-simple-requested"/>
+    </response>
+  </entry>
+  <entry>
+    <response>
+      <status value="201 Created"/>
+      <location value="ServiceRequest/example-laboratory-service-request"/>
+    </response>
+  </entry>
+</Bundle>

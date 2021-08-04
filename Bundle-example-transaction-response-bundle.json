@@ -1,0 +1,43 @@
+{
+  "resourceType": "Bundle",
+  "id": "example-transaction-response-bundle",
+  "type": "transaction-response",
+  "link": [
+    {
+      "relation": "self",
+      "url": "responding.server.org/fhir"
+    }
+  ],
+  "entry": [
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Composition/example-laboratory-composition"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Patient/example-laboratory-patient"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Provider/example-laboratory-provider"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "Task/example-laboratory-task-simple-requested"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "ServiceRequest/example-laboratory-service-request"
+      }
+    }
+  ]
+}

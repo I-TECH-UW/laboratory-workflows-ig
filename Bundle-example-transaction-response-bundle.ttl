@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://i-tech-uw.github.io/laboratory-workflows-ig/Bundle/example-transaction-response-bundle> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-transaction-response-bundle"];
+  fhir:Bundle.type [ fhir:value "transaction-response"];
+  fhir:Bundle.link [
+     fhir:index 0;
+     fhir:Bundle.link.relation [ fhir:value "self" ];
+     fhir:Bundle.link.url [ fhir:value "responding.server.org/fhir" ]
+  ];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.response [
+       fhir:Bundle.entry.response.status [ fhir:value "201 Created" ];
+       fhir:Bundle.entry.response.location [ fhir:value "Composition/example-laboratory-composition" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.response [
+       fhir:Bundle.entry.response.status [ fhir:value "201 Created" ];
+       fhir:Bundle.entry.response.location [ fhir:value "Patient/example-laboratory-patient" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.response [
+       fhir:Bundle.entry.response.status [ fhir:value "201 Created" ];
+       fhir:Bundle.entry.response.location [ fhir:value "Provider/example-laboratory-provider" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.response [
+       fhir:Bundle.entry.response.status [ fhir:value "201 Created" ];
+       fhir:Bundle.entry.response.location [ fhir:value "Task/example-laboratory-task-simple-requested" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.response [
+       fhir:Bundle.entry.response.status [ fhir:value "201 Created" ];
+       fhir:Bundle.entry.response.location [ fhir:value "ServiceRequest/example-laboratory-service-request" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://i-tech-uw.github.io/laboratory-workflows-ig/Bundle/example-transaction-response-bundle.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

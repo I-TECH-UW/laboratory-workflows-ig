@@ -11,7 +11,7 @@
   "title": "Laboratory Workflows Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-07-29T21:35:39+00:00",
+  "date": "2021-08-04T04:43:22+00:00",
   "publisher": "I-TECH-UW",
   "contact": [
     {
@@ -701,6 +701,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/example-laboratory-simple-bundle-transaction"
+        },
+        "name": "Single Test Laboratory Bundle - Transaction",
+        "description": "Example Single Test Laboratory Transaction Bundle",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Composition"
           }
         ],
@@ -738,6 +752,20 @@
         "name": "Lab Order Task - Simple Requested",
         "description": "Example Simple Task for Requested Lab Orders",
         "exampleCanonical": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-task"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/example-transaction-response-bundle"
+        },
+        "name": "Laboratory Bundle",
+        "description": "Example Full Laboratory Bundle",
+        "exampleBoolean": true
       }
     ],
     "page": {
