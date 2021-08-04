@@ -30,15 +30,41 @@ Description: "Example Task for Requested Lab Orders"
 Title:   "Lab Order Task - Requested"
 * identifier.value = "88ffa7fb-0419-4097-8b45-24f0d843c5ea"
 * identifier.system = "http://isanteplus.org/ext/task/identifier"   
-* basedOn[+] = Reference(example-laboratory-service-request-1)
+* basedOn[+] = Reference(example-laboratory-service-request-panel)
 * basedOn[=].type = "ServiceRequest"
-* basedOn[+] = Reference(example-laboratory-service-request-2)
+* basedOn[+] = Reference(example-laboratory-service-request)
 * basedOn[=].type = "ServiceRequest"
 * status = #requested
 * intent = #order
 * for = Reference(example-laboratory-patient)
 * authoredOn = "2021-05-20"
 * owner = Reference(example-laboratory-practitioner)
+
+Instance: example-laboratory-task-simple-requested
+InstanceOf: LaboratoryTask 
+Usage: #example 
+Description: "Example Simple Task for Requested Lab Orders"
+Title:   "Lab Order Task - Simple Requested"
+* identifier.value = "88ffa7fb-0419-4097-8b45-24f0d843a5ea"
+* identifier.system = "http://i-tech-uw.github.io/lab-workflow-ig/ext/task/identifier"   
+* basedOn[+] = Reference(example-laboratory-service-request)
+* basedOn[=].type = "ServiceRequest"
+* status = #requested
+* intent = #order
+* for = Reference(example-laboratory-patient)
+* authoredOn = "2021-02-20"
+* owner = Reference(example-laboratory-practitioner)
+
+Instance: example-laboratory-service-request
+InstanceOf: LaboratoryServiceRequest
+Usage: #example
+Description: "Example ServiceRequest resource representing a Lab Test Order"
+Title: "Laboratory ServiceRequest"
+* status = #active
+* intent = #order
+* code.coding.system = "http://loinc.org"
+* code.coding.code = #14682-9
+* subject = Reference(example-laboratory-patient)
 
 Instance: example-laboratory-service-request-1
 InstanceOf: LaboratoryServiceRequest
@@ -131,12 +157,60 @@ Title: "Laboratory DiagnosticReport"
 * result.type = "Observation"
 * status = #final
 
+Instance: example-laboratory-simple-composition
+InstanceOf: LaboratoryLabComposition
+Usage: #example
+Description: "Example Single Lab Order Composition"
+Title: "Laboratory Single Order Composition"
+* title = "Laboratory Single Order Composition"
+* type = #document
+* subject = Reference(example-laboratory-patient)
+* date = "2021-06-08"
+* status = #final
+* author = Reference(example-laboratory-practitioner)
+* section[labTask].entry[+] = Reference(example-laboratory-task-requested)
+* section[labOrders].entry[+] = Reference(example-laboratory-service-request)
+
+Instance: example-laboratory-simple-bundle
+InstanceOf: Bundle
+Usage: #example
+Description: "Example Single Test Laboratory Bundle"
+Title: "Single Test Laboratory Bundle"
+* type = #document
+* entry[+].resource = example-laboratory-simple-composition
+* entry[+].resource = example-laboratory-patient
+* entry[+].resource = example-laboratory-practitioner
+* entry[+].resource = example-laboratory-task-simple-requested
+* entry[+].resource = example-laboratory-service-request
+
+Instance: example-laboratory-simple-bundle-transaction
+InstanceOf: Bundle
+Usage: #example
+Description: "Example Single Test Laboratory Transaction Bundle"
+Title: "Single Test Laboratory Bundle - Transaction"
+* type = #transaction
+* entry[+].resource = example-laboratory-simple-composition
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Composition/example-laboratory-simple-composition"
+* entry[+].resource = example-laboratory-patient
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Patient/example-laboratory-patient"
+* entry[+].resource = example-laboratory-practitioner
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Practitioner/example-laboratory-practitioner"
+* entry[+].resource = example-laboratory-task-simple-requested
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Task/example-laboratory-task-simple-requested"
+* entry[+].resource = example-laboratory-service-request
+* entry[=].request.method = #PUT
+* entry[=].request.url = "ServiceRequest/example-laboratory-service-request"
+
 Instance: example-laboratory-composition
 InstanceOf: LaboratoryLabComposition
 Usage: #example
-Description: "Example Lab Order Composition"
-Title: "Laboratory Lab Composition"
-* title = "Laboratory Lab Composition"
+Description: "Example Laboratory Composition"
+Title: "Laboratory Composition"
+* title = "Laboratory Composition"
 * type = #document
 * subject = Reference(example-laboratory-patient)
 * date = "2021-06-06"
@@ -160,3 +234,22 @@ Title: "Laboratory Bundle"
 * entry[+].resource = example-laboratory-service-request-panel
 * entry[+].resource = example-laboratory-service-request-1
 * entry[+].resource = example-laboratory-service-request-2
+
+Instance: example-transaction-response-bundle
+InstanceOf: Bundle
+Usage: #example
+Description: "Example Transaction Response Bundle"
+Title: "Transaction Response Bundle"
+* type = #transaction-response
+* link[+].relation = #self
+* link[=].url = "responding.server.org/fhir"
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "Composition/example-laboratory-composition"
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "Patient/example-laboratory-patient"
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "Provider/example-laboratory-provider"
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "Task/example-laboratory-task-simple-requested"
+* entry[+].response.status = "201 Created"
+* entry[=].response.location = "ServiceRequest/example-laboratory-service-request"
