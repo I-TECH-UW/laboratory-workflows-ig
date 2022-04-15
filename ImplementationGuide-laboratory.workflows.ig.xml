@@ -13,7 +13,7 @@ in the OpenHIE Architecture.</p>
   <title value="Laboratory Workflows Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2022-04-15T15:40:52+00:00"/>
+  <date value="2022-04-15T20:22:53+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
     <name value="I-TECH-UW"/>
@@ -555,7 +555,7 @@ in the OpenHIE Architecture.</p>
         <reference value="Bundle/example-laboratory-simple-result-bundle"/>
       </reference>
       <name value="Laboratory Bundle"/>
-      <description value="Example Full Laboratory Bundle"/>
+      <description value="Example Resulted Laboratory Bundle"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -576,8 +576,8 @@ in the OpenHIE Architecture.</p>
       <reference>
         <reference value="Task/example-laboratory-task-simple-completed"/>
       </reference>
-      <name value="Lab Order Task - Simple Requested"/>
-      <description value="Example Simple Task for Requested Lab Orders"/>
+      <name value="Lab Order Task - Simple Completed"/>
+      <description value="Example Simple Task for Completed Lab Orders"/>
       <exampleCanonical value="http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-task"/>
     </resource>
     <resource>

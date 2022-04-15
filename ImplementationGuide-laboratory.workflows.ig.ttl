@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Laboratory Workflows Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2022-04-15T15:40:52+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-04-15T20:22:53+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "I-TECH-UW"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -791,7 +791,7 @@
          fhir:Reference.reference [ fhir:value "Bundle/example-laboratory-simple-result-bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratory Bundle" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Full Laboratory Bundle" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Resulted Laboratory Bundle" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 30;
@@ -821,8 +821,8 @@
          fhir:link <http://i-tech-uw.github.io/laboratory-workflows-ig/Task/example-laboratory-task-simple-completed>;
          fhir:Reference.reference [ fhir:value "Task/example-laboratory-task-simple-completed" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lab Order Task - Simple Requested" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Simple Task for Requested Lab Orders" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lab Order Task - Simple Completed" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Simple Task for Completed Lab Orders" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-task";
          fhir:link <http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-task>

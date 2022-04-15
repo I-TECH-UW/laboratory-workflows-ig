@@ -11,7 +11,7 @@
   "title": "Laboratory Workflows Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2022-04-15T15:40:52+00:00",
+  "date": "2022-04-15T20:22:53+00:00",
   "publisher": "I-TECH-UW",
   "contact": [
     {
@@ -775,7 +775,7 @@
           "reference": "Bundle/example-laboratory-simple-result-bundle"
         },
         "name": "Laboratory Bundle",
-        "description": "Example Full Laboratory Bundle",
+        "description": "Example Resulted Laboratory Bundle",
         "exampleBoolean": true
       },
       {
@@ -802,8 +802,8 @@
         "reference": {
           "reference": "Task/example-laboratory-task-simple-completed"
         },
-        "name": "Lab Order Task - Simple Requested",
-        "description": "Example Simple Task for Requested Lab Orders",
+        "name": "Lab Order Task - Simple Completed",
+        "description": "Example Simple Task for Completed Lab Orders",
         "exampleCanonical": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-task"
       },
       {

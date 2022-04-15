@@ -107,7 +107,7 @@
           <profile value="http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-task"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "example-laboratory-task-simple-completed" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-laboratory-task.html">Laboratory Workflow Task Resource</a></p></div><p><b>identifier</b>: id: 88ffa7fb-0419-4097-8b45-24f0d843a5ea</p><p><b>basedOn</b>: <a href="#ServiceRequest_example-laboratory-service-request">See above (ServiceRequest/example-laboratory-service-request)</a></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>for</b>: <a href="#Patient_example-laboratory-patient">See above (Patient/example-laboratory-patient)</a></p><p><b>authoredOn</b>: 2021-02-20</p><p><b>owner</b>: <a href="#Practitioner_example-laboratory-practitioner">See above (Practitioner/example-laboratory-practitioner)</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "example-laboratory-task-simple-completed" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-laboratory-task.html">Laboratory Workflow Task Resource</a></p></div><p><b>identifier</b>: id: 88ffa7fb-0419-4097-8b45-24f0d843a5ea</p><p><b>basedOn</b>: <a href="#ServiceRequest_example-laboratory-service-request">See above (ServiceRequest/example-laboratory-service-request)</a></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>for</b>: <a href="#Patient_example-laboratory-patient">See above (Patient/example-laboratory-patient)</a></p><p><b>authoredOn</b>: 2021-02-20</p><p><b>owner</b>: <a href="#Practitioner_example-laboratory-practitioner">See above (Practitioner/example-laboratory-practitioner)</a></p><h3>Outputs</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>DiagnosticReport <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td><td><a href="#DiagnosticReport_example-laboratory-diagnostic-report">See above (DiagnosticReport/example-laboratory-diagnostic-report)</a></td></tr></table></div>
         </text>
         <identifier>
           <system value="http://i-tech-uw.github.io/lab-workflow-ig/ext/task/identifier"/>
@@ -126,6 +126,14 @@
         <owner>
           <reference value="Practitioner/example-laboratory-practitioner"/>
         </owner>
+        <output>
+          <type>
+            <text value="DiagnosticReport"/>
+          </type>
+          <valueReference>
+            <reference value="DiagnosticReport/example-laboratory-diagnostic-report"/>
+          </valueReference>
+        </output>
       </Task>
     </resource>
   </entry>

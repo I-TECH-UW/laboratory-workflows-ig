@@ -1,14 +1,14 @@
 ﻿LaboratoryIg : Validation Results
 =========================================
 
-err = 244, warn = 152, info = 11
+err = 245, warn = 152, info = 11
 IG Publisher Version: 1.1.115
-Generated Fri Apr 15 15:41:29 UTC 2022. FHIR version 4.0.1 for laboratory.workflows.ig#0.2.0 (canonical = http://i-tech-uw.github.io/laboratory-workflows-ig)
+Generated Fri Apr 15 20:23:29 UTC 2022. FHIR version 4.0.1 for laboratory.workflows.ig#0.2.0 (canonical = http://i-tech-uw.github.io/laboratory-workflows-ig)
  Build Errors : 642 / 0 / 0
  /github/workspace/fsh-generated/resources/Bundle-example-laboratory-bundle : 41 / 3 / 18
  /github/workspace/fsh-generated/resources/Bundle-example-laboratory-simple-bundle : 33 / 4 / 13
  /github/workspace/fsh-generated/resources/Bundle-example-laboratory-simple-bundle-transaction : 25 / 3 / 13
- /github/workspace/fsh-generated/resources/Bundle-example-laboratory-simple-result-bundle : 43 / 6 / 17
+ /github/workspace/fsh-generated/resources/Bundle-example-laboratory-simple-result-bundle : 44 / 4 / 17
  /github/workspace/fsh-generated/resources/Bundle-example-transaction-response-bundle : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Composition-example-laboratory-composition : 2 / 1 / 2
  /github/workspace/fsh-generated/resources/Composition-example-laboratory-simple-composition : 7 / 1 / 1
@@ -95,13 +95,13 @@ ERROR: /github/workspace/output/Bundle-example-laboratory-simple-result-bundle.h
 ERROR: /github/workspace/output/Bundle-example-laboratory-simple-result-bundle.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-laboratory-simple-result-bundle.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-laboratory-simple-result-bundle.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/Bundle-example-laboratory-simple-result-bundle.json.html#/html/body/div/div/div/p/a at Line 551, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-laboratory-simple-result-bundle.json.html#/html/body/div/div/div/p/a at Line 561, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-laboratory-simple-result-bundle.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-laboratory-simple-result-bundle.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/Bundle-example-laboratory-simple-result-bundle.ttl.html#/html/body/div/div/div/p/a at Line 495, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-laboratory-simple-result-bundle.ttl.html#/html/body/div/div/div/p/a at Line 501, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-laboratory-simple-result-bundle.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-laboratory-simple-result-bundle.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/Bundle-example-laboratory-simple-result-bundle.xml.html#/html/body/div/div/div/p/a at Line 500, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-laboratory-simple-result-bundle.xml.html#/html/body/div/div/div/p/a at Line 509, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-transaction-response-bundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 117, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-transaction-response-bundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-transaction-response-bundle.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
@@ -577,13 +577,13 @@ ERROR: /github/workspace/output/Task-example-laboratory-task-simple-completed.ht
 ERROR: /github/workspace/output/Task-example-laboratory-task-simple-completed.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/Task-example-laboratory-task-simple-completed.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
 ERROR: /github/workspace/output/Task-example-laboratory-task-simple-completed.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/Task-example-laboratory-task-simple-completed.json.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/Task-example-laboratory-task-simple-completed.json.html#/html/body/div/div/div/p/a at Line 293, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/Task-example-laboratory-task-simple-completed.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
 ERROR: /github/workspace/output/Task-example-laboratory-task-simple-completed.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/Task-example-laboratory-task-simple-completed.ttl.html#/html/body/div/div/div/p/a at Line 296, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/Task-example-laboratory-task-simple-completed.ttl.html#/html/body/div/div/div/p/a at Line 303, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/Task-example-laboratory-task-simple-completed.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
 ERROR: /github/workspace/output/Task-example-laboratory-task-simple-completed.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 118, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
-ERROR: /github/workspace/output/Task-example-laboratory-task-simple-completed.xml.html#/html/body/div/div/div/p/a at Line 279, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/Task-example-laboratory-task-simple-completed.xml.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/Task-example-laboratory-task-simple-requested.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 117, column 10: The link 'system_specification.html' for "System Requirements" cannot be resolved
 ERROR: /github/workspace/output/Task-example-laboratory-task-simple-requested.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 120, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved
 ERROR: /github/workspace/output/Task-example-laboratory-task-simple-requested.change.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
@@ -832,6 +832,7 @@ ERROR: Bundle/example-laboratory-simple-result-bundle: Bundle.entry[3]: Bundle e
 ERROR: Bundle/example-laboratory-simple-result-bundle: Bundle.entry[3].resource.ofType(Task).basedOn[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/example-laboratory-simple-result-bundle: Bundle.entry[3].resource.ofType(Task).for: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/example-laboratory-simple-result-bundle: Bundle.entry[3].resource.ofType(Task).owner: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/example-laboratory-simple-result-bundle: Bundle.entry[3].resource.ofType(Task).output[0].value.ofType(Reference): Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/example-laboratory-simple-result-bundle: Bundle.entry[3].resource.ofType(Task).status: The value provided ('completed') is not in the value set 'Laboratory Status for Task' (http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-task-status-vs), and a code is required from this value set) (error message = Code System URI 'http://hl7.org/fhir/ValueSet/task-status' is unknown so the code cannot be validated)
 ERROR: Bundle/example-laboratory-simple-result-bundle: Bundle.entry[3].resource.ofType(Task).intent: The value provided ('order') is not in the value set 'Laboratory Intent for Task' (http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-task-intent-vs), and a code is required from this value set) (error message = Code System URI 'http://hl7.org/fhir/ValueSet/task-intent' is unknown so the code cannot be validated)
 ERROR: Bundle/example-laboratory-simple-result-bundle: Bundle.entry[4]: Bundle entry missing fullUrl
