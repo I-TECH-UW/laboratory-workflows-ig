@@ -3,7 +3,7 @@
 
 err = 245, warn = 152, info = 11
 IG Publisher Version: 1.1.115
-Generated Fri Apr 15 20:23:29 UTC 2022. FHIR version 4.0.1 for laboratory.workflows.ig#0.2.0 (canonical = http://i-tech-uw.github.io/laboratory-workflows-ig)
+Generated Fri Apr 15 20:23:38 UTC 2022. FHIR version 4.0.1 for laboratory.workflows.ig#0.2.0 (canonical = http://i-tech-uw.github.io/laboratory-workflows-ig)
  Build Errors : 642 / 0 / 0
  /github/workspace/fsh-generated/resources/Bundle-example-laboratory-bundle : 41 / 3 / 18
  /github/workspace/fsh-generated/resources/Bundle-example-laboratory-simple-bundle : 33 / 4 / 13
