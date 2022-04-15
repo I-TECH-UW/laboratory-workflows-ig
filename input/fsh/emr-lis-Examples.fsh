@@ -58,8 +58,8 @@ Title:   "Lab Order Task - Simple Requested"
 Instance: example-laboratory-task-simple-completed
 InstanceOf: LaboratoryTask 
 Usage: #example 
-Description: "Example Simple Task for Requested Lab Orders"
-Title:   "Lab Order Task - Simple Requested"
+Description: "Example Simple Task for Completed Lab Orders"
+Title:   "Lab Order Task - Simple Completed"
 * identifier.value = "88ffa7fb-0419-4097-8b45-24f0d843a5ea"
 * identifier.system = "http://i-tech-uw.github.io/lab-workflow-ig/ext/task/identifier"   
 * basedOn[+] = Reference(example-laboratory-service-request)
@@ -69,7 +69,8 @@ Title:   "Lab Order Task - Simple Requested"
 * for = Reference(example-laboratory-patient)
 * authoredOn = "2021-02-20"
 * owner = Reference(example-laboratory-practitioner)
-
+* output[+].valueReference = Reference(example-laboratory-diagnostic-report)
+* output[=].type.text = "DiagnosticReport"
 
 Instance: example-laboratory-service-request
 InstanceOf: LaboratoryServiceRequest
@@ -254,7 +255,7 @@ Title: "Laboratory Bundle"
 Instance: example-laboratory-simple-result-bundle
 InstanceOf: Bundle
 Usage: #example
-Description: "Example Full Laboratory Bundle"
+Description: "Example Resulted Laboratory Bundle"
 Title: "Laboratory Bundle"
 * type = #document
 * entry[+].resource = example-laboratory-simple-composition
