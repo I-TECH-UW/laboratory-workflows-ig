@@ -55,6 +55,22 @@ Title:   "Lab Order Task - Simple Requested"
 * authoredOn = "2021-02-20"
 * owner = Reference(example-laboratory-practitioner)
 
+Instance: example-laboratory-task-simple-requested
+InstanceOf: LaboratoryTask 
+Usage: #example 
+Description: "Example Simple Task for Requested Lab Orders"
+Title:   "Lab Order Task - Simple Requested"
+* identifier.value = "88ffa7fb-0419-4097-8b45-24f0d843a5ea"
+* identifier.system = "http://i-tech-uw.github.io/lab-workflow-ig/ext/task/identifier"   
+* basedOn[+] = Reference(example-laboratory-service-request)
+* basedOn[=].type = "ServiceRequest"
+* status = #completed
+* intent = #order
+* for = Reference(example-laboratory-patient)
+* authoredOn = "2021-02-20"
+* owner = Reference(example-laboratory-practitioner)
+
+
 Instance: example-laboratory-service-request
 InstanceOf: LaboratoryServiceRequest
 Usage: #example
@@ -234,6 +250,20 @@ Title: "Laboratory Bundle"
 * entry[+].resource = example-laboratory-service-request-panel
 * entry[+].resource = example-laboratory-service-request-1
 * entry[+].resource = example-laboratory-service-request-2
+
+Instance: example-laboratory-simple-result-bundle
+InstanceOf: Bundle
+Usage: #example
+Description: "Example Full Laboratory Bundle"
+Title: "Laboratory Bundle"
+* type = #document
+* entry[+].resource = example-laboratory-simple-composition
+* entry[+].resource = example-laboratory-patient
+* entry[+].resource = example-laboratory-practitioner
+* entry[+].resource = example-laboratory-task-simple-completed
+* entry[+].resource = example-laboratory-service-request
+* entry[+].resource = example-laboratory-diagnostic-report
+* entry[+].resource = example-laboratory-observation
 
 Instance: example-transaction-response-bundle
 InstanceOf: Bundle
