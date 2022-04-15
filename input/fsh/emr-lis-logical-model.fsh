@@ -34,13 +34,13 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "*"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = ""
+* differential.element[=].mapping[=].map = "OpenELIS Data Model"
 * differential.element[=].mapping[+].identity = "OpenMRS"
-* differential.element[=].mapping[=].map = ""
+* differential.element[=].mapping[=].map = "OpenMRS Data Model"
 * differential.element[=].mapping[+].identity = "iSantePlus"
-* differential.element[=].mapping[=].map = ""
+* differential.element[=].mapping[=].map = "iSantePlus Data Model"
 * differential.element[=].mapping[+].identity = "FHIR-R4"
-* differential.element[=].mapping[=].map = ""
+* differential.element[=].mapping[=].map = "FHIR-R4 Mappings"
 
 /**
  Patient
@@ -53,13 +53,14 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Patient"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Patient"
 * differential.element[=].mapping[+].identity = "iSantePlus"
 * differential.element[=].mapping[=].map = "Patient"
 * differential.element[=].mapping[+].identity = "FHIR-R4"
 * differential.element[=].mapping[=].map = "LaboratoryPatient"
+
 
 
 //Patient.id
@@ -71,7 +72,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Patient.fhirUuid"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Patient.uuid"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -88,7 +89,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Patient.nationalId"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Patient.activeIdentifiers"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -107,7 +108,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "not Patient.voided"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -124,7 +125,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "*"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Patient.person.firstName"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Patient.names"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -142,7 +143,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "*"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Patient.person.primaryPhone"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Person.personAttribute"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -159,7 +160,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Patient.gender"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Patient.gender"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -176,7 +177,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Patient.birthDateForDisplay"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Patient.birthdate"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -193,7 +194,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "*"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "PersonAddress"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Patient.addresses"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -210,7 +211,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Patient.deathDate or Patient.dead"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -229,7 +230,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Sample"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "FhirTask"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -246,7 +247,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Sample.fhirUuid"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "FhirTask.id"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -263,7 +264,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Sample.status"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "FhirTask.status"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -280,7 +281,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "FhirTask.intent"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -297,7 +298,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "*"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Analysis"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "FhirTask.basedOn"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -315,7 +316,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "FhirTask.encounter"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -332,7 +333,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Patient"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "FhirTask.for"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -349,7 +350,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "FhirTask.owner"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -366,7 +367,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "*"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "FhirTask.input"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -383,7 +384,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "*"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "FhirTask.output"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -400,7 +401,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Sample.enteredDate"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "FhirTask.dateCreated"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -417,7 +418,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "FhirTask.dateChanged"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -436,7 +437,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Analysis"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "TestOrder"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -454,7 +455,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Analysis.fhirUuid"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "TestOrder.uuid"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -472,7 +473,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Analysis.status"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Task.status"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -489,7 +490,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Analysis.test"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "TestOrder.concept"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -506,7 +507,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Patient"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "TestOrder.patient"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -523,7 +524,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Provider"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "TestOrder.orderer"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -540,7 +541,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Task.owner"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -557,7 +558,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "TestOrder.effectiveEndDate"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -577,7 +578,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "*"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Analysis"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Obs"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -594,7 +595,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Analysis.fhirUuid"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Obs.uuid"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -611,7 +612,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Analysis.status"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Obs.status"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -628,7 +629,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Analysis.test"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Obs.concept"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -645,11 +646,11 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "iSantePlus"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "FHIR-R4"
 * differential.element[=].mapping[=].map = "LaboratoryDiagnosticReport.category"
 
@@ -662,7 +663,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Obs.encounter"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -679,7 +680,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Patient"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Obs.person"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -696,7 +697,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Obs.dateCreated"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -713,7 +714,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "*"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Result"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Obs.groupMembers"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -732,7 +733,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Result"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Obs"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -749,7 +750,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Result.fhirUuid"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Obs.uuid"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -766,11 +767,11 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Result.fhirUuid"
 * differential.element[=].mapping[+].identity = "OpenMRS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "iSantePlus"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "FHIR-R4"
 * differential.element[=].mapping[=].map = "LaboratoryObservation.identifier"
 
@@ -783,7 +784,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Result.analysis.status"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Obs.status"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -800,7 +801,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Obs.encounter"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -817,7 +818,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Patient"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Obs.person"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -834,7 +835,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Obs.concept"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -851,7 +852,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Result.value"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Obs.value[x]"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -868,7 +869,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "*"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Obs.groupMembers"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -887,7 +888,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Encounter"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -905,7 +906,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Encounter.uuid"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -922,7 +923,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Encounter.status"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -939,7 +940,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Encounter.patient"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -957,7 +958,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Encounter.participant"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -974,7 +975,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Encounter.location"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -994,7 +995,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Provider"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Provider"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -1011,7 +1012,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Provider.fhirUuid"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Provider.uuid"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -1028,7 +1029,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Provider.identifier"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -1046,7 +1047,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = "Provider.person.firstName"
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Provider.names"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -1063,7 +1064,7 @@ Usage: #definition
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Provider.gender"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -1080,7 +1081,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Provider.birthdate"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -1097,7 +1098,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "*"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "Provider.address"
 * differential.element[=].mapping[+].identity = "iSantePlus"
@@ -1115,7 +1116,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = "TO DO"
+* differential.element[=].mapping[=].map = ""
 * differential.element[=].mapping[+].identity = "OpenMRS"
 * differential.element[=].mapping[=].map = "not Patient.retired"
 * differential.element[=].mapping[+].identity = "iSantePlus"
