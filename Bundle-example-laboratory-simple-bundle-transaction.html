@@ -105,10 +105,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="c57bb437-afc4-48d7-b88e-380669cd3bcd">​</a>
+      <li><a name="l179">​</a>
         <a href="system_specification.html">System Requirements</a>
       </li>
-      <li><a name="14b020c3-465c-4727-a7b9-33c5b238a78e">​</a>
+      <li><a name="l185">​</a>
         <a href="use_cases.html">Use Cases</a>
       </li>
     </ul>
@@ -157,6 +157,8 @@
 
 
 
+
+
 <ul class="nav nav-tabs">
 
   <li class="active">
@@ -188,6 +190,19 @@
 
   <h2 id="root">Example Bundle: Single Test Laboratory Bundle - Transaction</h2>
 
+  <table class="null">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 
     <!-- insert intro if present -->
@@ -196,11 +211,13 @@
 
 
   <div><p>Bundle example-laboratory-simple-bundle-transaction of type transaction</p><a name="Composition_example-laboratory-simple-composition"> </a><hr/><p>Entry 1</p><p>Request:</p><pre>PUT Composition/example-laboratory-simple-composition
-</pre><p>Resource Composition:</p><blockquote><p><b>Generated Narrative</b></p><p><b>status</b>: FINAL</p><p><b>type</b>: <span title="Codes: ">document</span></p><p><b>date</b>: 2021-06-08</p><p><b>author</b>: <a href="Practitioner-example-laboratory-practitioner.html">Generated Summary: id: 1000AX; Moses Mutesa</a></p><p><b>title</b>: Laboratory Single Order Composition</p></blockquote><a name="Patient_example-laboratory-patient"> </a><hr/><p>Entry 2</p><p>Request:</p><pre>PUT Patient/example-laboratory-patient
-</pre><p>Resource Patient:</p><blockquote>moses Mutesa  Female 1988-03-02 ( iSantePlus ID: 10012R (OFFICIAL))</blockquote><a name="Practitioner_example-laboratory-practitioner"> </a><hr/><p>Entry 3</p><p>Request:</p><pre>PUT Practitioner/example-laboratory-practitioner
-</pre><p>Resource Practitioner:</p><blockquote><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1000AX</p><p><b>name</b>: Moses Mutesa</p></blockquote><a name="Task_example-laboratory-task-simple-requested"> </a><hr/><p>Entry 4</p><p>Request:</p><pre>PUT Task/example-laboratory-task-simple-requested
-</pre><p>Resource Task:</p><blockquote><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 88ffa7fb-0419-4097-8b45-24f0d843a5ea</p><p><b>basedOn</b>: <a href="ServiceRequest-example-laboratory-service-request.html">Generated Summary: status: active; intent: order; <span title="Codes: {http://loinc.org 14682-9}">14682-9</span></a></p><p><b>status</b>: REQUESTED</p><p><b>intent</b>: ORDER</p><p><b>for</b>: <a href="Patient-example-laboratory-patient.html">Generated Summary: iSantePlus ID: 10012R (OFFICIAL); active; moses Mutesa ; gender: female; birthDate: 1988-03-02; </a></p><p><b>authoredOn</b>: 2021-02-20</p><p><b>owner</b>: <a href="Practitioner-example-laboratory-practitioner.html">Generated Summary: id: 1000AX; Moses Mutesa</a></p></blockquote><a name="ServiceRequest_example-laboratory-service-request"> </a><hr/><p>Entry 5</p><p>Request:</p><pre>PUT ServiceRequest/example-laboratory-service-request
-</pre><p>Resource ServiceRequest:</p><blockquote><p><b>Generated Narrative</b></p><p><b>status</b>: ACTIVE</p><p><b>intent</b>: ORDER</p><p><b>code</b>: <span title="Codes: {http://loinc.org 14682-9}">14682-9</span></p><p><b>subject</b>: <a href="Patient-example-laboratory-patient.html">Generated Summary: iSantePlus ID: 10012R (OFFICIAL); active; moses Mutesa ; gender: female; birthDate: 1988-03-02; </a></p></blockquote></div>
+</pre><p>Resource Composition:</p><blockquote><p><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "example-laboratory-simple-composition" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-laboratory-composition.html">Laboratory Order Composition</a></p></div><p><b>status</b>: FINAL</p><p><b>type</b>: document <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#document)</span></p><p><b>date</b>: 2021-06-08</p><p><b>author</b>: <a href="Practitioner-example-laboratory-practitioner.html">Practitioner/example-laboratory-practitioner</a> ""</p><p><b>title</b>: Laboratory Single Order Composition</p></p></blockquote><a name="Patient_example-laboratory-patient"> </a><hr/><p>Entry 2</p><p>Request:</p><pre>PUT Patient/example-laboratory-patient
+</pre><p>Resource Patient:</p><blockquote><p>moses Mutesa  Female, DoB: 1988-03-02 ( iSantePlus ID: 10012R (OFFICIAL))</p></blockquote><a name="Practitioner_example-laboratory-practitioner"> </a><hr/><p>Entry 3</p><p>Request:</p><pre>PUT Practitioner/example-laboratory-practitioner
+</pre><p>Resource Practitioner:</p><blockquote><p><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "example-laboratory-practitioner" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-laboratory-practitioner.html">Laboratory Encounter</a></p></div><p><b>identifier</b>: id: 1000AX</p><p><b>name</b>: Moses Mutesa</p></p></blockquote><a name="Task_example-laboratory-task-simple-requested"> </a><hr/><p>Entry 4</p><p>Request:</p><pre>PUT Task/example-laboratory-task-simple-requested
+</pre><p>Resource Task:</p><blockquote><p><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "example-laboratory-task-simple-requested" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-laboratory-task.html">Laboratory Workflow Task Resource</a></p></div><p><b>identifier</b>: id: 88ffa7fb-0419-4097-8b45-24f0d843a5ea</p><p><b>basedOn</b>: <a href="ServiceRequest-example-laboratory-service-request.html">ServiceRequest/example-laboratory-service-request</a></p><p><b>status</b>: REQUESTED</p><p><b>intent</b>: ORDER</p><p><b>for</b>: <a href="Patient-example-laboratory-patient.html">Patient/example-laboratory-patient</a> " MUTESA"</p><p><b>authoredOn</b>: 2021-02-20</p><p><b>owner</b>: <a href="Practitioner-example-laboratory-practitioner.html">Practitioner/example-laboratory-practitioner</a> ""</p></p></blockquote><a name="ServiceRequest_example-laboratory-service-request"> </a><hr/><p>Entry 5</p><p>Request:</p><pre>PUT ServiceRequest/example-laboratory-service-request
+</pre><p>Resource ServiceRequest:</p><blockquote><p><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "example-laboratory-service-request" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-laboratory-service-request.html">Laboratory Service Request</a></p></div><p><b>status</b>: ACTIVE</p><p><b>intent</b>: ORDER</p><p><b>code</b>: Creatinine [Moles/volume] in Serum or Plasma <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#14682-9)</span></p><p><b>subject</b>: <a href="Patient-example-laboratory-patient.html">Patient/example-laboratory-patient</a> " MUTESA"</p></p></blockquote></div>
+
+  
 
     <!-- insert notes if present -->
   
@@ -229,8 +246,8 @@
 
            
       <div class="inner-wrapper">
-        <p><a name="2c8be542-3907-424a-ad69-118ba713b4d4">​</a>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="www.github.com/i-tech-uw">I-TECH-UW</a>.  Package laboratory.workflows.ig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 4, 2021 05:53+0000">2021-08-04</span>
+        <p><a name="l563">​</a>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="www.github.com/i-tech-uw">I-TECH-UW</a>.  Package laboratory.workflows.ig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 15, 2022 15:40+0000">2022-04-15</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -259,6 +276,8 @@
   <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
   <script src="assets/js/respond.min.js" type="text/javascript"> </script>
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

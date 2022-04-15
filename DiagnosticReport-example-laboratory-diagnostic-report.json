@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 22748-8}\">22748-8</span> (<span title=\"Codes: {http://loinc.org 22748-8}\">22748-8</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>Mar 3, 2011, 9:30:00 PM</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td><a href=\"Observation-example-laboratory-observation.html\"><span title=\"Codes: {http://loinc.org 22748-8}\">22748-8</span></a></td><td>55 UI/L</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 22748-8}\">Cholesterol in LDL [Moles/volume] in Serum or Plasma</span> (<span title=\"Codes: {http://loinc.org 22748-8}\">Cholesterol in LDL [Moles/volume] in Serum or Plasma</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>2011-03-04 08:30:00+1100</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td><a href=\"Observation-example-laboratory-observation.html\"><span title=\"Codes: {http://loinc.org 22748-8}\">Cholesterol in LDL [Moles/volume] in Serum or Plasma</span></a></td><td>55 UI/L</td></tr></table></div>"
   },
   "status": "final",
   "category": [

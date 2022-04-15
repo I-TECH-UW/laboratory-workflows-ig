@@ -1,6 +1,8 @@
 {
   "version": "0.2.0",
-  "fhirVersion": "[4.0.1]",
-  "date": "20210804055302",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "date": "20220415154010",
   "name": "laboratory.workflows.ig"
 }
