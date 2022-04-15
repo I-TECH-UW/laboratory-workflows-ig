@@ -55,7 +55,7 @@ Title:   "Lab Order Task - Simple Requested"
 * authoredOn = "2021-02-20"
 * owner = Reference(example-laboratory-practitioner)
 
-Instance: example-laboratory-task-simple-requested
+Instance: example-laboratory-task-simple-completed
 InstanceOf: LaboratoryTask 
 Usage: #example 
 Description: "Example Simple Task for Requested Lab Orders"

@@ -98,23 +98,23 @@ Usage: #definition
 * differential.element[=].mapping[=].map = "LaboratoryPatient.identifier"
 
 //Patient.Active
-* differential.element[+].id = "Patient.Active"
-* differential.element[=].path = "LaboratoryLogicalModel.Patient.Active"
-* differential.element[=].short = "Patient Active Flag"
-* differential.element[=].definition = "Flag for distinguishing between active and not active Patients"
-* differential.element[=].type.code = #boolean
-// * differential.element[=].binding.valueSet = TODO
-* differential.element[=].binding.strength = #extensible
-* differential.element[=].min = 0
-* differential.element[=].max = "1"
-* differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = ""
-* differential.element[=].mapping[+].identity = "OpenMRS"
-* differential.element[=].mapping[=].map = "not Patient.voided"
-* differential.element[=].mapping[+].identity = "iSantePlus"
-* differential.element[=].mapping[=].map = "not Patient.voided"
-* differential.element[=].mapping[+].identity = "FHIR-R4"
-* differential.element[=].mapping[=].map = "LaboratoryPatient.active"
+// * differential.element[+].id = "Patient.Active"
+// * differential.element[=].path = "LaboratoryLogicalModel.Patient.Active"
+// * differential.element[=].short = "Patient Active Flag"
+// * differential.element[=].definition = "Flag for distinguishing between active and not active Patients"
+// * differential.element[=].type.code = #boolean
+// // * differential.element[=].binding.valueSet = TODO
+// * differential.element[=].binding.strength = #extensible
+// * differential.element[=].min = 0
+// * differential.element[=].max = "1"
+// * differential.element[=].mapping[+].identity = "OpenELIS"
+// * differential.element[=].mapping[=].map = "TO DO"
+// * differential.element[=].mapping[+].identity = "OpenMRS"
+// * differential.element[=].mapping[=].map = "not Patient.voided"
+// * differential.element[=].mapping[+].identity = "iSantePlus"
+// * differential.element[=].mapping[=].map = "not Patient.voided"
+// * differential.element[=].mapping[+].identity = "FHIR-R4"
+// * differential.element[=].mapping[=].map = "LaboratoryPatient.active"
 
 //Patient.Name
 * differential.element[+].id = "Patient.Name"
@@ -1106,21 +1106,21 @@ Usage: #definition
 * differential.element[=].mapping[+].identity = "FHIR-R4"
 * differential.element[=].mapping[=].map = "LaboratoryPractitioner.address"
 
-//Requester.Active
-* differential.element[+].id = "Requester.Active"
-* differential.element[=].path = "LaboratoryLogicalModel.Requester.Active"
-* differential.element[=].short = "Requester Active Flag"
-* differential.element[=].definition = "Flag for distinguishing between active and not active Requester"
-* differential.element[=].type.code = #boolean
-* differential.element[=].binding.strength = #extensible
-* differential.element[=].min = 0
-* differential.element[=].max = "1"
-* differential.element[=].mapping[+].identity = "OpenELIS"
-* differential.element[=].mapping[=].map = ""
-* differential.element[=].mapping[+].identity = "OpenMRS"
-* differential.element[=].mapping[=].map = "not Patient.retired"
-* differential.element[=].mapping[+].identity = "iSantePlus"
-* differential.element[=].mapping[=].map = "not Patient.retired"
-* differential.element[=].mapping[+].identity = "FHIR-R4"
-* differential.element[=].mapping[=].map = "LaboratoryPractitioner.active"
+// //Requester.Active
+// * differential.element[+].id = "Requester.Active"
+// * differential.element[=].path = "LaboratoryLogicalModel.Requester.Active"
+// * differential.element[=].short = "Requester Active Flag"
+// * differential.element[=].definition = "Flag for distinguishing between active and not active Requester"
+// * differential.element[=].type.code = #boolean
+// * differential.element[=].binding.strength = #extensible
+// * differential.element[=].min = 0
+// * differential.element[=].max = "1"
+// * differential.element[=].mapping[+].identity = "OpenELIS"
+// * differential.element[=].mapping[=].map = "TO DO"
+// * differential.element[=].mapping[+].identity = "OpenMRS"
+// * differential.element[=].mapping[=].map = "not Patient.retired"
+// * differential.element[=].mapping[+].identity = "iSantePlus"
+// * differential.element[=].mapping[=].map = "not Patient.retired"
+// * differential.element[=].mapping[+].identity = "FHIR-R4"
+// * differential.element[=].mapping[=].map = "LaboratoryPractitioner.active"
 
