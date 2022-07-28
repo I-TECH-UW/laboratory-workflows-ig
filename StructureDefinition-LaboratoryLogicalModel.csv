@@ -1,131 +1,131 @@
-"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: OpenELIS Global v2","Mapping: OpenMRS RefApp 2.9","Mapping: iSantePlus 2","Mapping: FHIR Release 4","Mapping: RIM Mapping"
-"LaboratoryLogicalModel","","","",0,*,"","","","","Base for all elements","LaboratoryLogicalModel","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: OpenELIS Global v2","Mapping: OpenMRS RefApp 2.9","Mapping: iSantePlus 2","Mapping: FHIR Release 4","Mapping: RIM Mapping"
+"LaboratoryLogicalModel","LaboratoryLogicalModel","","","",0,*,"","","","","Base for all elements","LaboratoryLogicalModel","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","OpenELIS Data Model","OpenMRS Data Model","iSantePlus Data Model","FHIR-R4 Mappings","n/a"
-"LaboratoryLogicalModel.id","","","",0,1,"","","","string {[]} {[]}
+"LaboratoryLogicalModel.id","LaboratoryLogicalModel.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"LaboratoryLogicalModel.extension","","extensions
+"LaboratoryLogicalModel.extension","LaboratoryLogicalModel.extension","","extensions
 user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"LaboratoryLogicalModel.Patient","","","",0,1,"","","","BackboneElement {[]} {[]}
+"LaboratoryLogicalModel.Patient","LaboratoryLogicalModel.Patient","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Laboratory Patient Logical Model","Logical model of Laboratory Patient","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Patient",0,1,"","","Patient","Patient","Patient","LaboratoryPatient"
-"LaboratoryLogicalModel.Patient.Id","","","",1,1,"","","","id {[]} {[]}
+"LaboratoryLogicalModel.Patient.Id","LaboratoryLogicalModel.Patient.Id","","","",1,1,"","","","id {[]} {[]}
 ","Patient Logical ID","Patient Logical ID","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Patient.Id",1,1,"","","Patient.fhirUuid","Patient.uuid","Patient.uuid","LaboratoryPatient.id"
-"LaboratoryLogicalModel.Patient.Identifier","","","",0,1,"","","","Identifier {[]} {[]}
+"LaboratoryLogicalModel.Patient.Identifier","LaboratoryLogicalModel.Patient.Identifier","","","",0,1,"","","","Identifier {[]} {[]}
 ","An identifier for this patient.","Patient Identifier","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Patient.Identifier",0,1,"","","Patient.nationalId","Patient.activeIdentifiers","Patient.activeIdentifiers","LaboratoryPatient.identifier"
-"LaboratoryLogicalModel.Patient.Name","","","",0,*,"","","","HumanName {[]} {[]}
+"LaboratoryLogicalModel.Patient.Name","LaboratoryLogicalModel.Patient.Name","","","",0,*,"","","","HumanName {[]} {[]}
 ","Patient Name","Patient Name","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Patient.Name",0,*,"","","Patient.person.firstName","Patient.names","Patient.names","LaboratoryPatient.name"
-"LaboratoryLogicalModel.Patient.Contact","","","",0,*,"","","","ContactPoint {[]} {[]}
+"LaboratoryLogicalModel.Patient.Contact","LaboratoryLogicalModel.Patient.Contact","","","",0,*,"","","","ContactPoint {[]} {[]}
 ","Patient Contact","Patient Contact","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Patient.Contact",0,*,"","","Patient.person.primaryPhone","Person.personAttribute","Person.personAttribute","LaboratoryPatient.telecom"
-"LaboratoryLogicalModel.Patient.Gender","","","",1,1,"","","","code {[]} {[]}
+"LaboratoryLogicalModel.Patient.Gender","LaboratoryLogicalModel.Patient.Gender","","","",1,1,"","","","code {[]} {[]}
 ","Patient Gender","Patient Gender","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Patient.Gender",1,1,"","","Patient.gender","Patient.gender","Patient.gender","LaboratoryPatient.gender"
-"LaboratoryLogicalModel.Patient.BirthDate","","","",0,1,"","","","date {[]} {[]}
+"LaboratoryLogicalModel.Patient.BirthDate","LaboratoryLogicalModel.Patient.BirthDate","","","",0,1,"","","","date {[]} {[]}
 ","Patient Date of Birth","Patient Date of Birth","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Patient.BirthDate",0,1,"","","Patient.birthDateForDisplay","Patient.birthdate","Patient.birthdate","LaboratoryPatient.birthDate"
-"LaboratoryLogicalModel.Patient.Address","","","",0,*,"","","","Address {[]} {[]}
+"LaboratoryLogicalModel.Patient.Address","LaboratoryLogicalModel.Patient.Address","","","",0,*,"","","","Address {[]} {[]}
 ","Patient Address","Patient Address","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Patient.Address",0,*,"","","PersonAddress","Patient.addresses","Patient.addresses","LaboratoryPatient.address"
-"LaboratoryLogicalModel.Patient.DeceasedDateTime","","","",0,1,"","","","date {[]} {[]}
+"LaboratoryLogicalModel.Patient.DeceasedDateTime","LaboratoryLogicalModel.Patient.DeceasedDateTime","","","",0,1,"","","","date {[]} {[]}
 ","Patient Death Date","Patient Death Date","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Patient.DeceasedDateTime",0,1,"","","","Patient.deathDate or Patient.dead","Patient.deathDate or Patient.dead","LaboratoryPatient.deceased"
-"LaboratoryLogicalModel.LabTask","","","",0,1,"","","","BackboneElement {[]} {[]}
+"LaboratoryLogicalModel.LabTask","LaboratoryLogicalModel.LabTask","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Laboratory Workflow Task","A task for tracking the full lifecycle of a Laboratory Lab Order Workflow between EMRs and LISs","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabTask",0,1,"","","Sample","FhirTask","FhirTask","LaboratoryTask"
-"LaboratoryLogicalModel.LabTask.Id","","","",1,1,"","","","id {[]} {[]}
+"LaboratoryLogicalModel.LabTask.Id","LaboratoryLogicalModel.LabTask.Id","","","",1,1,"","","","id {[]} {[]}
 ","Laboratory Workflow Task Id","Laboratory Workflow Task Logical Id Id","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabTask.Id",1,1,"","","Sample.fhirUuid","FhirTask.id","FhirTask.id","LaboratoryTask.id"
-"LaboratoryLogicalModel.LabTask.Status","","","",0,1,"","","","code {[]} {[]}
+"LaboratoryLogicalModel.LabTask.Status","LaboratoryLogicalModel.LabTask.Status","","","",0,1,"","","","code {[]} {[]}
 ","Laboratory Task Status","Laboratory LabTask Status","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabTask.Status",0,1,"","","Sample.status","FhirTask.status","FhirTask.status","LaboratoryTask.status"
-"LaboratoryLogicalModel.LabTask.Intent","","","",0,1,"","","","code {[]} {[]}
+"LaboratoryLogicalModel.LabTask.Intent","LaboratoryLogicalModel.LabTask.Intent","","","",0,1,"","","","code {[]} {[]}
 ","Laboratory Task Intent","Indicates the level of actionability associated with the Task","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabTask.Intent",0,1,"","","","FhirTask.intent","FhirTask.intent","LaboratoryTask.intent"
-"LaboratoryLogicalModel.LabTask.LabOrder","","","",1,*,"","","","Reference {[]} {[]}
+"LaboratoryLogicalModel.LabTask.LabOrder","LaboratoryLogicalModel.LabTask.LabOrder","","","",1,*,"","","","Reference {[]} {[]}
 ","Laboratory Task LabOrder","LabOrder fulfilled by this Task","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabTask.LabOrder",1,*,"","","Analysis","FhirTask.basedOn","FhirTask.basedOn","LaboratoryTask.basedOn"
-"LaboratoryLogicalModel.LabTask.Encounter","","","",0,1,"","","","Reference {[]} {[]}
+"LaboratoryLogicalModel.LabTask.Encounter","LaboratoryLogicalModel.LabTask.Encounter","","","",0,1,"","","","Reference {[]} {[]}
 ","Laboratory Task Encounter","Encounter during which this task originated","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabTask.Encounter",0,1,"","","","FhirTask.encounter","FhirTask.encounter","LaboratoryTask.encounter"
-"LaboratoryLogicalModel.LabTask.Patient","","","",1,1,"","","","Reference {[]} {[]}
+"LaboratoryLogicalModel.LabTask.Patient","LaboratoryLogicalModel.LabTask.Patient","","","",1,1,"","","","Reference {[]} {[]}
 ","Laboratory Task Patient","The Patient for whom the lab order was created.","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabTask.Patient",1,1,"","","Patient","FhirTask.for","FhirTask.for","LaboratoryTask.for"
-"LaboratoryLogicalModel.LabTask.Requester","","","",1,1,"","","","Reference {[]} {[]}
+"LaboratoryLogicalModel.LabTask.Requester","LaboratoryLogicalModel.LabTask.Requester","","","",1,1,"","","","Reference {[]} {[]}
 ","Laboratory Task Requester","The requester of the lab order ","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabTask.Requester",1,1,"","","","FhirTask.owner","FhirTask.owner","LaboratoryTask.owner"
-"LaboratoryLogicalModel.LabTask.Input","","","",0,*,"","","","CodeableConcept {[]} {[]}
+"LaboratoryLogicalModel.LabTask.Input","LaboratoryLogicalModel.LabTask.Input","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Laboratory Task Input","Information used to perform task","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabTask.Input",0,*,"","","","FhirTask.input","FhirTask.input","LaboratoryTask.input"
-"LaboratoryLogicalModel.LabTask.Result","","","",0,*,"","","","CodeableConcept {[]} {[]}
+"LaboratoryLogicalModel.LabTask.Result","LaboratoryLogicalModel.LabTask.Result","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Laboratory Task Result","Lab Order Result","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabTask.Result",0,*,"","","","FhirTask.output","FhirTask.output","LaboratoryTask.output"
-"LaboratoryLogicalModel.LabTask.OrderDate","","","",1,1,"","","","date {[]} {[]}
+"LaboratoryLogicalModel.LabTask.OrderDate","LaboratoryLogicalModel.LabTask.OrderDate","","","",1,1,"","","","date {[]} {[]}
 ","Laboratory Task OrderDate","Date Lab Order was authored on","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabTask.OrderDate",1,1,"","","Sample.enteredDate","FhirTask.dateCreated","FhirTask.dateCreated","LaboratoryTask.authoredOn"
-"LaboratoryLogicalModel.LabTask.DateModified","","","",0,1,"","","","date {[]} {[]}
+"LaboratoryLogicalModel.LabTask.DateModified","LaboratoryLogicalModel.LabTask.DateModified","","","",0,1,"","","","date {[]} {[]}
 ","Laboratory Task DateModified","Date Lab Order was modified on","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabTask.DateModified",0,1,"","","","FhirTask.dateChanged","FhirTask.dateChanged","LaboratoryTask.lastModified"
-"LaboratoryLogicalModel.LabOrder","","","",0,1,"","","","BackboneElement {[]} {[]}
+"LaboratoryLogicalModel.LabOrder","LaboratoryLogicalModel.LabOrder","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Laboratory  Order Logical Model","Logical model of a Laboratory Order","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabOrder",0,1,"","","Analysis","TestOrder","TestOrder","LaboratoryServiceRequest"
-"LaboratoryLogicalModel.LabOrder.Id","","","",1,1,"","","","id {[]} {[]}
+"LaboratoryLogicalModel.LabOrder.Id","LaboratoryLogicalModel.LabOrder.Id","","","",1,1,"","","","id {[]} {[]}
 ","Laboratory Order Id","Laboratory Order Logical Id","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabOrder.Id",1,1,"","","Analysis.fhirUuid","TestOrder.uuid","TestOrder.uuid","LaboratoryServiceRequest.id"
-"LaboratoryLogicalModel.LabOrder.Status","","","",0,1,"","","","code {[]} {[]}
+"LaboratoryLogicalModel.LabOrder.Status","LaboratoryLogicalModel.LabOrder.Status","","","",0,1,"","","","code {[]} {[]}
 ","Laboratory Order Status","Laboratory Order Status","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabOrder.Status",0,1,"","","Analysis.status","Task.status","Task.status","LaboratoryServiceRequest.status"
-"LaboratoryLogicalModel.LabOrder.LabTest","","","",1,1,"","","","CodeableConcept {[]} {[]}
+"LaboratoryLogicalModel.LabOrder.LabTest","LaboratoryLogicalModel.LabOrder.LabTest","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Laboratory Order LabTest","LabTest being requested/ordered","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabOrder.LabTest",1,1,"","","Analysis.test","TestOrder.concept","TestOrder.concept","LaboratoryServiceRequest.code"
-"LaboratoryLogicalModel.LabOrder.Patient","","","",1,1,"","","","Reference {[]} {[]}
+"LaboratoryLogicalModel.LabOrder.Patient","LaboratoryLogicalModel.LabOrder.Patient","","","",1,1,"","","","Reference {[]} {[]}
 ","Laboratory Order Patient","The subject of the lab order","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabOrder.Patient",1,1,"","","Patient","TestOrder.patient","TestOrder.patient","LaboratoryServiceRequest.subject"
-"LaboratoryLogicalModel.LabOrder.Requester","","","",1,1,"","","","Reference {[]} {[]}
+"LaboratoryLogicalModel.LabOrder.Requester","LaboratoryLogicalModel.LabOrder.Requester","","","",1,1,"","","","Reference {[]} {[]}
 ","Laboratory Order Requester","The requester of the lab order","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabOrder.Requester",1,1,"","","Provider","TestOrder.orderer","TestOrder.orderer","LaboratoryServiceRequest.requester"
-"LaboratoryLogicalModel.LabOrder.Perfomer","","","",1,1,"","","","Reference {[]} {[]}
+"LaboratoryLogicalModel.LabOrder.Perfomer","LaboratoryLogicalModel.LabOrder.Perfomer","","","",1,1,"","","","Reference {[]} {[]}
 ","Laboratory Order Perfomer","The Perfomer of the lab order","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabOrder.Perfomer",1,1,"","","","Task.owner","Task.owner","LaboratoryServiceRequest.performer"
-"LaboratoryLogicalModel.LabOrder.OrderDate","","","",1,1,"","","","date {[]} {[]}
+"LaboratoryLogicalModel.LabOrder.OrderDate","LaboratoryLogicalModel.LabOrder.OrderDate","","","",1,1,"","","","date {[]} {[]}
 ","Laboratory Order OrderDate","Date Lab Order was authored on","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabOrder.OrderDate",1,1,"","","","TestOrder.effectiveEndDate","TestOrder.effectiveEndDate","LaboratoryServiceRequest.authoredOn"
-"LaboratoryLogicalModel.LabResult","","","",0,*,"","","","BackboneElement {[]} {[]}
+"LaboratoryLogicalModel.LabResult","LaboratoryLogicalModel.LabResult","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","Result for Lab Orders","Result for Lab Orders","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabResult",0,*,"","","Analysis","Obs","Obs","LaboratoryDiagnosticReport"
-"LaboratoryLogicalModel.LabResult.Id","","","",1,1,"","","","id {[]} {[]}
+"LaboratoryLogicalModel.LabResult.Id","LaboratoryLogicalModel.LabResult.Id","","","",1,1,"","","","id {[]} {[]}
 ","LabResult Logical Id","LabResult Logical Id","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabResult.Id",1,1,"","","Analysis.fhirUuid","Obs.uuid","Obs.uuid","LaboratoryDiagnosticReport.id"
-"LaboratoryLogicalModel.LabResult.Status","","","",1,1,"","","","code {[]} {[]}
+"LaboratoryLogicalModel.LabResult.Status","LaboratoryLogicalModel.LabResult.Status","","","",1,1,"","","","code {[]} {[]}
 ","LabResult Status","LabResult Status","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabResult.Status",1,1,"","","Analysis.status","Obs.status","Obs.status","LaboratoryDiagnosticReport.status"
-"LaboratoryLogicalModel.LabResult.LabTest","","","",1,1,"","","","CodeableConcept {[]} {[]}
+"LaboratoryLogicalModel.LabResult.LabTest","LaboratoryLogicalModel.LabResult.LabTest","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Lab Test for LabResult","Lab Test for LabResult","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabResult.LabTest",1,1,"","","Analysis.test","Obs.concept","Obs.concept","LaboratoryDiagnosticReport.code"
-"LaboratoryLogicalModel.LabResult.Category","","","",1,1,"","","","CodeableConcept {[]} {[]}
+"LaboratoryLogicalModel.LabResult.Category","LaboratoryLogicalModel.LabResult.Category","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","LabResult Category","LabResult Category","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabResult.Category",1,1,"","","","","","LaboratoryDiagnosticReport.category"
-"LaboratoryLogicalModel.LabResult.Encounter","","","",1,1,"","","","Reference {[]} {[]}
+"LaboratoryLogicalModel.LabResult.Encounter","LaboratoryLogicalModel.LabResult.Encounter","","","",1,1,"","","","Reference {[]} {[]}
 ","LabResult Encounter","Encounter during which this LabResult originated","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabResult.Encounter",1,1,"","","","Obs.encounter","Obs.encounter","LaboratoryDiagnosticReport.encounter"
-"LaboratoryLogicalModel.LabResult.Encounter","","","",1,1,"","","","Reference {[]} {[]}
+"LaboratoryLogicalModel.LabResult.Encounter","LaboratoryLogicalModel.LabResult.Encounter","","","",1,1,"","","","Reference {[]} {[]}
 ","LabResult Patient","The subject to whom the  LabResult belongs","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabResult.Encounter",1,1,"","","Patient","Obs.person","Obs.person","LaboratoryDiagnosticReport.subject"
-"LaboratoryLogicalModel.LabResult.DateCreated","","","",1,1,"","","","date {[]} {[]}
+"LaboratoryLogicalModel.LabResult.DateCreated","LaboratoryLogicalModel.LabResult.DateCreated","","","",1,1,"","","","date {[]} {[]}
 ","LabResult DateCreated","Date Lab result was Created","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabResult.DateCreated",1,1,"","","","Obs.dateCreated","Obs.dateCreated","LaboratoryDiagnosticReport.effectiveDateTime"
-"LaboratoryLogicalModel.LabResult.DateCreated","","","",1,*,"","","","Reference {[]} {[]}
+"LaboratoryLogicalModel.LabResult.DateCreated","LaboratoryLogicalModel.LabResult.DateCreated","","","",1,*,"","","","Reference {[]} {[]}
 ","LabResult Observation","Observation for the LabResult","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.LabResult.DateCreated",1,*,"","","Result","Obs.groupMembers","Obs.groupMembers","LaboratoryDiagnosticReport.result"
-"LaboratoryLogicalModel.Observation","","","",0,1,"","","","BackboneElement {[]} {[]}
+"LaboratoryLogicalModel.Observation","LaboratoryLogicalModel.Observation","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Observation for Lab Orders","Observation for Lab Order Results","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Observation",0,1,"","","Result","Obs","Obs","LaboratoryObservation"
-"LaboratoryLogicalModel.Observation.Id","","","",1,1,"","","","BackboneElement {[]} {[]}
+"LaboratoryLogicalModel.Observation.Id","LaboratoryLogicalModel.Observation.Id","","","",1,1,"","","","BackboneElement {[]} {[]}
 ","Observation Logical Id","Observation Logical Id","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Observation.Id",1,1,"","","Result.fhirUuid","Obs.uuid","Obs.uuid","LaboratoryObservation.id"
-"LaboratoryLogicalModel.Observation.Identifier","","","",0,1,"","","","Identifier {[]} {[]}
+"LaboratoryLogicalModel.Observation.Identifier","LaboratoryLogicalModel.Observation.Identifier","","","",0,1,"","","","Identifier {[]} {[]}
 ","An identifier for this Observation","Observation Identifier","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Observation.Identifier",0,1,"","","Result.fhirUuid","","","LaboratoryObservation.identifier"
-"LaboratoryLogicalModel.Observation.Status","","","",1,1,"","","","code {[]} {[]}
+"LaboratoryLogicalModel.Observation.Status","LaboratoryLogicalModel.Observation.Status","","","",1,1,"","","","code {[]} {[]}
 ","Observation Status","Observation Status","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Observation.Status",1,1,"","","Result.analysis.status","Obs.status","Obs.status","LaboratoryObservation.status"
-"LaboratoryLogicalModel.Observation.Encounter","","","",1,1,"","","","Reference {[]} {[]}
+"LaboratoryLogicalModel.Observation.Encounter","LaboratoryLogicalModel.Observation.Encounter","","","",1,1,"","","","Reference {[]} {[]}
 ","Observation Encounter","Encounter during which this Observation originated","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Observation.Encounter",1,1,"","","","Obs.encounter","Obs.encounter","LaboratoryObservation.encounter"
-"LaboratoryLogicalModel.Observation.Encounter","","","",1,1,"","","","Reference {[]} {[]}
+"LaboratoryLogicalModel.Observation.Encounter","LaboratoryLogicalModel.Observation.Encounter","","","",1,1,"","","","Reference {[]} {[]}
 ","Observation Patient","The subject to whom the  Observation belongs","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Observation.Encounter",1,1,"","","Patient","Obs.person","Obs.person","LaboratoryObservation.subject"
-"LaboratoryLogicalModel.Observation.LabTest","","","",1,1,"","","","CodeableConcept {[]} {[]}
+"LaboratoryLogicalModel.Observation.LabTest","LaboratoryLogicalModel.Observation.LabTest","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Lab Test for Observation","Lab Test for Observation","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Observation.LabTest",1,1,"","","","Obs.concept","Obs.concept","LaboratoryObservation.code"
-"LaboratoryLogicalModel.Observation.Value","","","",1,1,"","","","CodeableConcept {[]} {[]}
+"LaboratoryLogicalModel.Observation.Value","LaboratoryLogicalModel.Observation.Value","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Value  for Observation","Value for Observation","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Observation.Value",1,1,"","","Result.value","Obs.value[x]","Obs.value[x]","LaboratoryObservation.value[x]"
-"LaboratoryLogicalModel.Observation.LabTest","","","",0,*,"","","","CodeableConcept {[]} {[]}
+"LaboratoryLogicalModel.Observation.LabTest","LaboratoryLogicalModel.Observation.LabTest","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Component for Observation","Component for Observation","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Observation.LabTest",0,*,"","","","Obs.groupMembers","Obs.groupMembers","LaboratoryObservation.component"
-"LaboratoryLogicalModel.Encounter","","","",0,1,"","","","BackboneElement {[]} {[]}
+"LaboratoryLogicalModel.Encounter","LaboratoryLogicalModel.Encounter","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Encounter during which Lab Oders are Created","Encounter during which Lab Oders are Created","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Encounter",0,1,"","","","Encounter","Encounter","LaboratoryEncounter"
-"LaboratoryLogicalModel.Encounter.Id","","","",0,1,"","","","id {[]} {[]}
+"LaboratoryLogicalModel.Encounter.Id","LaboratoryLogicalModel.Encounter.Id","","","",0,1,"","","","id {[]} {[]}
 ","Encounter Logical Id","Encounter Logical Id","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Encounter.Id",0,1,"","","","Encounter.uuid","Encounter.uuid","LaboratoryEncounter.id"
-"LaboratoryLogicalModel.Encounter.Status","","","",0,1,"","","","code {[]} {[]}
+"LaboratoryLogicalModel.Encounter.Status","LaboratoryLogicalModel.Encounter.Status","","","",0,1,"","","","code {[]} {[]}
 ","Encounter Status","Encounter Status","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Encounter.Status",0,1,"","","","Encounter.status","Encounter.status","LaboratoryEncounter.status"
-"LaboratoryLogicalModel.Encounter.Patient","","","",0,1,"","","","Reference {[]} {[]}
+"LaboratoryLogicalModel.Encounter.Patient","LaboratoryLogicalModel.Encounter.Patient","","","",0,1,"","","","Reference {[]} {[]}
 ","Encounter Patient","Encounter Patient","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Encounter.Patient",0,1,"","","","Encounter.patient","Encounter.patient","LaboratoryEncounter.subject"
-"LaboratoryLogicalModel.Encounter.Provider","","","",0,1,"","","","Reference {[]} {[]}
+"LaboratoryLogicalModel.Encounter.Provider","LaboratoryLogicalModel.Encounter.Provider","","","",0,1,"","","","Reference {[]} {[]}
 ","Encounter Provider","Encounter Provider","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Encounter.Provider",0,1,"","","","Encounter.participant","Encounter.participant","LaboratoryEncounter.serviceProvider"
-"LaboratoryLogicalModel.Encounter.Location","","","",0,1,"","","","Reference {[]} {[]}
+"LaboratoryLogicalModel.Encounter.Location","LaboratoryLogicalModel.Encounter.Location","","","",0,1,"","","","Reference {[]} {[]}
 ","Encounter Location","Encounter Location","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Encounter.Location",0,1,"","","","Encounter.location","Encounter.location","LaboratoryEncounter.location"
-"LaboratoryLogicalModel.Requester","","","",0,1,"","","","BackboneElement {[]} {[]}
+"LaboratoryLogicalModel.Requester","LaboratoryLogicalModel.Requester","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Lab Order Requester","Lab Order Requester","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Requester",0,1,"","","Provider","Provider","Provider","LaboratoryPractitioner"
-"LaboratoryLogicalModel.Requester.Id","","","",1,1,"","","","id {[]} {[]}
+"LaboratoryLogicalModel.Requester.Id","LaboratoryLogicalModel.Requester.Id","","","",1,1,"","","","id {[]} {[]}
 ","Requester Logical ID","Requester Logical ID","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Requester.Id",1,1,"","","Provider.fhirUuid","Provider.uuid","Provider.uuid","LaboratoryPractitioner.id"
-"LaboratoryLogicalModel.Requester.Identifier","","","",1,1,"","","","Identifier {[]} {[]}
+"LaboratoryLogicalModel.Requester.Identifier","LaboratoryLogicalModel.Requester.Identifier","","","",1,1,"","","","Identifier {[]} {[]}
 ","Requester Identifier","Requester Identifier","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Requester.Identifier",1,1,"","","","Provider.identifier","Provider.identifier","LaboratoryPractitioner.identifier"
-"LaboratoryLogicalModel.Requester.Name","","","",1,1,"","","","HumanName {[]} {[]}
+"LaboratoryLogicalModel.Requester.Name","LaboratoryLogicalModel.Requester.Name","","","",1,1,"","","","HumanName {[]} {[]}
 ","Requester Name","Patient Name","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Requester.Name",1,1,"","","Provider.person.firstName","Provider.names","Provider.name","LaboratoryPractitioner.name"
-"LaboratoryLogicalModel.Requester.Gender","","","",1,1,"","","","code {[]} {[]}
+"LaboratoryLogicalModel.Requester.Gender","LaboratoryLogicalModel.Requester.Gender","","","",1,1,"","","","code {[]} {[]}
 ","Requester Gender","Requester Gender","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Requester.Gender",1,1,"","","","Provider.gender","Provider.gender","LaboratoryPractitioner.gender"
-"LaboratoryLogicalModel.Requester.BirthDate","","","",0,1,"","","","date {[]} {[]}
+"LaboratoryLogicalModel.Requester.BirthDate","LaboratoryLogicalModel.Requester.BirthDate","","","",0,1,"","","","date {[]} {[]}
 ","Requester Date of Birth","Requester Date of Birth","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Requester.BirthDate",0,1,"","","","Provider.birthdate","Provider.birthdate","LaboratoryPractitioner.birthDate"
-"LaboratoryLogicalModel.Requester.Address","","","",0,*,"","","","Address {[]} {[]}
+"LaboratoryLogicalModel.Requester.Address","LaboratoryLogicalModel.Requester.Address","","","",0,*,"","","","Address {[]} {[]}
 ","Requester Address","Requester Address","","","","","","","","","",,,,,"",,,,"LaboratoryLogicalModel.Requester.Address",0,*,"","","","Provider.address","Provider.address","LaboratoryPractitioner.address"

@@ -3,17 +3,17 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="laboratory.workflows.ig"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>LaboratoryIg</h2><p>The official URL for this implementation guide is: </p><pre>http://i-tech-uw.github.io/laboratory-workflows-ig/ImplementationGuide/laboratory.workflows.ig</pre><div><p>Implementation guide for FHIR-based communication for Laboratory Test Orders and Results
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>LaboratoryWorkflowsIg</h2><p>The official URL for this implementation guide is: </p><pre>http://i-tech-uw.github.io/laboratory-workflows-ig/ImplementationGuide/laboratory.workflows.ig</pre><div><p>Implementation guide for FHIR-based communication for Laboratory Test Orders and Results
 in the OpenHIE Architecture.</p>
 </div></div>
   </text>
   <url value="http://i-tech-uw.github.io/laboratory-workflows-ig/ImplementationGuide/laboratory.workflows.ig"/>
-  <version value="0.2.0"/>
-  <name value="LaboratoryIg"/>
+  <version value="0.3.0"/>
+  <name value="LaboratoryWorkflowsIg"/>
   <title value="Laboratory Workflows Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2022-04-15T20:23:00+00:00"/>
+  <date value="2022-07-28T23:41:56+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
     <name value="I-TECH-UW"/>
@@ -30,6 +30,11 @@ in the OpenHIE Architecture.</p>
   <packageId value="laboratory.workflows.ig"/>
   <license value="CC-BY-SA-4.0"/>
   <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="3.1.0"/>
+  </dependsOn>
   <dependsOn id="hl7_fhir_uv_ips">
     <uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
     <packageId value="hl7.fhir.uv.ips"/>

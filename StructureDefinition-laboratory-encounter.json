@@ -16,11 +16,11 @@
     }
   ],
   "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-encounter",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "LaboratoryEncounter",
   "title": "Laboratory Encounter",
   "status": "active",
-  "date": "2022-04-15T20:23:00+00:00",
+  "date": "2022-07-28T23:41:56+00:00",
   "publisher": "I-TECH-UW",
   "contact": [
     {

@@ -1,12 +1,12 @@
 {
   "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/ImplementationGuide/laboratory.workflows.ig",
-  "name": "LaboratoryIg",
+  "name": "LaboratoryWorkflowsIg",
   "package-id": "laboratory.workflows.ig",
-  "ig-ver": "0.2.0",
-  "date": "Fri, 15 Apr, 2022 20:23:00 +0000",
-  "errs": 245,
-  "warnings": 152,
+  "ig-ver": "0.3.0",
+  "date": "Thu, 28 Jul, 2022 23:41:56 +0000",
+  "errs": 246,
+  "warnings": 153,
   "hints": 11,
   "version": "4.0.1",
-  "tool": "5.0.0-snapshot1 (3)"
+  "tool": "5.0.0-snapshot2 (3)"
 }

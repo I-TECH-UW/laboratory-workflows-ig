@@ -3,112 +3,112 @@
     "id": "laboratory.workflows.ig",
     "type": "ImplementationGuide",
     "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/ImplementationGuide/laboratory.workflows.ig",
-    "version": "0.2.0",
-    "name": "LaboratoryIg"
+    "version": "0.3.0",
+    "name": "LaboratoryWorkflowsIg"
   },
   {
     "id": "LaboratoryLogicalModel",
     "type": "StructureDefinition",
     "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/LaboratoryLogicalModel",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "name": "LaboratoryLogicalModel"
   },
   {
     "id": "laboratory-composition",
     "type": "StructureDefinition",
     "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-composition",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "name": "LaboratoryLabComposition"
   },
   {
     "id": "laboratory-diagnostic-report",
     "type": "StructureDefinition",
     "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-diagnostic-report",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "name": "LaboratoryDiagnosticReport"
   },
   {
     "id": "laboratory-encounter",
     "type": "StructureDefinition",
     "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-encounter",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "name": "LaboratoryEncounter"
   },
   {
     "id": "laboratory-observation",
     "type": "StructureDefinition",
     "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-observation",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "name": "LaboratoryObservation"
   },
   {
     "id": "laboratory-openmrs-identifier",
     "type": "StructureDefinition",
     "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-openmrs-identifier",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "name": "LaboratoryOpenmrsIdentifier"
   },
   {
     "id": "laboratory-patient",
     "type": "StructureDefinition",
     "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-patient",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "name": "LaboratoryPatient"
   },
   {
     "id": "laboratory-patient-identifier-location",
     "type": "StructureDefinition",
     "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-patient-identifier-location",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "name": "LaboratoryPatientIdentifierLocationExtension"
   },
   {
     "id": "laboratory-practitioner",
     "type": "StructureDefinition",
     "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-practitioner",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "name": "LaboratoryPractitioner"
   },
   {
     "id": "laboratory-service-request",
     "type": "StructureDefinition",
     "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-service-request",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "name": "LaboratoryServiceRequest"
   },
   {
     "id": "laboratory-task",
     "type": "StructureDefinition",
     "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-task",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "name": "LaboratoryTask"
   },
   {
     "id": "laboratory-diagnostic-report-status-vs",
     "type": "ValueSet",
     "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-diagnostic-report-status-vs",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "name": "LaboratoryDiagnosticReportStatusVS"
   },
   {
     "id": "laboratory-order-code-vs",
     "type": "ValueSet",
     "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-order-code-vs",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "name": "LaboratoryOrderCodeVS"
   },
   {
     "id": "laboratory-task-intent-vs",
     "type": "ValueSet",
     "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-task-intent-vs",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "name": "LaboratoryTaskIntentVS"
   },
   {
     "id": "laboratory-task-status-vs",
     "type": "ValueSet",
     "url": "http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-task-status-vs",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "name": "LaboratoryTaskStatusVS"
   }
 ]

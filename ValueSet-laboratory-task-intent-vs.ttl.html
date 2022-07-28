@@ -71,7 +71,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Laboratory Workflows Implementation Guide</span><br/>0.2.0 - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Laboratory Workflows Implementation Guide</span><br/>0.3.0 - ci-build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -101,14 +101,17 @@
     <a href="toc.html">Table of Contents</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Specifications
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Requirements
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li><a name="l179">​</a>
-        <a href="system_specification.html">System Requirements</a>
+        <a href="concepts.html">Key Concepts</a>
       </li>
       <li><a name="l185">​</a>
+        <a href="functional.html">Functional Requirements</a>
+      </li>
+      <li><a name="l191">​</a>
         <a href="use_cases.html">Use Cases</a>
       </li>
     </ul>
@@ -118,8 +121,17 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
+      <li><a name="l208">​</a>
+        <a href="actors.html">Actors</a>
+      </li>
+      <li><a name="l214">​</a>
+        <a href="transactions.html">Transactions</a>
+      </li>
+      <li><a name="l220">​</a>
+        <a href="workflows.html">Workflows</a>
+      </li>
       <li>
-        <a href="artifacts.html">Artifacts</a>
+        <a href="artifacts.html">Artifact Index</a>
       </li>
     </ul>
   </li>
@@ -148,7 +160,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">Laboratory Workflows Implementation Guide - Local Development build (v0.2.0). See the <a href="http://i-tech-uw.github.io/laboratory-workflows-ig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!-- ReleaseHeader --><p id="publish-box">Laboratory Workflows Implementation Guide - Local Development build (v0.3.0). See the <a href="http://i-tech-uw.github.io/laboratory-workflows-ig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
 
 
@@ -195,7 +207,7 @@
         
           Active
           
-            as of 2022-04-15
+            as of 2022-07-28
           
         
       </td>
@@ -227,11 +239,11 @@
      fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;http://hl7.org/fhir/ValueSet/task-intent&lt;/code&gt;&lt;table class=\"none\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;task-intent-order&lt;/td&gt;&lt;td&gt;Order&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
   ];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-task-intent-vs"];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "0.2.0"];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "0.3.0"];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "LaboratoryTaskIntentVS"];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Laboratory Intent for Task"];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "active"];
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2022-04-15T20:23:00+00:00"^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2022-07-28T23:41:56+00:00"^^xsd:dateTime];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "I-TECH-UW"];
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -291,8 +303,8 @@
 
            
       <div class="inner-wrapper">
-        <p><a name="l515">​</a>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="www.github.com/i-tech-uw">I-TECH-UW</a>.  Package laboratory.workflows.ig#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 15, 2022 20:23+0000">2022-04-15</span>
+        <p><a name="l539">​</a>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="www.github.com/i-tech-uw">I-TECH-UW</a>.  Package laboratory.workflows.ig#0.3.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 28, 2022 23:41+0000">2022-07-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

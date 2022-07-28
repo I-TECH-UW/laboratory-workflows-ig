@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-order-code-vs"];
-  fhir:ValueSet.version [ fhir:value "0.2.0"];
+  fhir:ValueSet.version [ fhir:value "0.3.0"];
   fhir:ValueSet.name [ fhir:value "LaboratoryOrderCodeVS"];
   fhir:ValueSet.title [ fhir:value "EMR Lab Order Code"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-04-15T20:23:00+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-07-28T23:41:56+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "I-TECH-UW"];
   fhir:ValueSet.contact [
      fhir:index 0;

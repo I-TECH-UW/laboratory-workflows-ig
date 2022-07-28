@@ -12,11 +12,11 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://i-tech-uw.github.io/laboratory-workflows-ig/StructureDefinition/laboratory-diagnostic-report"/>
-  <version value="0.2.0"/>
+  <version value="0.3.0"/>
   <name value="LaboratoryDiagnosticReport"/>
   <title value="Laboratory Diagnostic Report"/>
   <status value="active"/>
-  <date value="2022-04-15T20:23:00+00:00"/>
+  <date value="2022-07-28T23:41:56+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
     <name value="I-TECH-UW"/>
