@@ -2,6 +2,6 @@
 
 ## HIE-Based Scenario
 
- {% include hie-based.svg %}
+{% include hie-based.png %}
 
 ## Standalone Scenario
