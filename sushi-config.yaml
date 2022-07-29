@@ -32,8 +32,7 @@ menu:
   Home: index.html
   Table of Contents: toc.html
   Business Requirements:
-    Key Concepts: concepts.html
-    Functional Requirements: functional.html
+    Overview: overview.html
     Use Cases: use_cases.html
   Technical Specifications:
     Actors: actors.html
