@@ -3,7 +3,7 @@
 
 err = 246, warn = 153, info = 11
 IG Publisher Version: 1.1.127
-Generated Thu Jul 28 23:42:43 UTC 2022. FHIR version 4.0.1 for laboratory.workflows.ig#0.3.0 (canonical = http://i-tech-uw.github.io/laboratory-workflows-ig)
+Generated Fri Jul 29 00:17:37 UTC 2022. FHIR version 4.0.1 for laboratory.workflows.ig#0.3.0 (canonical = http://i-tech-uw.github.io/laboratory-workflows-ig)
  Build Errors : 1478 / 0 / 0
  /github/workspace/fsh-generated/resources/Bundle-example-laboratory-bundle : 42 / 7 / 18
  /github/workspace/fsh-generated/resources/Bundle-example-laboratory-simple-bundle : 33 / 5 / 13
@@ -1505,7 +1505,7 @@ ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 129, column 10: The link 'actors.html' for "Actors" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'transactions.html' for "Transactions" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 135, column 10: The link 'workflows.html' for "Workflows" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 292, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 286, column 28: The link 'www.github.com/i-tech-uw' for "I-TECH-UW" cannot be resolved
 ERROR: /github/workspace/output/spec.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 113, column 10: The link 'concepts.html' for "Key Concepts" cannot be resolved
 ERROR: /github/workspace/output/spec.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 10: The link 'functional.html' for "Functional Requirements" cannot be resolved
 ERROR: /github/workspace/output/spec.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 10: The link 'use_cases.html' for "Use Cases" cannot be resolved

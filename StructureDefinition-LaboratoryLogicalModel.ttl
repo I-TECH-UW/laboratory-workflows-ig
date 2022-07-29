@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "LaboratoryLogicalModel"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
   fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2022-07-28T23:41:56+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-07-29T00:16:52+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "I-TECH-UW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
