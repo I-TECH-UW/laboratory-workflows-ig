@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "LaboratoryOpenmrsIdentifier"];
   fhir:StructureDefinition.title [ fhir:value "Laboratory Workflow OpenMRS Identifier"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-07-29T00:16:52+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-07-29T07:49:23+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "I-TECH-UW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

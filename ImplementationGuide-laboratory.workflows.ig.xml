@@ -13,7 +13,7 @@ in the OpenHIE Architecture.</p>
   <title value="Laboratory Workflows Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2022-07-29T00:16:52+00:00"/>
+  <date value="2022-07-29T07:49:23+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
     <name value="I-TECH-UW"/>
@@ -617,6 +617,11 @@ in the OpenHIE Architecture.</p>
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="actors.html"/>
+        <title value="Actors"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="background.html"/>
         <title value="Background"/>
         <generation value="html"/>
@@ -632,8 +637,28 @@ in the OpenHIE Architecture.</p>
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="overview.html"/>
+        <title value="Overview"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="spec.html"/>
         <title value="Spec"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="transactions.html"/>
+        <title value="Transactions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="use_cases.html"/>
+        <title value="Use Cases"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="workflows.html"/>
+        <title value="Workflows"/>
         <generation value="markdown"/>
       </page>
     </page>

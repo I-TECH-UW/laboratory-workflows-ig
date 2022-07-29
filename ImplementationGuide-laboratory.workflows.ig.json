@@ -11,7 +11,7 @@
   "title": "Laboratory Workflows Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2022-07-29T00:16:52+00:00",
+  "date": "2022-07-29T07:49:23+00:00",
   "publisher": "I-TECH-UW",
   "contact": [
     {
@@ -852,6 +852,11 @@
           "generation": "html"
         },
         {
+          "nameUrl": "actors.html",
+          "title": "Actors",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "background.html",
           "title": "Background",
           "generation": "html"
@@ -867,8 +872,28 @@
           "generation": "html"
         },
         {
+          "nameUrl": "overview.html",
+          "title": "Overview",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "spec.html",
           "title": "Spec",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "transactions.html",
+          "title": "Transactions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "use_cases.html",
+          "title": "Use Cases",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "workflows.html",
+          "title": "Workflows",
           "generation": "markdown"
         }
       ]
