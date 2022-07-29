@@ -4,9 +4,9 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: laboratory.workflows.ig
 canonical: http://i-tech-uw.github.io/laboratory-workflows-ig
-name: LaboratoryIg
+name: LaboratoryWorkflowsIg
 status: draft
-version: 0.2.0
+version: 0.3.0
 fhirVersion: 4.0.1
 # copyright:
 copyrightYear: 2021+
@@ -31,10 +31,13 @@ parameters:
 menu:
   Home: index.html
   Table of Contents: toc.html
-  Functional Specifications:
-    System Requirements: system_specification.html
+  Business Requirements:
+    Overview: overview.html
     Use Cases: use_cases.html
   Technical Specifications:
-    Artifacts: artifacts.html
+    Actors: actors.html
+    Transactions: transactions.html
+    Workflows: workflows.html
+    Artifact Index: artifacts.html
 dependencies:
   hl7.fhir.uv.ips: 1.0.0
