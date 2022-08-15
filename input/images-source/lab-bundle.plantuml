@@ -1,20 +1,21 @@
 @startuml
-object Patient
-object ServiceRequest
-object DiagnosticReport
-object Observation
-object Location
-object Organization
-object Practitioner
-
-map Task {
-  requester=>
-  for=>
-  basedOn=>
-  output=>
-  status=>
-  owner=>
-  location=>
+package DocumentBundle {
+  object Patient
+  object ServiceRequest
+  object DiagnosticReport
+  object Observation
+  object Location
+  object Organization
+  object Practitioner
+  map Task {
+    requester=>
+    for=>
+    basedOn=>
+    output=>
+    status=>
+    owner=>
+    location=>
+  }
 }
 
 Task::requester -u-> Practitioner
