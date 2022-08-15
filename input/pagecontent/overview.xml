@@ -13,4 +13,6 @@
       <div><strong>HIE-Based Setup - SVG</strong></div>
       {% include hie-based.svg %}
     </p>
+    <h3>Data Model</h3>
+    {% include lab-bundle.svg %}
 </div>
