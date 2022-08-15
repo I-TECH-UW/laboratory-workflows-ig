@@ -33,6 +33,7 @@ menu:
   Table of Contents: toc.html
   Business Requirements:
     Overview: overview.html
+    Key Concepts: concepts.html
     Use Cases: use_cases.html
   Technical Specifications:
     Actors: actors.html
