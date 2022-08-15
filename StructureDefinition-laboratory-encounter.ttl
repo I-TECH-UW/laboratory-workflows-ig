@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "LaboratoryEncounter"];
   fhir:StructureDefinition.title [ fhir:value "Laboratory Encounter"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-15T22:39:59+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-15T23:07:29+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "I-TECH-UW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
