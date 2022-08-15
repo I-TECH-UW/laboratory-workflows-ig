@@ -1,0 +1,3 @@
+[submodule "openhie-ig-template"]
+	path = openhie-ig-template
+	url = https://github.com/pmanko/openhie-ig-template.git

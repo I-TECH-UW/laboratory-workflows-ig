@@ -12,4 +12,5 @@
       <br />
       <strong>HIE-Based Setup - SVG</strong>
       {% include hie-based.svg %}
+    </p>
 </div>
