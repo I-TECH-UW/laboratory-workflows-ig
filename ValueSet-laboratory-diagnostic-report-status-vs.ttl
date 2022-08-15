@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "LaboratoryDiagnosticReportStatusVS"];
   fhir:ValueSet.title [ fhir:value "Laboratory Diagnostic Report Status Flag"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-08-15T21:20:36+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-08-15T21:27:55+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "I-TECH-UW"];
   fhir:ValueSet.contact [
      fhir:index 0;

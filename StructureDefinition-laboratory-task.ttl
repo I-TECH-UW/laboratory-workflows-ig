@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "LaboratoryTask"];
   fhir:StructureDefinition.title [ fhir:value "Laboratory Workflow Task Resource"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-15T21:20:36+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-15T21:27:55+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "I-TECH-UW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
