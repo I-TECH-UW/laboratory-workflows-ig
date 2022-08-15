@@ -13,7 +13,7 @@ in the OpenHIE Architecture.</p>
   <title value="Laboratory Workflows Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2022-07-29T07:56:05+00:00"/>
+  <date value="2022-08-15T21:20:36+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
     <name value="I-TECH-UW"/>
@@ -639,7 +639,7 @@ in the OpenHIE Architecture.</p>
       <page>
         <nameUrl value="overview.html"/>
         <title value="Overview"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="spec.html"/>
