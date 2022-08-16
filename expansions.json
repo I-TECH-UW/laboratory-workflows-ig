@@ -1,79 +1,11 @@
 {
   "resourceType" : "Bundle",
-  "id" : "bad123c9-4ed5-4609-b3ba-ccec2dbdff2a",
+  "id" : "d391c796-825d-4369-a6ca-f154c8689044",
   "meta" : {
-    "lastUpdated" : "2022-08-15T23:07:29.978+00:00"
+    "lastUpdated" : "2022-08-16T00:01:57.420+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-diagnostic-report-status-vs",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "laboratory-diagnostic-report-status-vs",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html\">DiagnosticReportStatus v4.0.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html\"><code>http://hl7.org/fhir/diagnostic-report-status</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-partial\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-partial\">diagnostic-report-status-partial</a></td><td>Partial</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-final\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-final\">diagnostic-report-status-final</a></td><td>Final</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-unknown\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-unknown\">diagnostic-report-status-unknown</a></td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-canceled\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-canceled\">diagnostic-report-status-canceled</a></td><td>Canceled</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-amended\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-amended\">diagnostic-report-status-amended</a></td><td>Amended</td></tr></table></div>"
-      },
-      "url" : "http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-diagnostic-report-status-vs",
-      "version" : "0.3.0",
-      "name" : "LaboratoryDiagnosticReportStatusVS",
-      "title" : "Laboratory Diagnostic Report Status Flag",
-      "status" : "active",
-      "date" : "2022-08-15T23:07:29+00:00",
-      "publisher" : "I-TECH-UW",
-      "contact" : [{
-        "name" : "I-TECH-UW",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "www.github.com/i-tech-uw"
-        },
-        {
-          "system" : "email",
-          "value" : "pmanko@uw.edu"
-        }]
-      }],
-      "description" : "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html",
-      "expansion" : {
-        "identifier" : "urn:uuid:b6aba3bc-f2f1-4023-8fb1-cae736751af6",
-        "timestamp" : "2022-08-15T23:08:01+00:00",
-        "total" : 5,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://hl7.org/fhir/diagnostic-report-status|4.0.1"
-        }],
-        "contains" : [{
-          "system" : "http://hl7.org/fhir/diagnostic-report-status",
-          "code" : "diagnostic-report-status-partial",
-          "display" : "Partial"
-        },
-        {
-          "system" : "http://hl7.org/fhir/diagnostic-report-status",
-          "code" : "diagnostic-report-status-final",
-          "display" : "Final"
-        },
-        {
-          "system" : "http://hl7.org/fhir/diagnostic-report-status",
-          "code" : "diagnostic-report-status-unknown",
-          "display" : "Unknown"
-        },
-        {
-          "system" : "http://hl7.org/fhir/diagnostic-report-status",
-          "code" : "diagnostic-report-status-canceled",
-          "display" : "Canceled"
-        },
-        {
-          "system" : "http://hl7.org/fhir/diagnostic-report-status",
-          "code" : "diagnostic-report-status-amended",
-          "display" : "Amended"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-order-code-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -87,7 +19,7 @@
       "name" : "LaboratoryOrderCodeVS",
       "title" : "EMR Lab Order Code",
       "status" : "active",
-      "date" : "2022-08-15T23:07:29+00:00",
+      "date" : "2022-08-16T00:01:57+00:00",
       "publisher" : "I-TECH-UW",
       "contact" : [{
         "name" : "I-TECH-UW",
@@ -106,8 +38,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:cfa08331-9d58-4ef8-9800-80eb1abddf4c",
-        "timestamp" : "2022-08-15T23:08:02+00:00",
+        "identifier" : "urn:uuid:e8474afe-90f7-48b6-936b-07e537b4c718",
+        "timestamp" : "2022-08-16T00:02:24+00:00",
         "total" : 1000,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5120,6 +5052,74 @@
           "system" : "http://loinc.org",
           "code" : "10757-3",
           "display" : "Hematologic+Nuclear elements.microscopic observation [Identifier] in Tissue by Giemsa stain.May-Grunwald"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-diagnostic-report-status-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "laboratory-diagnostic-report-status-vs",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html\">DiagnosticReportStatus v4.0.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html\"><code>http://hl7.org/fhir/diagnostic-report-status</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-partial\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-partial\">diagnostic-report-status-partial</a></td><td>Partial</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-final\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-final\">diagnostic-report-status-final</a></td><td>Final</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-unknown\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-unknown\">diagnostic-report-status-unknown</a></td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-canceled\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-canceled\">diagnostic-report-status-canceled</a></td><td>Canceled</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-amended\"> </a>  <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-amended\">diagnostic-report-status-amended</a></td><td>Amended</td></tr></table></div>"
+      },
+      "url" : "http://i-tech-uw.github.io/laboratory-workflows-ig/ValueSet/laboratory-diagnostic-report-status-vs",
+      "version" : "0.3.0",
+      "name" : "LaboratoryDiagnosticReportStatusVS",
+      "title" : "Laboratory Diagnostic Report Status Flag",
+      "status" : "active",
+      "date" : "2022-08-16T00:01:57+00:00",
+      "publisher" : "I-TECH-UW",
+      "contact" : [{
+        "name" : "I-TECH-UW",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "www.github.com/i-tech-uw"
+        },
+        {
+          "system" : "email",
+          "value" : "pmanko@uw.edu"
+        }]
+      }],
+      "description" : "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html",
+      "expansion" : {
+        "identifier" : "urn:uuid:c46d78d8-b4e8-4974-b2a0-86a9a8492451",
+        "timestamp" : "2022-08-16T00:02:30+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/diagnostic-report-status|4.0.1"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/diagnostic-report-status",
+          "code" : "diagnostic-report-status-partial",
+          "display" : "Partial"
+        },
+        {
+          "system" : "http://hl7.org/fhir/diagnostic-report-status",
+          "code" : "diagnostic-report-status-final",
+          "display" : "Final"
+        },
+        {
+          "system" : "http://hl7.org/fhir/diagnostic-report-status",
+          "code" : "diagnostic-report-status-unknown",
+          "display" : "Unknown"
+        },
+        {
+          "system" : "http://hl7.org/fhir/diagnostic-report-status",
+          "code" : "diagnostic-report-status-canceled",
+          "display" : "Canceled"
+        },
+        {
+          "system" : "http://hl7.org/fhir/diagnostic-report-status",
+          "code" : "diagnostic-report-status-amended",
+          "display" : "Amended"
         }]
       }
     }
